@@ -22,7 +22,6 @@ D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.AdService\bin\AM.EmergencyService.AdService.dll.config
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.AdService\bin\AM.EmergencyService.AdService.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.AdService\bin\AM.EmergencyService.AdService.pdb
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.csprojResolveAssemblyReference.cache
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.csproj.CoreCompileInputs.cache
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.pdb
@@ -33,3 +32,4 @@ l:\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyS
 l:\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.csproj.CoreCompileInputs.cache
 l:\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.dll
 l:\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.pdb
+d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.csprojResolveAssemblyReference.cache

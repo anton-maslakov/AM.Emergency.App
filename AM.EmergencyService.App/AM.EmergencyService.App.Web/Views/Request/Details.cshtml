@@ -1,33 +1,70 @@
 ﻿
-@model IEnumerable<AM.EmergencyService.App.Common.Models.IncidentModel>
+@model IEnumerable<AM.EmergencyService.App.Common.Models.RequestDetailModel>
 @{
     ViewBag.Title = "Происшествия";
 }
 <table class="table">
     <tr>
         <th>
+            @Html.DisplayNameFor(model => model.RequestNumber)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.IncidentInformation)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.IncidentReason)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BrigadeNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BrigadeCallDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BrigadeArrivalDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BrigadeEndDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BrigadeReturnDate)
+        </th>
         <th></th>
     </tr>
     @foreach (var item in Model)
     {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.IncidentInformation)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IncidentReason)
-            </td>
-            <td>
-                @*@Html.ActionLink("Edit", "Edit", new { id = item.Id }) |*@
-                @*@Html.ActionLink("Подробнее", "Details", new { id = item.Id }) |*@
-                @* @Html.ActionLink("Delete", "Delete", new { id = item.Id })*@
-            </td>
-        </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.RequestNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IncidentInformation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IncidentReason)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BrigadeNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BrigadeCallDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BrigadeArrivalDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BrigadeEndDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BrigadeReturnDate)
+        </td>
+
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { id = item.Id }) |*@
+            @Html.ActionLink("Подробнее", "Details", new { requestNumber = item.RequestNumber }) |
+            @* @Html.ActionLink("Delete", "Delete", new { id = item.Id })*@
+        </td>
+    </tr>
     }
 </table>
 <p>

@@ -34,19 +34,7 @@
             @Html.DisplayNameFor(model => model.RequestDate)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.BrigadeCallDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.BrigadeArrivalDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.BrigadeEndDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.BrigadeReturnDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.RequestCategory)
+            @Html.DisplayNameFor(model => model.CategoryName)
         </th>
         <th></th>
     </tr>
@@ -67,23 +55,11 @@
                 @Html.DisplayFor(modelItem => item.RequestDate)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.BrigadeCallDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BrigadeArrivalDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BrigadeEndDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BrigadeReturnDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RequestCategory)
+                @Html.DisplayFor(modelItem => item.CategoryName)
             </td>
             <td>
                 @*@Html.ActionLink("Edit", "Edit", new { id = item.Id }) |*@
-                @Html.ActionLink("Подробнее", "Details", new { id = item.Id })
+                @Html.ActionLink("Подробнее", "Details", new { requestNumber = item.RequestNumber })
                 @*@Html.ActionLink("Delete", "Delete", new { id = item.Id })*@
             </td>
         </tr>

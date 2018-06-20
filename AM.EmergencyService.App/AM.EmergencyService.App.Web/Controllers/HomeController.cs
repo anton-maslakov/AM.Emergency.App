@@ -12,11 +12,9 @@ namespace AM.EmergencyService.App.Web.Controllers
     public class HomeController : Controller
     {
         private static ILogger _logger;
-        private IRepository _repository;
 
-        public HomeController(IRepository repository, ILogger logger)
+        public HomeController(ILogger logger)
         {
-            _repository = repository;
             _logger = logger;
         }
         public ActionResult Index(string requestDate = "")

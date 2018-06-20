@@ -71,14 +71,19 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="DependencyResolution\DataRegistry.cs" />
-    <Compile Include="Repository\BrigadesManipulator.cs" />
-    <Compile Include="Repository\IDataManipulator.cs" />
-    <Compile Include="Repository\IncidentManipulator.cs" />
-    <Compile Include="Repository\InventoryManipulator.cs" />
-    <Compile Include="Repository\Repository.cs" />
-    <Compile Include="Repository\IRepository.cs" />
-    <Compile Include="Repository\RequestManipulator.cs" />
-    <Compile Include="Repository\RescuersManipulator.cs" />
+    <Compile Include="Repository\ICasualtyRepository.cs" />
+    <Compile Include="Repository\IInventoryRepository.cs" />
+    <Compile Include="Repository\Impl\BrigadesRepository.cs" />
+    <Compile Include="Repository\IBrigadesRepository.cs" />
+    <Compile Include="Repository\Impl\CasualtyRepository.cs" />
+    <Compile Include="Repository\Impl\InventoryRepository.cs" />
+    <Compile Include="Repository\ConnectionStringInitialiser.cs" />
+    <Compile Include="Repository\Impl\RequestDetailRepository.cs" />
+    <Compile Include="Repository\Impl\RequestsRepository.cs" />
+    <Compile Include="Repository\Impl\RescuersRepository.cs" />
+    <Compile Include="Repository\IRequestDetailsRepository.cs" />
+    <Compile Include="Repository\IRequestsRepository.cs" />
+    <Compile Include="Repository\IRescuersRepository.cs" />
     <Compile Include="Service\AdService.cs" />
     <Compile Include="Service\IAdService.cs" />
   </ItemGroup>
