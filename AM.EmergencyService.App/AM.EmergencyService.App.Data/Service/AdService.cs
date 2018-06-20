@@ -4,6 +4,7 @@ using System.Configuration;
 using System.IO;
 using System.ServiceModel;
 using System.ServiceModel.Configuration;
+using AM.EmergencyService.App.Common.Helper;
 using AM.EmergencyService.App.Common.Logger;
 using AM.EmergencyService.App.Data.AdServiceReference;
 
@@ -16,6 +17,7 @@ namespace AM.EmergencyService.App.Data.Service
 
         public AdService(ILogger logger)
         {
+            ErrorHandlingHelper.IfArgumentNullException(logger, "ILogger");
             _logger = logger;
             ExeConfigurationFileMap fileMap = new ExeConfigurationFileMap();
             fileMap.ExeConfigFilename = Path.Combine(AppDomain.CurrentDomain.SetupInformation.PrivateBinPath, "App.config");

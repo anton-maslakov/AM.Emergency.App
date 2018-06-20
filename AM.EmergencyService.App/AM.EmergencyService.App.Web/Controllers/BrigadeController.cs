@@ -1,4 +1,5 @@
 ﻿using AM.EmergencyService.App.Business.DataProvider;
+using AM.EmergencyService.App.Common.Helper;
 using System.Web.Mvc;
 
 namespace AM.EmergencyService.App.Web.Controllers
@@ -10,6 +11,8 @@ namespace AM.EmergencyService.App.Web.Controllers
 
         public BrigadeController(IBrigadesProvider brigadesProvider, IRescuersProvider rescuersProvider)
         {
+            ErrorHandlingHelper.IfArgumentNullException(brigadesProvider, "IBrigadesProvider");
+            ErrorHandlingHelper.IfArgumentNullException(rescuersProvider, "IRescuersProvider");
             _brigadesProvider = brigadesProvider;
             _rescuersProvider = rescuersProvider;
         }

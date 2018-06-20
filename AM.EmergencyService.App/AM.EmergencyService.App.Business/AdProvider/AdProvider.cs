@@ -1,4 +1,5 @@
-﻿using AM.EmergencyService.App.Data.AdServiceReference;
+﻿using AM.EmergencyService.App.Common.Helper;
+using AM.EmergencyService.App.Data.AdServiceReference;
 using AM.EmergencyService.App.Data.Service;
 using System.Collections.Generic;
 
@@ -6,14 +7,15 @@ namespace AM.EmergencyService.App.Business.AdProvider
 {
     public class AdProvider : IAdProvider
     {
-        private IAdService _provider;
-        public AdProvider(IAdService provider)
+        private IAdService _adService;
+        public AdProvider(IAdService adService)
         {
-            _provider = provider;
+            ErrorHandlingHelper.IfArgumentNullException(adService, "IAdService");
+            _adService = adService;
         }
         public IEnumerable<AdvertisingModel> GetAd(int numberOfAd)
         {
-            return _provider.GetAd(numberOfAd);
+            return _adService.GetAd(numberOfAd);
         }
     }
 }

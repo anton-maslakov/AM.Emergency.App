@@ -1,4 +1,5 @@
 ﻿using AM.EmergencyService.App.Business.DataProvider;
+using AM.EmergencyService.App.Common.Helper;
 using System.Web.Mvc;
 
 namespace AM.EmergencyService.App.Web.Controllers
@@ -9,6 +10,7 @@ namespace AM.EmergencyService.App.Web.Controllers
 
         public IncidentController(IRequestDetailsProvider requestDetailsProvider)
         {
+            ErrorHandlingHelper.IfArgumentNullException(requestDetailsProvider, "IRequestDetailsProvider");
             _requestDetailsProvider = requestDetailsProvider;
         }
         public ActionResult IncidentInfo(int id)

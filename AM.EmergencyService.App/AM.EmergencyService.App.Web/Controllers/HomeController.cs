@@ -1,10 +1,5 @@
-﻿using AM.EmergencyService.App.Common.Logger;
-using AM.EmergencyService.App.Data;
-using AM.EmergencyService.App.Data.Repository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using AM.EmergencyService.App.Common.Helper;
+using AM.EmergencyService.App.Common.Logger;
 using System.Web.Mvc;
 
 namespace AM.EmergencyService.App.Web.Controllers
@@ -15,6 +10,7 @@ namespace AM.EmergencyService.App.Web.Controllers
 
         public HomeController(ILogger logger)
         {
+            ErrorHandlingHelper.IfArgumentNullException(logger, "ILogger");
             _logger = logger;
         }
         public ActionResult Index(string requestDate = "")
