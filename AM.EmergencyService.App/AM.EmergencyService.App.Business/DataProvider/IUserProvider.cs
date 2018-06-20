@@ -6,7 +6,8 @@ namespace AM.EmergencyService.App.Business.DataProvider
     public interface IUserProvider
     {
         UserModel GetUserByLogin(string login);
+        UserModel GetUserById(int id);
         IEnumerable<RoleModel> GetUserRoles(int userId);
-        IEnumerable<string> GetAllLogins();
+        IEnumerable<UserModel> GetAllUsers();
     }
 }

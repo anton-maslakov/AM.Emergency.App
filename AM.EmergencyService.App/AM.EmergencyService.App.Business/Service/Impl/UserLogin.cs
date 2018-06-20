@@ -5,7 +5,6 @@ using AM.EmergencyService.App.Common.Models.Authorization;
 using AM.EmergencyService.App.Data.Repository;
 using Newtonsoft.Json;
 using System;
-using System.Linq;
 using System.Web;
 using System.Web.Security;
 

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AM.EmergencyService.App.Common.Models
 {
@@ -12,9 +8,9 @@ namespace AM.EmergencyService.App.Common.Models
         public string IncidentInformation { get; set; }
         public string IncidentReason { get; set; }
         public int BrigadeNumber { get; set; }
-        public string BrigadeCallDate { get; set; }
-        public string BrigadeArrivalDate { get; set; }
-        public string BrigadeEndDate { get; set; }
-        public string BrigadeReturnDate { get; set; }
+        public DateTime BrigadeCallDate { get; set; }
+        public DateTime BrigadeArrivalDate { get; set; }
+        public DateTime BrigadeEndDate { get; set; }
+        public DateTime BrigadeReturnDate { get; set; }
     }
 }

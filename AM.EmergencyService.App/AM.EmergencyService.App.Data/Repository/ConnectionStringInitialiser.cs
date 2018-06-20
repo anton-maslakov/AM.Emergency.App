@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using AM.EmergencyService.App.Common.Logger;
+using System;
 using System.Configuration;
 using System.IO;
-using System.ServiceModel.Configuration;
-using AM.EmergencyService.App.Common.Logger;
-using AM.EmergencyService.App.Common.Models;
 
 namespace AM.EmergencyService.App.Data.Repository
 {

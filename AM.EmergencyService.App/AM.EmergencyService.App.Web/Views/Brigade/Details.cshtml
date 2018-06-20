@@ -1,54 +1,8 @@
-﻿@model IEnumerable<AM.EmergencyService.App.Common.Models.RescuerModel>
-@{
-    ViewBag.Title = "Бригады";
-}
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Firstname)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Surname)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Lastname)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.BirthDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Job)
-        </th>
-        <th></th>
-    </tr>
-
-    @foreach (var item in Model)
-    {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Firstname)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Surname)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Lastname)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BirthDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Job)
-        </td>
-        <td>
-            @*@Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.Id })*@
-        </td>
-    </tr>
-    }
-
-</table>
+﻿@model AM.EmergencyService.App.Web.Models.Brigade.BrigadeCreateViewModel
+<h4>Состав бригады:</h4>
+@Html.Action("ShowBrigadeRescuers", "Rescuers", new { brigadeNumber = Model.BrigadeNumber })
+<h4>Инструмент бригады:</h4>
+@Html.Action("ShowBrigadeInventory", "Inventory", new { brigadeNumber = Model.BrigadeNumber })
 <p>
     @Html.ActionLink("Назад", "Index")
 </p>

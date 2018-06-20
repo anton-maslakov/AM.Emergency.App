@@ -5,9 +5,6 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AM.EmergencyService.App.Data.Repository.Impl
 {
@@ -21,6 +18,38 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
             _logger = logger;
             _conn = ConnectionStringInitialiser.InitConnectionString();
         }
+
+        public void Create(RequestModel requestModel)
+        {
+            SqlConnection conn = new SqlConnection(_conn);
+            SqlCommand command = new SqlCommand("InsertRequest", conn) { CommandType = CommandType.StoredProcedure };
+
+            try
+            {
+                conn.Open();
+                SqlParameter[] sqlParameters = {
+                    new SqlParameter() { ParameterName = "@RequestAddress", Value = requestModel.RequestAddress},
+                    new SqlParameter() { ParameterName = "@RequestReason", Value = requestModel.RequestReason},
+                    new SqlParameter() { ParameterName = "@IdCategory", Value = requestModel.Category.Id}
+                };
+
+                command.Parameters.AddRange(sqlParameters);
+
+                command.ExecuteNonQuery();
+
+                conn.Close();
+            }
+            catch (SqlException ex)
+            {
+                _logger.Log(LogLevel.Error, ex.Message);
+            }
+        }
+
+        public void Delete(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<RequestModel> GetAllData()
         {
             List<RequestModel> requestList = new List<RequestModel>();
@@ -39,7 +68,7 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
                         RequestAddress = reader.GetString(1),
                         RequestReason = reader.GetString(2),
                         RequestDate = reader[3].ToString(),
-                        CategoryName = reader.GetString(4)
+                        Category = new CategoryModel{CategoryName=reader.GetString(4)}
                     });
                 }
             }
@@ -54,13 +83,13 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
         {
             List<RequestModel> requestList = new List<RequestModel>();
             SqlConnection conn = new SqlConnection(_conn);
-            SqlCommand sqlCommand = new SqlCommand("GetRequestByAddress", conn);
-            sqlCommand.CommandType = CommandType.StoredProcedure;
+            SqlCommand command = new SqlCommand("GetRequestByAddress", conn);
+            command.CommandType = CommandType.StoredProcedure;
             try
             {
                 conn.Open();
-                sqlCommand.Parameters.AddWithValue("@RequestAddress", requestAddress);
-                SqlDataReader reader = sqlCommand.ExecuteReader();
+                command.Parameters.AddWithValue("@RequestAddress", requestAddress);
+                SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
                     requestList.Add(new RequestModel
@@ -69,7 +98,41 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
                         RequestAddress = reader.GetString(1),
                         RequestReason = reader.GetString(2),
                         RequestDate = reader[3].ToString(),
-                        CategoryName = reader.GetString(4)
+                        Category = new CategoryModel{ CategoryName=reader.GetString(4) }
+                    });
+                }
+            }
+            catch (SqlException ex)
+            {
+                _logger.Log(LogLevel.Error, ex.Message);
+            }
+            return requestList;
+        }
+
+        public IEnumerable<RequestModel> GetRequestByAddressAndDate(string requestAddress, string requestDate)
+        {
+            List<RequestModel> requestList = new List<RequestModel>();
+            SqlConnection conn = new SqlConnection(_conn);
+            SqlCommand command = new SqlCommand("GetRequestByAddressAndDate", conn);
+            command.CommandType = CommandType.StoredProcedure;
+            try
+            {
+                conn.Open();
+                SqlParameter[] sqlParameters = {
+                    new SqlParameter() { ParameterName = "@RequestAddress", Value = requestAddress},
+                    new SqlParameter() { ParameterName = "@RequestDate", Value = requestDate}
+                };
+                command.Parameters.AddRange(sqlParameters);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    requestList.Add(new RequestModel
+                    {
+                        RequestNumber = reader.GetInt32(0),
+                        RequestAddress = reader.GetString(1),
+                        RequestReason = reader.GetString(2),
+                        RequestDate = reader[3].ToString(),
+                        Category = new CategoryModel { CategoryName = reader.GetString(4) }
                     });
                 }
             }
@@ -84,13 +147,13 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
         {
             List<RequestModel> requestList = new List<RequestModel>();
             SqlConnection conn = new SqlConnection(_conn);
-            SqlCommand sqlCommand = new SqlCommand("GetRequestByCategory", conn);
-            sqlCommand.CommandType = CommandType.StoredProcedure;
+            SqlCommand command = new SqlCommand("GetRequestByCategory", conn);
+            command.CommandType = CommandType.StoredProcedure;
             try
             {
                 conn.Open();
-                sqlCommand.Parameters.AddWithValue("@RequestCategory", requestCategory);
-                SqlDataReader reader = sqlCommand.ExecuteReader();
+                command.Parameters.AddWithValue("@RequestCategory", requestCategory);
+                SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
                     requestList.Add(new RequestModel
@@ -99,7 +162,41 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
                         RequestAddress = reader.GetString(1),
                         RequestReason = reader.GetString(2),
                         RequestDate = reader[3].ToString(),
-                        CategoryName = reader.GetString(4)
+                        Category = new CategoryModel { CategoryName = reader.GetString(4) }
+                    });
+                }
+            }
+            catch (SqlException ex)
+            {
+                _logger.Log(LogLevel.Error, ex.Message);
+            }
+            return requestList;
+        }
+
+        public IEnumerable<RequestModel> GetRequestByCategoryAndDate(string requestCategory, string requestDate)
+        {
+            List<RequestModel> requestList = new List<RequestModel>();
+            SqlConnection conn = new SqlConnection(_conn);
+            SqlCommand command = new SqlCommand("GetRequestByCategoryAndDate", conn);
+            command.CommandType = CommandType.StoredProcedure;
+            try
+            {
+                conn.Open();
+                SqlParameter[] sqlParameters = {
+                    new SqlParameter() { ParameterName = "@RequestCategory", Value = requestCategory},
+                    new SqlParameter() { ParameterName = "@RequestDate", Value = requestDate}
+                };
+                command.Parameters.AddRange(sqlParameters);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    requestList.Add(new RequestModel
+                    {
+                        RequestNumber = reader.GetInt32(0),
+                        RequestAddress = reader.GetString(1),
+                        RequestReason = reader.GetString(2),
+                        RequestDate = reader[3].ToString(),
+                        Category = new CategoryModel { CategoryName = reader.GetString(4) }
                     });
                 }
             }
@@ -114,13 +211,13 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
         {
             List<RequestModel> requestList = new List<RequestModel>();
             SqlConnection conn = new SqlConnection(_conn);
-            SqlCommand sqlCommand = new SqlCommand("GetRequestByNumber", conn);
-            sqlCommand.CommandType = CommandType.StoredProcedure;
+            SqlCommand command = new SqlCommand("GetRequestByNumber", conn);
+            command.CommandType = CommandType.StoredProcedure;
             try
             {
                 conn.Open();
-                sqlCommand.Parameters.AddWithValue("@RequestNumber", requestNumber);
-                SqlDataReader reader = sqlCommand.ExecuteReader();
+                command.Parameters.AddWithValue("@RequestNumber", requestNumber);
+                SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
                     requestList.Add(new RequestModel
@@ -129,7 +226,7 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
                         RequestAddress = reader.GetString(1),
                         RequestReason = reader.GetString(2),
                         RequestDate = reader[3].ToString(),
-                        CategoryName = reader.GetString(4)
+                        Category = new CategoryModel{ CategoryName = reader.GetString(4) }
                     });
                 }
             }
@@ -138,6 +235,45 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
                 _logger.Log(LogLevel.Error, ex.Message);
             }
             return requestList;
+        }
+
+        public IEnumerable<RequestModel> GetRequestByNumberAndDate(int requestNumber, string requestDate)
+        {
+            List<RequestModel> requestList = new List<RequestModel>();
+            SqlConnection conn = new SqlConnection(_conn);
+            SqlCommand command = new SqlCommand("GetRequestByNumberAndDate", conn);
+            command.CommandType = CommandType.StoredProcedure;
+            try
+            {
+                conn.Open();
+                SqlParameter[] sqlParameters = {
+                    new SqlParameter() { ParameterName = "@RequestNumber", Value = requestNumber},
+                    new SqlParameter() { ParameterName = "@RequestDate", Value = requestDate}
+                };
+                command.Parameters.AddRange(sqlParameters);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    requestList.Add(new RequestModel
+                    {
+                        RequestNumber = reader.GetInt32(0),
+                        RequestAddress = reader.GetString(1),
+                        RequestReason = reader.GetString(2),
+                        RequestDate = reader[3].ToString(),
+                        Category = { CategoryName = reader.GetString(4) }
+                    });
+                }
+            }
+            catch (SqlException ex)
+            {
+                _logger.Log(LogLevel.Error, ex.Message);
+            }
+            return requestList;
+        }
+
+        public void Update(RequestModel requestModel)
+        {
+            throw new NotImplementedException();
         }
     }
 }

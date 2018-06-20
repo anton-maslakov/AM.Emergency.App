@@ -6,7 +6,12 @@ namespace AM.EmergencyService.App.Data.Repository
     public interface IUserRepository
     {
         UserModel GetUserByLogin(string login);
+        UserModel GetUserById(int id);
+        List<string> GetAllLogins();
         IEnumerable<RoleModel> GetUserRoles(int userId);
-        IEnumerable<string> GetAllLogins();
+        IEnumerable<UserModel> GetAllUsers();
+        void Create(UserModel userModel);
+        void Update(UserModel userModel);
+        void Delete(int id);
     }
 }

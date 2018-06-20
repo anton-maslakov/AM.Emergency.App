@@ -16,7 +16,18 @@ namespace AM.EmergencyService.App.Business.DependencyResolution
             For<IRequestDetailsProvider>().Use<RequestDetailsProvider>();
             For<IRequestsProvider>().Use<RequestsProvider>();
             For<IRescuersProvider>().Use<RescuersProvider>();
+            For<ICategoriesProvider>().Use<CategoriesProvider>();
             For<IUserLogin>().Use<UserLogin>();
+            For<ICacheService>().Use<ÑacheService>();
+            For<IBrigadeService>().Use<BrigadeService>();
+            For<ICasualtyService>().Use<CasualtyService>();
+            For<IInventoryService>().Use<InventoryService>();
+            For<IRequestDetailService>().Use<RequestDetailService>();
+            For<IRequestService>().Use<RequestService>();
+            For<IRescuersService>().Use<RescuerService>();
+            For<IUserProvider>().Use<UserProvider>();
+            For<IRoleProvider>().Use<RoleProvider>();
+            For<IUserService>().Use<UserService>();
         }
     }
 }

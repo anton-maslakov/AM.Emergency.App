@@ -4,9 +4,6 @@ using AM.EmergencyService.App.Common.Models.Authorization;
 using AM.EmergencyService.App.Data.Repository;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AM.EmergencyService.App.Business.DataProvider.Impl
 {
@@ -30,6 +27,11 @@ namespace AM.EmergencyService.App.Business.DataProvider.Impl
         public IEnumerable<RoleModel> GetRoleById(int id)
         {
             return _repos.GetRoleById(id);
+        }
+
+        public IEnumerable<RoleModel> GetUserRoles(int id)
+        {
+            return _repos.GetUserRoles(id);
         }
     }
 }

@@ -1,0 +1,47 @@
+﻿@model IEnumerable<AM.EmergencyService.App.Web.Models.Request.RequestViewModel>
+@if (Model != null)
+{
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RequestNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RequestAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RequestReason)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RequestDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryName)
+            </th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RequestNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RequestAddress)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RequestReason)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RequestDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoryName)
+                </td>
+                <td>
+                    @Html.ActionLink("Изменить", "Edit", "RequestDetail", new { requestNumber = item.RequestNumber }, null) |
+                    @Html.ActionLink("Подробнее", "Details", "RequestDetail", new { requestNumber = item.RequestNumber }, null)
+                </td>
+            </tr>
+        }
+    </table>
+}

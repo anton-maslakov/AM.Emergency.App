@@ -19,7 +19,7 @@ namespace AM.EmergencyService.App.Business.DataProvider.Impl
             _repos = repos;
         }
 
-        public IEnumerable<RequestDetailModel> GetRequestDetailsByRequestNumber(int requestNumber)
+        public RequestDetailModel GetRequestDetailsByRequestNumber(int requestNumber)
         {
             return _repos.GetRequestDetailsByRequestNumber(requestNumber);
         }

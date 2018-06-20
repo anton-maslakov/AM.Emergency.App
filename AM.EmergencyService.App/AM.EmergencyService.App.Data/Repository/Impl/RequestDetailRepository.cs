@@ -1,13 +1,12 @@
 ﻿using AM.EmergencyService.App.Common.Helper;
 using AM.EmergencyService.App.Common.Logger;
 using AM.EmergencyService.App.Common.Models;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 
 namespace AM.EmergencyService.App.Data.Repository.Impl
 {
-    public class RequestDetailRepository:IRequestDetailsRepository
+    public class RequestDetailRepository : IRequestDetailsRepository
     {
         private static ILogger _logger;
         private string _conn;
@@ -18,9 +17,88 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
             _conn = ConnectionStringInitialiser.InitConnectionString();
         }
 
-        public IEnumerable<RequestDetailModel> GetRequestDetailsByRequestNumber(int requestNumber)
+        public void AddCasualtyToRequestDetail(int requestNumber, int casualtyId)
         {
-            List<RequestDetailModel> requestDetailList = new List<RequestDetailModel>();
+            SqlConnection conn = new SqlConnection(_conn);
+            SqlCommand command = new SqlCommand("InsertRequestCasualty", conn) { CommandType = CommandType.StoredProcedure };
+
+            try
+            {
+                conn.Open();
+                SqlParameter[] sqlParameters = {
+                    new SqlParameter() { ParameterName = "@RequestNumber", Value = requestNumber},
+                    new SqlParameter() { ParameterName = "@IdCasualty", Value = casualtyId}
+                };
+                command.Parameters.AddRange(sqlParameters);
+                command.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (SqlException ex)
+            {
+                _logger.Log(LogLevel.Error, ex.Message);
+            }
+        }
+
+        public void AddInventoryToRequestDetail(int requestNumber, int inventoryNumber)
+        {
+            SqlConnection conn = new SqlConnection(_conn);
+            SqlCommand command = new SqlCommand("InsertInventoryRequestDetails", conn) { CommandType = CommandType.StoredProcedure };
+
+            try
+            {
+                conn.Open();
+                SqlParameter[] sqlParameters = {
+                    new SqlParameter() { ParameterName = "@RequestNumber", Value = requestNumber},
+                    new SqlParameter() { ParameterName = "@InventoryNumber", Value = inventoryNumber}
+                };
+                command.Parameters.AddRange(sqlParameters);
+                command.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (SqlException ex)
+            {
+                _logger.Log(LogLevel.Error, ex.Message);
+            }
+        }
+
+        public void Create(RequestDetailModel requestDetailModel)
+        {
+            SqlConnection conn = new SqlConnection(_conn);
+            SqlCommand command = new SqlCommand("InsertRequestDetails", conn) { CommandType = CommandType.StoredProcedure };
+
+            try
+            {
+                conn.Open();
+                SqlParameter[] sqlParameters = {
+                    new SqlParameter() { ParameterName = "@RequestNumber", Value = requestDetailModel.RequestNumber},
+                    new SqlParameter() { ParameterName = "@IncidentInformation", Value = requestDetailModel.IncidentInformation},
+                    new SqlParameter() { ParameterName = "@IncidentReason", Value = requestDetailModel.IncidentReason},
+                    new SqlParameter() { ParameterName = "@BrigadeCallDate", Value = requestDetailModel.BrigadeCallDate},
+                    new SqlParameter() { ParameterName = "@BrigadeArrivalDate", Value = requestDetailModel.BrigadeArrivalDate},
+                    new SqlParameter() { ParameterName = "@BrigadeEndDate", Value = requestDetailModel.BrigadeEndDate},
+                    new SqlParameter() { ParameterName = "@BrigadeReturnDate", Value = requestDetailModel.BrigadeReturnDate}
+                };
+
+                command.Parameters.AddRange(sqlParameters);
+
+                command.ExecuteNonQuery();
+
+                conn.Close();
+            }
+            catch (SqlException ex)
+            {
+                _logger.Log(LogLevel.Error, ex.Message);
+            }
+        }
+
+        public void Delete(int id)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public RequestDetailModel GetRequestDetailsByRequestNumber(int requestNumber)
+        {
+            RequestDetailModel requestDetail=null;
             SqlConnection conn = new SqlConnection(_conn);
             SqlCommand sqlCommand = new SqlCommand("GetRequestDetails", conn);
             sqlCommand.CommandType = CommandType.StoredProcedure;
@@ -31,24 +109,29 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
                 SqlDataReader reader = sqlCommand.ExecuteReader();
                 while (reader.Read())
                 {
-                    requestDetailList.Add(new RequestDetailModel
+                    requestDetail = new RequestDetailModel
                     {
                         RequestNumber = reader.GetInt32(0),
-                        IncidentInformation=reader.GetString(1),
-                        IncidentReason=reader.GetString(2),
-                        BrigadeNumber=reader.GetInt32(3),
-                        BrigadeCallDate=reader[4].ToString(),
-                        BrigadeArrivalDate=reader[5].ToString(),
-                        BrigadeEndDate=reader[6].ToString(),
-                        BrigadeReturnDate=reader[7].ToString()
-                    });
+                        IncidentInformation = reader.GetString(1),
+                        IncidentReason = reader.GetString(2),
+                        BrigadeNumber = reader.GetInt32(3),
+                        BrigadeCallDate = reader.GetDateTime(4),
+                        BrigadeArrivalDate = reader.GetDateTime(5),
+                        BrigadeEndDate = reader.GetDateTime(6),
+                        BrigadeReturnDate = reader.GetDateTime(7)
+                    };
                 }
             }
             catch (SqlException ex)
             {
                 _logger.Log(LogLevel.Error, ex.Message);
             }
-            return requestDetailList;
+            return requestDetail;
+        }
+
+        public void Update(RequestDetailModel requestDetailModel)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

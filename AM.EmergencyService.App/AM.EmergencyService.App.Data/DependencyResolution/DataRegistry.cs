@@ -14,8 +14,10 @@ namespace AM.EmergencyService.App.Data.DependencyResolution
             For<IRequestDetailsRepository>().Use<RequestDetailRepository>();
             For<IRequestsRepository>().Use<RequestsRepository>();
             For<IRescuersRepository>().Use<RescuersRepository>();
+            For<ICategoriesRepository>().Use<CategoriesRepository>();
             For<IAdService>().Use<AdService>().Singleton();
             For<IUserRepository>().Use<UserRepository>();
+            For<IRoleRepository>().Use<RoleRepository>();
         }
     }
 }

@@ -18,9 +18,19 @@ namespace AM.EmergencyService.App.Business.DataProvider.Impl
             _repos = repos;
         }
 
+        public IEnumerable<CasualtyModel> GetAllCasualty()
+        {
+            return _repos.GetAllCasualty();
+        }
+
         public IEnumerable<CasualtyModel> GetCasualtyByRequest(int requestNumber)
         {
             return _repos.GetCasualtyByRequest(requestNumber);
+        }
+
+        public IEnumerable<CasualtyModel> GetCasualtyNotInRequest(int requestNumber)
+        {
+            return _repos.GetCasualtyNotInRequest(requestNumber);
         }
     }
 }
