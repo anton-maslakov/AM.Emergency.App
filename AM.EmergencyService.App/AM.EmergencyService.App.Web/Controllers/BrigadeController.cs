@@ -1,5 +1,4 @@
-﻿using AM.EmergencyService.App.Web.Models;
-using AM.EmergencyService.App.Web.Providers;
+﻿using AM.EmergencyService.App.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,8 +18,17 @@ namespace AM.EmergencyService.App.Web.Controllers
         // GET: Brigade
         public ActionResult Index()
         {
-            var requests = _dataProvider.GetData();
-            return View(requests);
+            var brigades = _dataProvider.Brigades;
+            var rescuers = _dataProvider.Rescuers;
+            return View(brigades);
+        }
+
+        public ActionResult Details(int id)
+        {
+            var rescuers = (from dataProvider in _dataProvider.Rescuers
+                            where dataProvider.BrigadeNumber.Equals(id)
+                            select dataProvider);
+            return View(rescuers);
         }
     }
 }

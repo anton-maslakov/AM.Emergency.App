@@ -1,19 +1,24 @@
-﻿@model IEnumerable<AM.EmergencyService.App.Web.Models.RequestModel>
-@{
-    ViewBag.Title = "Вызовы";
-}
+﻿@model IEnumerable<AM.EmergencyService.App.Common.Models.RequestModel>
+
 <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
 <script src="@Url.Content("~/Scripts/jquery-3.3.1.min.js")"></script>
 <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+
 <script type="text/javascript">
     $(function () {
-        $('.datepicker').datepicker({ format: "dd MM yyyy - hh:ii" });
+        $('.datepicker').datepicker({ format: "dd.mm.yyyy" });
     })
 </script>
-<h2>Вызовы</h2>
-@using (Html.BeginForm()) {
-@Html.TextBox("YourTextBox", "", new { @class = "form-control datepicker" })}
 
+<h2>Вызовы</h2>
+<div>
+    @using (Html.BeginForm())
+    {
+        @Html.Label("Дата вызова", htmlAttributes: new { @class = "control-label col-md-3" })
+        @Html.TextBox("requestDate", " ", new { @class = "form-control datepicker" })
+        <input type="submit" value="Показать"/>
+    }
+</div>
 <table class="table">
     <tr>
         <th>
@@ -85,3 +90,4 @@
     }
 
 </table>
+

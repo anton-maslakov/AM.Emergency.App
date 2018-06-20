@@ -10,27 +10,39 @@
 
 </head>
 <body>
-    <div class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Имя приложения", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse" id="navbarSupportedContent">
-                <ul class="nav navbar-nav mr-auto">
-                    <li class="nav-item"><a href="/Home/Index" class="nav-link">Домашняя страница</a></li>
-                    <li class="nav-item"><a href="/Request/Index" class="nav-link">Вызовы</a></li>
-                    <li class="nav-item"><a href="/Brigade/Index" class="nav-link">Бригады</a></li>
-                    <li class="nav-item"><a href="/Request/Search" class="nav-link">Поиск</a></li>
-                    <li class="nav-item"><a href="/Home/About" class="nav-link">О программе</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <table width="960" align="center" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td><img src="~/Content/Emergency.jpg" /></td>
+        </tr>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" width="960" align="center" bgcolor="#FFFFFF">
+        <tr>
+            <td>
+                <div class="navbar navbar-expand-sm navbar-dark bg-dark">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            @Html.ActionLink("Имя приложения", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                        </div>
+                        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav mr-auto">
+                                <li class="nav-item"><a href="/Home/Index" class="nav-link">Домашняя страница</a></li>
+                                <li class="nav-item"><a href="/Request/Index" class="nav-link">Вызовы</a></li>
+                                <li class="nav-item"><a href="/Brigade/Index" class="nav-link">Бригады</a></li>
+                                <li class="nav-item"><a href="/Request/Search" class="nav-link">Поиск</a></li>
+                                <li class="nav-item"><a href="/Home/About" class="nav-link">О программе</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
     <div class="container body-content">
         @RenderBody()
         <hr />

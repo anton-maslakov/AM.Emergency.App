@@ -20,6 +20,9 @@
     <Controller_SelectedScaffolderCategoryPath>root/Controller</Controller_SelectedScaffolderCategoryPath>
     <ActiveDebugTarget />
   </PropertyGroup>
+  <PropertyGroup>
+    <ReferencePath>D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\</ReferencePath>
+  </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
