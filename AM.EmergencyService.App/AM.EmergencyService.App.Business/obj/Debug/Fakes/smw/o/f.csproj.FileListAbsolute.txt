@@ -1,0 +1,14 @@
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Business\obj\Debug\Fakes\smw\b\StructureMap.Web.1.0.0.0.Fakes.xml
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Business\obj\Debug\Fakes\smw\b\StructureMap.Web.1.0.0.0.Fakes.dll
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Business\obj\Debug\Fakes\smw\b\StructureMap.Web.1.0.0.0.Fakes.pdb
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Business\obj\Debug\Fakes\smw\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Business\obj\Debug\Fakes\smw\b\StructureMap.dll
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Business\obj\Debug\Fakes\smw\b\StructureMap.Web.dll
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Business\obj\Debug\Fakes\smw\b\StructureMap.Web.pdb
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Business\obj\Debug\Fakes\smw\b\StructureMap.Web.xml
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Business\obj\Debug\Fakes\smw\b\StructureMap.xml
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Business\obj\Debug\Fakes\smw\b\ru\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Business\obj\Debug\Fakes\smw\o\f.csprojResolveAssemblyReference.cache
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Business\obj\Debug\Fakes\smw\o\f.csproj.CoreCompileInputs.cache
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Business\obj\Debug\Fakes\smw\o\StructureMap.Web.1.0.0.0.Fakes.dll
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Business\obj\Debug\Fakes\smw\o\StructureMap.Web.1.0.0.0.Fakes.pdb

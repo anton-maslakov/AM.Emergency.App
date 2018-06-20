@@ -1,0 +1,21 @@
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.csprojResolveAssemblyReference.cache
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.csproj.CoreCompileInputs.cache
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.AdService\bin\AM.EmergencyService.AdService.dll.config
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.AdService\bin\AM.EmergencyService.AdService.dll
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.AdService\bin\AM.EmergencyService.AdService.pdb
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.dll
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.pdb
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.AdService\bin\AM.EmergencyService.AdService.dll.config
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.AdService\bin\AM.EmergencyService.AdService.dll
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.AdService\bin\AM.EmergencyService.AdService.pdb
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.csproj.CoreCompileInputs.cache
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.dll
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.pdb
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.csprojResolveAssemblyReference.cache
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.AdService\bin\AM.EmergencyService.AdService.dll.config
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.AdService\bin\AM.EmergencyService.AdService.dll
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.AdService\bin\AM.EmergencyService.AdService.pdb
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.csprojResolveAssemblyReference.cache
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.csproj.CoreCompileInputs.cache
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.dll
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.pdb

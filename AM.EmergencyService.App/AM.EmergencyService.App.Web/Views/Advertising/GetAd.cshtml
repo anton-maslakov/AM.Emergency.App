@@ -1,0 +1,20 @@
+﻿@model IEnumerable<AM.EmergencyService.App.Data.AdServiceReference.AdvertisingModel>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <ul class="media-list list-unstyled">
+            @foreach (var item in Model)
+            {
+                <li class="media">
+                    <div class="media-body text-center">
+                        <h4 class="media-heading text-center">@item.Header</h4>
+                        <div class="text-muted">
+                            @item.AdText
+                        </div>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+
+
