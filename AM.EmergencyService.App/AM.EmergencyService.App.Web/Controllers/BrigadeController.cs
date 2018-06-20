@@ -1,5 +1,4 @@
 ﻿using AM.EmergencyService.App.Data;
-using AM.EmergencyService.App.Data.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,23 +9,23 @@ namespace AM.EmergencyService.App.Web.Controllers
 {
     public class BrigadeController : Controller
     {
-        private readonly IRepository _repository;
+        private readonly IDataProvider _dataProvider;
 
-        public BrigadeController(IRepository repository)
+        public BrigadeController(IDataProvider dataProvider)
         {
-            _repository = repository;
+            _dataProvider = dataProvider;
         }
         // GET: Brigade
         public ActionResult Index()
         {
-            var brigades = _repository.Brigades;
-            var rescuers = _repository.Rescuers;
+            var brigades = _dataProvider.Brigades;
+            var rescuers = _dataProvider.Rescuers;
             return View(brigades);
         }
 
         public ActionResult Details(int id)
         {
-            var rescuers = (from dataProvider in _repository.Rescuers
+            var rescuers = (from dataProvider in _dataProvider.Rescuers
                             where dataProvider.BrigadeNumber.Equals(id)
                             select dataProvider);
             return View(rescuers);

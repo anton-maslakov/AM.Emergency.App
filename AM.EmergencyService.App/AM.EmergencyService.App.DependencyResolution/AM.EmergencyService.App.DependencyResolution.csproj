@@ -55,17 +55,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DependencyResolution\MainRegistry.cs" />
+    <Compile Include="DependencyResolution\MainIoC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AM.EmergencyService.App.Business\AM.EmergencyService.App.Business.csproj">
-      <Project>{26FF037D-DDAC-412C-9955-753B87B0BB5A}</Project>
-      <Name>AM.EmergencyService.App.Business</Name>
-    </ProjectReference>
     <ProjectReference Include="..\AM.EmergencyService.App.Common\AM.EmergencyService.App.Common.csproj">
       <Project>{6585903D-D365-451C-A299-E91F4D194B55}</Project>
       <Name>AM.EmergencyService.App.Common</Name>

@@ -1,0 +1,8 @@
+INSERT INTO Incident(IncidentInformation,IncidentReason,IdBrigade,IdRequest)
+VALUES ('Пожар в жилом доме','Предварительно: непотушенная сигарета. Назначена экспертиза.', 2 ,1)
+INSERT INTO Incident(IncidentInformation,IncidentReason,IdBrigade,IdRequest)
+VALUES ('ДТП с участием Ford Focus рег.знак: 9632 АТ-6 и Volkswagen Golf рег. знак: 7412 ТМ-6.','Проезд на красный свет', 1, 2)
+INSERT INTO Incident(IncidentInformation,IncidentReason,IdBrigade,IdRequest)
+VALUES ('Взрыв газа в жилом доме','Нарушение правил эксплутации газовой плиты.',5 ,3)
+INSERT INTO Incident(IncidentInformation,IncidentReason,IdBrigade,IdRequest)
+VALUES ('Кот залез на дерево и боялся слезать','Его испугала собака.', 3, 4)

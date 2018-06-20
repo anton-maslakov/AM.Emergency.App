@@ -6,20 +6,12 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AM.EmergencyService.App.Web", "AM.EmergencyService.App.Web\AM.EmergencyService.App.Web.csproj", "{221A2231-CC3A-4FFE-B8B4-9D09A0C9CE9F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AM.EmergencyService.App.Data", "AM.EmergencyService.App.Data\AM.EmergencyService.App.Data.csproj", "{22DD9635-03D0-41AF-B4CE-E8AE4219F932}"
-	ProjectSection(ProjectDependencies) = postProject
-		{8EB37031-AC90-4EF5-8A9A-83B9CC96ED69} = {8EB37031-AC90-4EF5-8A9A-83B9CC96ED69}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AM.EmergencyService.App.Common", "AM.EmergencyService.App.Common\AM.EmergencyService.App.Common.csproj", "{6585903D-D365-451C-A299-E91F4D194B55}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AM.EmergencyService.App.Business", "AM.EmergencyService.App.Business\AM.EmergencyService.App.Business.csproj", "{26FF037D-DDAC-412C-9955-753B87B0BB5A}"
-	ProjectSection(ProjectDependencies) = postProject
-		{22DD9635-03D0-41AF-B4CE-E8AE4219F932} = {22DD9635-03D0-41AF-B4CE-E8AE4219F932}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AM.EmergencyService.App.DependencyResolution", "AM.EmergencyService.App.DependencyResolution\AM.EmergencyService.App.DependencyResolution.csproj", "{7958AB26-814E-48FE-9C48-6F756AB8AA00}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AM.EmergencyService.AdService", "AM.EmergencyService.AdService\AM.EmergencyService.AdService.csproj", "{8EB37031-AC90-4EF5-8A9A-83B9CC96ED69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -113,22 +105,6 @@ Global
 		{7958AB26-814E-48FE-9C48-6F756AB8AA00}.Release|x64.Build.0 = Release|Any CPU
 		{7958AB26-814E-48FE-9C48-6F756AB8AA00}.Release|x86.ActiveCfg = Release|Any CPU
 		{7958AB26-814E-48FE-9C48-6F756AB8AA00}.Release|x86.Build.0 = Release|Any CPU
-		{8EB37031-AC90-4EF5-8A9A-83B9CC96ED69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8EB37031-AC90-4EF5-8A9A-83B9CC96ED69}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8EB37031-AC90-4EF5-8A9A-83B9CC96ED69}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{8EB37031-AC90-4EF5-8A9A-83B9CC96ED69}.Debug|ARM.Build.0 = Debug|Any CPU
-		{8EB37031-AC90-4EF5-8A9A-83B9CC96ED69}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{8EB37031-AC90-4EF5-8A9A-83B9CC96ED69}.Debug|x64.Build.0 = Debug|Any CPU
-		{8EB37031-AC90-4EF5-8A9A-83B9CC96ED69}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{8EB37031-AC90-4EF5-8A9A-83B9CC96ED69}.Debug|x86.Build.0 = Debug|Any CPU
-		{8EB37031-AC90-4EF5-8A9A-83B9CC96ED69}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8EB37031-AC90-4EF5-8A9A-83B9CC96ED69}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8EB37031-AC90-4EF5-8A9A-83B9CC96ED69}.Release|ARM.ActiveCfg = Release|Any CPU
-		{8EB37031-AC90-4EF5-8A9A-83B9CC96ED69}.Release|ARM.Build.0 = Release|Any CPU
-		{8EB37031-AC90-4EF5-8A9A-83B9CC96ED69}.Release|x64.ActiveCfg = Release|Any CPU
-		{8EB37031-AC90-4EF5-8A9A-83B9CC96ED69}.Release|x64.Build.0 = Release|Any CPU
-		{8EB37031-AC90-4EF5-8A9A-83B9CC96ED69}.Release|x86.ActiveCfg = Release|Any CPU
-		{8EB37031-AC90-4EF5-8A9A-83B9CC96ED69}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -304,7 +304,6 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\StructuremapMvc.cs" />
-    <Compile Include="Controllers\AdvertisingController.cs" />
     <Compile Include="Controllers\BrigadeController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -339,9 +338,8 @@
     <Content Include="Views\Request\Search.cshtml" />
     <Content Include="Views\Request\Index.cshtml" />
     <Content Include="Views\Brigade\Details.cshtml" />
-    <Content Include="Views\Advertising\GetAd.cshtml" />
-    <Content Include="Views\Error\InternalServerError.cshtml" />
     <Content Include="Views\Error\NotFound.cshtml" />
+    <Content Include="Views\Error\InternalServerError.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -360,10 +358,6 @@
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AM.EmergencyService.App.Business\AM.EmergencyService.App.Business.csproj">
-      <Project>{26FF037D-DDAC-412C-9955-753B87B0BB5A}</Project>
-      <Name>AM.EmergencyService.App.Business</Name>
-    </ProjectReference>
     <ProjectReference Include="..\AM.EmergencyService.App.Common\AM.EmergencyService.App.Common.csproj">
       <Project>{6585903D-D365-451C-A299-E91F4D194B55}</Project>
       <Name>AM.EmergencyService.App.Common</Name>
