@@ -306,6 +306,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\StructuremapMvc.cs" />
+    <Compile Include="Attributes\AdminAttribute.cs" />
+    <Compile Include="Attributes\DispatcherAttribute.cs" />
+    <Compile Include="Attributes\EditorAttribute.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdvertisingController.cs" />
     <Compile Include="Controllers\BrigadeController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
@@ -319,6 +323,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\UserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -342,11 +347,14 @@
     <Content Include="Views\Request\Search.cshtml" />
     <Content Include="Views\Request\Index.cshtml" />
     <Content Include="Views\Brigade\Details.cshtml" />
-    <Content Include="Views\Advertising\GetAd.cshtml" />
+    <Content Include="Views\Advertising\ShowAdvertising.cshtml" />
     <Content Include="Views\Error\InternalServerError.cshtml" />
     <Content Include="Views\Error\NotFound.cshtml" />
     <Content Include="Views\Incident\IncidentInfo.cshtml" />
     <Content Include="Views\Request\Details.cshtml" />
+    <Content Include="Views\Advertising\NoAdvertising.cshtml" />
+    <Content Include="Views\Shared\_LoginView.cshtml" />
+    <Content Include="Views\Account\LogIn.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -356,7 +364,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

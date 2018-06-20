@@ -16,10 +16,17 @@ namespace AM.EmergencyService.App.Web.Controllers
             ErrorHandlingHelper.IfArgumentNullException(adProvider, "IAdProvider");
             _adProvider = adProvider;
         }
-        public ActionResult GetAdvertising()
+        public PartialViewResult ShowAdvertising()
         {
-            IEnumerable<AdvertisingModel> listOfAd = _adProvider.GetAd(NUM_OF_AD);
-            return PartialView("GetAd",listOfAd);
+            var listOfAd = _adProvider.GetAd(NUM_OF_AD);
+            if (listOfAd==null)
+            {
+                return PartialView("NoAdvertising");
+            }
+            else
+            {
+                return PartialView(listOfAd);
+            }
         }
     }
 }

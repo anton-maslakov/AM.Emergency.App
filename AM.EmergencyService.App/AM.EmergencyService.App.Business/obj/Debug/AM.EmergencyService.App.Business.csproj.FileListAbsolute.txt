@@ -77,32 +77,6 @@ D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.
 D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Business\obj\Debug\AM.EmergencyService.App.Business.csproj.CopyComplete
 D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Business\obj\Debug\AM.EmergencyService.App.Business.dll
 D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Business\obj\Debug\AM.EmergencyService.App.Business.pdb
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\AM.EmergencyService.App.Business.dll
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\AM.EmergencyService.App.Business.pdb
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\AM.EmergencyService.App.Common.dll
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\AM.EmergencyService.App.Data.dll
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\StructureMap.dll
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\StructureMap.Web.1.0.0.0.Fakes.dll
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\StructureMap.Web.dll
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\log4net.dll
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\AM.EmergencyService.App.Common.pdb
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\AM.EmergencyService.App.Common.dll.config
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\AM.EmergencyService.App.Common.exe.config
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\AM.EmergencyService.App.Data.pdb
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\AM.EmergencyService.App.Data.dll.config
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\AM.EmergencyService.App.Data.exe.config
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\StructureMap.xml
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\StructureMap.Web.pdb
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\StructureMap.Web.xml
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\StructureMap.Web.1.0.0.0.Fakes.xml
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\log4net.xml
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\ru\Microsoft.QualityTools.Testing.Fakes.resources.dll
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\obj\Debug\AM.EmergencyService.App.Business.csprojResolveAssemblyReference.cache
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\obj\Debug\AM.EmergencyService.App.Business.csproj.CoreCompileInputs.cache
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\obj\Debug\AM.EmergencyService.App.Business.csproj.CopyComplete
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\obj\Debug\AM.EmergencyService.App.Business.dll
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\obj\Debug\AM.EmergencyService.App.Business.pdb
 l:\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\AM.EmergencyService.App.Business.dll
 l:\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\AM.EmergencyService.App.Business.pdb
 l:\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\AM.EmergencyService.App.Common.dll

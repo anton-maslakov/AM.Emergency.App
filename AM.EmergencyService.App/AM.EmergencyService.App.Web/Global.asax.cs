@@ -1,10 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Optimization;
+using System.Web.Security;
+using Newtonsoft.Json;
+using AM.EmergencyService.App.Common.Models.Authorization;
+using AM.EmergencyService.App.Business.Model;
 
 namespace AM.EmergencyService.App.Web
 {
@@ -15,6 +17,17 @@ namespace AM.EmergencyService.App.Web
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+        }
+        protected void Application_PostAuthenticateRequest(object sender, EventArgs e)
+        {
+            var cookie = HttpContext.Current.Request.Cookies.Get(FormsAuthentication.FormsCookieName);
+            if (cookie != null)
+            {
+                var decryptedCookie = FormsAuthentication.Decrypt(cookie.Value);
+                var User = JsonConvert.DeserializeObject<UserModel>(decryptedCookie.UserData);
+                var userPrincipal = new UserPrincipal(User);
+                HttpContext.Current.User = userPrincipal;
+            }
         }
     }
 }

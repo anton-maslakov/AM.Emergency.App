@@ -34,6 +34,9 @@
     <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="StructureMap, Version=4.6.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\StructureMap.4.6.1\lib\net45\StructureMap.dll</HintPath>
     </Reference>
@@ -47,6 +50,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -63,14 +67,20 @@
     <Compile Include="DataProvider\Impl\InventoryProvider.cs" />
     <Compile Include="DataProvider\Impl\RequestDetailsProvider.cs" />
     <Compile Include="DataProvider\Impl\RescuersProvider.cs" />
+    <Compile Include="DataProvider\Impl\RoleProvider.cs" />
     <Compile Include="DataProvider\IRequestDetailsProvider.cs" />
     <Compile Include="DataProvider\IRescuersProvider.cs" />
+    <Compile Include="DataProvider\IRoleProvider.cs" />
+    <Compile Include="DataProvider\IUserProvider.cs" />
     <Compile Include="DependencyResolution\BusinessRegistry.cs" />
     <Compile Include="AdProvider\IAdProvider.cs" />
     <Compile Include="DataProvider\IRequestsProvider.cs" />
+    <Compile Include="Model\UserPrincipal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AdProvider\AdProvider.cs" />
     <Compile Include="DataProvider\Impl\RequestsProvider.cs" />
+    <Compile Include="Service\Impl\UserLogin.cs" />
+    <Compile Include="Service\IUserLogin.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

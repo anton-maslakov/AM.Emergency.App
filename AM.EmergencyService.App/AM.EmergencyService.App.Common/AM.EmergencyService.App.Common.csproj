@@ -69,6 +69,8 @@
     <Compile Include="Helper\ErrorHandlingHelper.cs" />
     <Compile Include="Logger\Interface\ILogger.cs" />
     <Compile Include="Logger\Implementation\Logger.cs" />
+    <Compile Include="Models\Authorization\RoleModel.cs" />
+    <Compile Include="Models\Authorization\UserModel.cs" />
     <Compile Include="Models\BrigadeModel.cs" />
     <Compile Include="Models\CasualtyModel.cs" />
     <Compile Include="Models\RequestDetailModel.cs" />

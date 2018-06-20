@@ -3,7 +3,8 @@ namespace AM.EmergencyService.App.Business.DependencyResolution
     using AM.EmergencyService.App.Business.AdProvider;
     using AM.EmergencyService.App.Business.DataProvider;
     using AM.EmergencyService.App.Business.DataProvider.Impl;
-    using AM.EmergencyService.App.Common.Logger;
+    using AM.EmergencyService.App.Business.Service;
+    using AM.EmergencyService.App.Business.Service.Impl;
     using StructureMap;
 
     public class BusinessRegistry : Registry {
@@ -15,6 +16,7 @@ namespace AM.EmergencyService.App.Business.DependencyResolution
             For<IRequestDetailsProvider>().Use<RequestDetailsProvider>();
             For<IRequestsProvider>().Use<RequestsProvider>();
             For<IRescuersProvider>().Use<RescuersProvider>();
+            For<IUserLogin>().Use<UserLogin>();
         }
     }
 }
