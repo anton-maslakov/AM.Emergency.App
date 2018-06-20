@@ -21,5 +21,20 @@ namespace AM.EmergencyService.App.Business.DataProvider.Impl
         {
             return _repos.GetAllData();
         }
+
+        public IEnumerable<RequestModel> GetRequestByAddress(string requestAddress)
+        {
+            return _repos.GetRequestByAddress(requestAddress);
+        }
+
+        public IEnumerable<RequestModel> GetRequestByCategory(string requestCategory)
+        {
+            return _repos.GetRequestByCategory(requestCategory);
+        }
+
+        IEnumerable<RequestModel> IRequestsProvider.GetRequestByNumber(int requestNumber)
+        {
+            return _repos.GetRequestByNumber(requestNumber);
+        }
     }
 }

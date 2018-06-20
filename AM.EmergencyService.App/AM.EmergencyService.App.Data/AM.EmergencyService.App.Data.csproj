@@ -94,6 +94,7 @@
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Connected Services\AdServiceReference\AdService.wsdl" />
     <None Include="Connected Services\AdServiceReference\AM.EmergencyService.App.Data.AdServiceReference.AdvertisingModel.datasource">

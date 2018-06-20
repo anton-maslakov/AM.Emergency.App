@@ -67,8 +67,8 @@
   <ItemGroup>
     <Compile Include="DependencyResolution\CommonRegistry.cs" />
     <Compile Include="Helper\ErrorHandlingHelper.cs" />
-    <Compile Include="Logger\Interface\ILogger.cs" />
-    <Compile Include="Logger\Implementation\Logger.cs" />
+    <Compile Include="Logger\ILogger.cs" />
+    <Compile Include="Logger\Logger.cs" />
     <Compile Include="Models\Authorization\RoleModel.cs" />
     <Compile Include="Models\Authorization\UserModel.cs" />
     <Compile Include="Models\BrigadeModel.cs" />
@@ -81,7 +81,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
