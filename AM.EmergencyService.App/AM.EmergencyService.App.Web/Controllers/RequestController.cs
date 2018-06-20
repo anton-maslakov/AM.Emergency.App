@@ -1,5 +1,6 @@
 ﻿using AM.EmergencyService.App.Common.Logger;
 using AM.EmergencyService.App.Data;
+using AM.EmergencyService.App.Data.Repository;
 using StructureMap;
 using System;
 using System.Collections.Generic;
@@ -12,11 +13,11 @@ namespace AM.EmergencyService.App.Web.Controllers
     public class RequestController : Controller
     {
         private static ILogger _logger;
-        private readonly IDataProvider _dataProvider;
+        private readonly IRepository _repository;
 
-        public RequestController(IDataProvider dataProvider, ILogger logger)
+        public RequestController(IRepository repository, ILogger logger)
         {
-            _dataProvider = dataProvider;
+            _repository = repository;
             _logger = logger;
         }
 
@@ -25,14 +26,14 @@ namespace AM.EmergencyService.App.Web.Controllers
             _logger.Log(LogLevel.Info, "RequesPage is running.");
             if (!string.IsNullOrEmpty(requestDate))
             {
-                var requestsByDate = (from dataProvider in _dataProvider.Requests
+                var requestsByDate = (from dataProvider in _repository.Requests
                                       where dataProvider.RequestDate.ToShortDateString().Equals(DateTime.Parse(requestDate).ToShortDateString())
                                       select dataProvider);
                 return View(requestsByDate);
             }
             else
             {
-                var requestsByDate = _dataProvider.Requests;
+                var requestsByDate = _repository.Requests;
                 return View(requestsByDate);
             }
         }
@@ -44,21 +45,21 @@ namespace AM.EmergencyService.App.Web.Controllers
                 {
                     case "requestNumber":
                         {
-                            var requestsByNumber = (from dataProvider in _dataProvider.Requests
+                            var requestsByNumber = (from dataProvider in _repository.Requests
                                                     where dataProvider.RequestNumber.Equals(int.Parse(searchString))
                                                     select dataProvider);
                             return View(requestsByNumber);
                         }
                     case "requestCategory":
                         {
-                            var requestsByCategory = (from dataProvider in _dataProvider.Requests
+                            var requestsByCategory = (from dataProvider in _repository.Requests
                                                       where dataProvider.RequestCategory.ToUpper().Contains(searchString.ToUpper())
                                                       select dataProvider);
                             return View(requestsByCategory);
                         }
                     case "requestAddress":
                         {
-                            var requestsByAddress = (from dataProvider in _dataProvider.Requests
+                            var requestsByAddress = (from dataProvider in _repository.Requests
                                                      where dataProvider.RequestAddress.ToUpper().Contains(searchString.ToUpper())
                                                      select dataProvider);
                             return View(requestsByAddress);
