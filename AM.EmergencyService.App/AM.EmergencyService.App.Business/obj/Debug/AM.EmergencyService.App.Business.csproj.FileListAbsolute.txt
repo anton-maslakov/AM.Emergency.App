@@ -1,0 +1,7 @@
+d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\AM.EmergencyService.App.Business.exe.config
+d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\AM.EmergencyService.App.Business.exe
+d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Debug\AM.EmergencyService.App.Business.pdb
+d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\obj\Debug\AM.EmergencyService.App.Business.csprojResolveAssemblyReference.cache
+d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\obj\Debug\AM.EmergencyService.App.Business.exe
+d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\obj\Debug\AM.EmergencyService.App.Business.pdb
+d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\obj\Debug\AM.EmergencyService.App.Business.csproj.CoreCompileInputs.cache
