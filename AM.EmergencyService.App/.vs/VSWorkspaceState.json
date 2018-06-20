@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\AM.EmergencyService.App.Web"
+    "\\AM.EmergencyService.App.Web",
+    "\\AM.EmergencyService.App.Web\\Views"
   ],
-  "SelectedNode": "\\AM.EmergencyService.App.sln",
+  "SelectedNode": "\\AM.EmergencyService.App.Web\\Views\\Home",
   "PreviewInSolutionExplorer": false
 }

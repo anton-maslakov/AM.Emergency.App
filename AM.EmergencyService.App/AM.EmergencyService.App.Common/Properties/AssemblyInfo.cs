@@ -1,6 +1,8 @@
-﻿using System.Reflection;
+﻿using System.IO;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+
 
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
@@ -20,7 +22,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("b28b6f10-36e3-48e1-ad5b-e95239aafbf9")]
+[assembly: Guid("6585903d-d365-451c-a299-e91f4d194b55")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //
@@ -34,3 +36,4 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+//[assembly: log4net.Config.XmlConfigurator(ConfigFileExtension = "log4net.config", Watch = true)]
