@@ -1,0 +1,87 @@
+﻿@model IEnumerable<AM.EmergencyService.App.Web.Models.RequestModel>
+@{
+    ViewBag.Title = "Вызовы";
+}
+<link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+<script src="@Url.Content("~/Scripts/jquery-3.3.1.min.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+<script type="text/javascript">
+    $(function () {
+        $('.datepicker').datepicker({ format: "dd MM yyyy - hh:ii" });
+    })
+</script>
+<h2>Вызовы</h2>
+@using (Html.BeginForm()) {
+@Html.TextBox("YourTextBox", "", new { @class = "form-control datepicker" })}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.RequestNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RequestAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RequestReason)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RequestDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BrigadeCallDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BrigadeArrivalDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BrigadeEndDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BrigadeReturnDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RequestCategory)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RequestNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RequestAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RequestReason)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RequestDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BrigadeCallDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BrigadeArrivalDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BrigadeEndDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BrigadeReturnDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RequestCategory)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
