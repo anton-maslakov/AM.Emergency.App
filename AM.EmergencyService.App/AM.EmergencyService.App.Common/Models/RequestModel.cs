@@ -34,5 +34,6 @@ namespace AM.EmergencyService.App.Common.Models
         public DateTime BrigadeReturnDate { get; set; }
         [Display(Name = "Категория вызова")]
         public string RequestCategory { get; set; }
+        public int idBrigade { get; set; }
     }
 }

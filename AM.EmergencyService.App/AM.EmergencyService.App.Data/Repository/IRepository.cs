@@ -9,8 +9,10 @@ namespace AM.EmergencyService.App.Data.Repository
 {
     public interface IRepository
     {
-        ICollection<BrigadeModel> Brigades { get; }
-        ICollection<RequestModel> Requests { get; }
-        ICollection<RescuerModel> Rescuers { get; }
+        IDataManipulator<BrigadeModel> Brigades { get; }
+        IDataManipulator<RequestModel> Requests { get; }
+        IDataManipulator<RescuerModel> Rescuers { get; }
+        IDataManipulator<InventoryModel> Inventory { get; }
+        IDataManipulator<IncidentModel> Incidents { get; }
     }
 }

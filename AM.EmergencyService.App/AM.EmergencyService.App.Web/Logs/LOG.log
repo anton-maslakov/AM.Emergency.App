@@ -79,12 +79,354 @@
 2018-05-06 18:23:07,157 INFO LogFileAppender - Application HomePage is running.
 2018-05-06 19:57:17,962 INFO LogFileAppender - Application HomePage is running.
 2018-05-06 20:02:47,744 INFO LogFileAppender - Application HomePage is running.
-2018-05-07 22:34:32,372 ERROR LogFileAppender - HTTP 500 error occurred
-2018-05-07 22:34:37,734 ERROR LogFileAppender - HTTP 500 error occurred
-2018-05-07 22:34:39,006 ERROR LogFileAppender - HTTP 404 error occurred
-2018-05-07 22:34:43,744 ERROR LogFileAppender - HTTP 500 error occurred
-2018-05-07 22:34:43,767 ERROR LogFileAppender - HTTP 500 error occurred
-2018-05-07 22:34:55,380 INFO LogFileAppender - Application HomePage is running.
-2018-05-07 22:35:17,280 ERROR LogFileAppender - HTTP 404 error occurred
-2018-05-07 22:35:38,495 ERROR LogFileAppender - HTTP 500 error occurred
-2018-05-07 22:35:50,533 INFO LogFileAppender - Application HomePage is running.
+2018-05-10 11:27:25,844 INFO LogFileAppender - Application HomePage is running.
+2018-05-10 14:54:31,016 INFO LogFileAppender - Application HomePage is running.
+2018-05-10 14:57:39,336 INFO LogFileAppender - Application HomePage is running.
+2018-05-11 21:04:51,250 INFO LogFileAppender - Application HomePage is running.
+2018-05-11 21:06:16,218 INFO LogFileAppender - Application HomePage is running.
+2018-05-11 21:12:18,219 INFO LogFileAppender - Application HomePage is running.
+2018-05-11 21:15:25,483 INFO LogFileAppender - Application HomePage is running.
+2018-05-11 21:17:02,222 INFO LogFileAppender - Application HomePage is running.
+2018-05-11 21:19:17,155 INFO LogFileAppender - Application HomePage is running.
+2018-05-11 22:40:54,326 INFO LogFileAppender - Application HomePage is running.
+2018-05-11 22:41:39,350 INFO LogFileAppender - Application HomePage is running.
+2018-05-11 23:11:02,386 INFO LogFileAppender - Application HomePage is running.
+2018-05-11 23:26:18,049 INFO LogFileAppender - Application HomePage is running.
+2018-05-11 23:30:59,808 INFO LogFileAppender - Application HomePage is running.
+2018-05-11 23:34:47,043 INFO LogFileAppender - Application HomePage is running.
+2018-05-11 23:38:52,905 INFO LogFileAppender - Application HomePage is running.
+2018-05-11 23:40:34,635 INFO LogFileAppender - Application HomePage is running.
+2018-05-11 23:49:33,359 INFO LogFileAppender - Application HomePage is running.
+2018-05-11 23:53:13,281 INFO LogFileAppender - RequesPage is running.
+2018-05-11 23:53:26,994 INFO LogFileAppender - Application HomePage is running.
+2018-05-11 23:54:12,930 INFO LogFileAppender - Application HomePage is running.
+2018-05-11 23:55:58,968 INFO LogFileAppender - Application HomePage is running.
+2018-05-11 23:59:44,806 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 00:15:36,661 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 00:19:20,584 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 00:20:38,746 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 00:21:55,517 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 00:22:33,685 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 00:23:58,996 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 00:29:03,819 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 00:32:36,140 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 00:33:37,153 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 00:35:32,377 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 00:39:12,017 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 00:39:57,102 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 00:39:57,102 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 00:42:01,898 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 00:42:52,113 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 00:44:13,368 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 00:44:51,847 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 00:45:20,627 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 00:45:44,275 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 00:46:51,662 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 00:51:35,923 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 00:53:25,921 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 01:08:39,655 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 01:11:47,478 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 01:15:49,605 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 01:17:49,735 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 01:24:17,504 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 01:27:01,366 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 01:28:30,600 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 09:51:11,627 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 10:02:11,569 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 10:03:06,151 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 10:04:10,013 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 10:18:03,945 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 10:18:49,587 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 10:21:23,152 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 10:23:26,037 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 10:26:35,365 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 10:27:01,541 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 10:29:48,160 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 10:31:56,455 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 10:32:59,570 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 10:37:00,885 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 10:37:41,463 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 10:44:17,245 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 10:45:29,737 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 10:49:28,777 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 10:50:27,497 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 10:54:35,235 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 10:58:23,826 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 11:01:43,306 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 11:08:04,775 INFO LogFileAppender - Application HomePage is running.
+2018-05-12 11:09:49,265 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 12:53:52,564 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 12:55:39,704 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 12:55:43,308 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 12:55:46,083 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 12:55:47,540 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 13:51:13,853 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 14:06:02,851 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 14:06:24,835 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 14:22:35,300 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 14:22:40,822 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-14 14:22:42,942 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-14 14:23:56,027 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 14:24:00,112 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-14 14:24:03,101 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-14 14:24:18,471 ERROR LogFileAppender - HTTP 500 error occurred
+2018-05-14 14:50:40,418 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 14:50:46,819 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-14 14:51:09,800 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 14:51:46,315 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 14:52:44,758 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 14:53:02,822 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 14:53:07,964 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 14:53:13,942 INFO LogFileAppender - RequesPage is running.
+2018-05-14 14:57:50,713 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 14:59:11,296 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 14:59:29,603 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 14:59:43,560 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 15:00:31,572 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 15:00:42,084 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 15:00:44,862 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 15:00:46,967 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 15:00:48,717 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 15:00:51,220 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 15:00:52,781 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 15:00:59,598 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 15:02:24,537 INFO LogFileAppender - Application HomePage is running.
+2018-05-14 15:02:30,787 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-15 22:50:51,045 INFO LogFileAppender - Application HomePage is running.
+2018-05-15 22:51:01,282 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-15 22:53:58,420 INFO LogFileAppender - Application HomePage is running.
+2018-05-15 22:54:08,616 ERROR LogFileAppender - HTTP 500 error occurred
+2018-05-15 23:03:06,911 INFO LogFileAppender - Application HomePage is running.
+2018-05-15 23:03:14,685 ERROR LogFileAppender - HTTP 500 error occurred
+2018-05-15 23:08:19,431 INFO LogFileAppender - Application HomePage is running.
+2018-05-15 23:09:46,055 INFO LogFileAppender - Application HomePage is running.
+2018-05-15 23:13:01,398 INFO LogFileAppender - Application HomePage is running.
+2018-05-15 23:13:17,433 ERROR LogFileAppender - HTTP 500 error occurred
+2018-05-15 23:21:11,165 INFO LogFileAppender - Application HomePage is running.
+2018-05-15 23:21:30,294 ERROR LogFileAppender - HTTP 500 error occurred
+2018-05-15 23:22:11,287 INFO LogFileAppender - Application HomePage is running.
+2018-05-15 23:22:43,336 ERROR LogFileAppender - HTTP 500 error occurred
+2018-05-15 23:23:15,752 INFO LogFileAppender - Application HomePage is running.
+2018-05-15 23:25:59,482 INFO LogFileAppender - Application HomePage is running.
+2018-05-15 23:27:44,092 ERROR LogFileAppender - HTTP 500 error occurred
+2018-05-15 23:28:51,346 INFO LogFileAppender - Application HomePage is running.
+2018-05-15 23:29:58,594 INFO LogFileAppender - Application HomePage is running.
+2018-05-15 23:39:50,573 INFO LogFileAppender - Application HomePage is running.
+2018-05-15 23:40:56,192 INFO LogFileAppender - Application HomePage is running.
+2018-05-15 23:41:05,680 ERROR LogFileAppender - HTTP 500 error occurred
+2018-05-15 23:41:39,657 INFO LogFileAppender - Application HomePage is running.
+2018-05-15 23:42:48,713 INFO LogFileAppender - Application HomePage is running.
+2018-05-15 23:43:11,240 ERROR LogFileAppender - При установлении соединения с SQL Server произошла ошибка, связанная с сетью или с определенным экземпляром. Сервер не найден или недоступен. Убедитесь, что имя экземпляра указано правильно и что на SQL Server разрешены удаленные соединения. (provider: SQL Network Interfaces, error: 26 - Ошибка при обнаружении указанного сервера или экземпляра)
+2018-05-15 23:44:54,297 INFO LogFileAppender - Application HomePage is running.
+2018-05-15 23:45:17,906 ERROR LogFileAppender - При установлении соединения с SQL Server произошла ошибка, связанная с сетью или с определенным экземпляром. Сервер не найден или недоступен. Убедитесь, что имя экземпляра указано правильно и что на SQL Server разрешены удаленные соединения. (provider: SQL Network Interfaces, error: 26 - Ошибка при обнаружении указанного сервера или экземпляра)
+2018-05-15 23:46:20,195 INFO LogFileAppender - Application HomePage is running.
+2018-05-15 23:46:40,395 ERROR LogFileAppender - При установлении соединения с SQL Server произошла ошибка, связанная с сетью или с определенным экземпляром. Сервер не найден или недоступен. Убедитесь, что имя экземпляра указано правильно и что на SQL Server разрешены удаленные соединения. (provider: SQL Network Interfaces, error: 26 - Ошибка при обнаружении указанного сервера или экземпляра)
+2018-05-15 23:53:59,096 INFO LogFileAppender - Application HomePage is running.
+2018-05-15 23:54:07,054 INFO LogFileAppender - Database connection success
+2018-05-15 23:55:06,672 INFO LogFileAppender - Application HomePage is running.
+2018-05-15 23:55:26,721 ERROR LogFileAppender - При установлении соединения с SQL Server произошла ошибка, связанная с сетью или с определенным экземпляром. Сервер не найден или недоступен. Убедитесь, что имя экземпляра указано правильно и что на SQL Server разрешены удаленные соединения. (provider: SQL Network Interfaces, error: 26 - Ошибка при обнаружении указанного сервера или экземпляра)
+2018-05-15 23:56:49,516 INFO LogFileAppender - Application HomePage is running.
+2018-05-15 23:57:09,847 ERROR LogFileAppender - При установлении соединения с SQL Server произошла ошибка, связанная с сетью или с определенным экземпляром. Сервер не найден или недоступен. Убедитесь, что имя экземпляра указано правильно и что на SQL Server разрешены удаленные соединения. (provider: SQL Network Interfaces, error: 26 - Ошибка при обнаружении указанного сервера или экземпляра)
+2018-05-15 23:58:03,705 INFO LogFileAppender - Application HomePage is running.
+2018-05-15 23:58:13,317 INFO LogFileAppender - Database connection success
+2018-05-16 00:29:34,673 INFO LogFileAppender - Application HomePage is running.
+2018-05-16 00:29:41,304 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-16 00:30:48,283 INFO LogFileAppender - Database connection success
+2018-05-16 00:31:13,395 INFO LogFileAppender - Application HomePage is running.
+2018-05-16 00:31:18,873 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-16 00:31:40,658 INFO LogFileAppender - Database connection success
+2018-05-18 23:19:47,558 INFO LogFileAppender - Application HomePage is running.
+2018-05-18 23:20:07,063 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-18 23:22:00,638 INFO LogFileAppender - RequesPage is running.
+2018-05-18 23:22:01,070 INFO LogFileAppender - Database connection success
+2018-05-18 23:23:13,523 INFO LogFileAppender - Application HomePage is running.
+2018-05-18 23:23:18,823 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-18 23:23:21,741 INFO LogFileAppender - RequesPage is running.
+2018-05-18 23:23:21,789 INFO LogFileAppender - Database connection success
+2018-05-18 23:25:13,688 INFO LogFileAppender - Application HomePage is running.
+2018-05-18 23:25:18,319 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-18 23:25:25,424 INFO LogFileAppender - Application HomePage is running.
+2018-05-18 23:25:26,873 INFO LogFileAppender - Application HomePage is running.
+2018-05-18 23:25:28,166 INFO LogFileAppender - Application HomePage is running.
+2018-05-18 23:25:30,914 INFO LogFileAppender - RequesPage is running.
+2018-05-18 23:25:30,991 INFO LogFileAppender - Database connection success
+2018-05-18 23:30:16,195 INFO LogFileAppender - Application HomePage is running.
+2018-05-18 23:30:20,445 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-18 23:30:24,429 INFO LogFileAppender - RequesPage is running.
+2018-05-18 23:30:24,486 INFO LogFileAppender - Database connection success
+2018-05-18 23:30:45,296 INFO LogFileAppender - RequesPage is running.
+2018-05-18 23:30:45,302 INFO LogFileAppender - Database connection success
+2018-05-19 14:07:29,905 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 14:07:37,005 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-19 14:07:50,588 INFO LogFileAppender - Database connection success
+2018-05-19 14:07:53,718 INFO LogFileAppender - Database connection success
+2018-05-19 14:07:53,991 ERROR LogFileAppender - HTTP 500 error occurred
+2018-05-19 14:07:57,094 INFO LogFileAppender - Database connection success
+2018-05-19 14:07:57,126 ERROR LogFileAppender - HTTP 500 error occurred
+2018-05-19 17:46:30,433 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 17:46:37,006 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-19 17:46:45,769 INFO LogFileAppender - Database connection success
+2018-05-19 17:46:48,943 INFO LogFileAppender - Database connection success
+2018-05-19 17:49:46,120 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 17:49:50,857 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-19 17:49:53,527 INFO LogFileAppender - Database connection success
+2018-05-19 17:49:55,597 INFO LogFileAppender - Database connection success
+2018-05-19 17:51:40,016 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 17:51:45,659 INFO LogFileAppender - Database connection success
+2018-05-19 17:51:47,483 INFO LogFileAppender - Database connection success
+2018-05-19 17:51:47,510 INFO LogFileAppender - Database connection success
+2018-05-19 17:51:51,724 INFO LogFileAppender - Database connection success
+2018-05-19 17:51:54,349 INFO LogFileAppender - Database connection success
+2018-05-19 17:51:54,373 INFO LogFileAppender - Database connection success
+2018-05-19 17:51:59,330 INFO LogFileAppender - Database connection success
+2018-05-19 17:54:47,374 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 17:54:51,950 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-19 17:55:05,380 INFO LogFileAppender - Database connection success
+2018-05-19 17:55:08,126 INFO LogFileAppender - Database connection success
+2018-05-19 17:55:08,157 INFO LogFileAppender - Database connection success
+2018-05-19 18:23:54,758 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:24:47,497 ERROR LogFileAppender - HTTP 500 error occurred
+2018-05-19 18:24:48,563 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-19 18:24:50,598 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:25:28,291 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:25:33,412 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-19 18:25:36,735 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:25:39,582 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:25:40,748 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:25:43,076 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:25:45,516 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:26:18,612 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:26:24,001 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-19 18:26:27,751 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:27:32,523 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-19 18:27:34,563 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-19 18:27:37,620 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-19 18:28:04,737 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:28:08,784 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-19 18:28:11,148 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:28:12,799 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:28:48,266 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:28:51,589 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-19 18:28:53,651 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:28:54,643 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:28:55,545 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:28:56,365 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:28:57,227 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:30:24,572 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:30:29,769 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-19 18:30:31,849 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:30:33,506 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:30:36,642 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:31:50,244 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:31:57,468 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-19 18:32:00,580 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:32:01,609 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:32:02,531 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:32:03,405 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:50:05,488 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 18:50:14,025 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-19 18:50:27,718 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 19:20:55,263 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 19:21:04,215 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-19 19:22:55,781 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 19:24:01,247 INFO LogFileAppender - Application HomePage is running.
+2018-05-19 19:24:02,667 ERROR LogFileAppender - Прослушивание на http://localhost:56945/Service.svc не выполняла ни одна конечная точка, которая могла бы принять сообщение. Среди прочих причин это могло быть вызвано неправильным адресом или действием SOAP. Подробнее см. в описании InnerException (если имеется).
+2018-05-19 19:24:04,729 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-20 12:24:21,540 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-20 12:24:24,092 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-20 12:24:32,797 INFO LogFileAppender - Application HomePage is running.
+2018-05-20 12:24:40,692 INFO LogFileAppender - Application HomePage is running.
+2018-05-20 12:24:41,684 INFO LogFileAppender - Application HomePage is running.
+2018-05-20 12:24:42,562 INFO LogFileAppender - Application HomePage is running.
+2018-05-20 12:25:26,186 INFO LogFileAppender - Application HomePage is running.
+2018-05-20 12:26:04,941 INFO LogFileAppender - Application HomePage is running.
+2018-05-20 12:26:05,827 ERROR LogFileAppender - Прослушивание на http://localhost:56945/Service.svc не выполняла ни одна конечная точка, которая могла бы принять сообщение. Среди прочих причин это могло быть вызвано неправильным адресом или действием SOAP. Подробнее см. в описании InnerException (если имеется).
+2018-05-20 12:26:08,587 INFO LogFileAppender - Application HomePage is running.
+2018-05-20 12:26:08,657 ERROR LogFileAppender - Прослушивание на http://localhost:56945/Service.svc не выполняла ни одна конечная точка, которая могла бы принять сообщение. Среди прочих причин это могло быть вызвано неправильным адресом или действием SOAP. Подробнее см. в описании InnerException (если имеется).
+2018-05-20 12:26:10,954 INFO LogFileAppender - Application HomePage is running.
+2018-05-20 12:26:11,020 ERROR LogFileAppender - Прослушивание на http://localhost:56945/Service.svc не выполняла ни одна конечная точка, которая могла бы принять сообщение. Среди прочих причин это могло быть вызвано неправильным адресом или действием SOAP. Подробнее см. в описании InnerException (если имеется).
+2018-05-20 12:26:25,803 INFO LogFileAppender - Application HomePage is running.
+2018-05-20 12:26:25,872 ERROR LogFileAppender - Прослушивание на http://localhost:56945/Service.svc не выполняла ни одна конечная точка, которая могла бы принять сообщение. Среди прочих причин это могло быть вызвано неправильным адресом или действием SOAP. Подробнее см. в описании InnerException (если имеется).
+2018-05-20 12:26:59,148 INFO LogFileAppender - Application HomePage is running.
+2018-05-20 12:26:59,252 ERROR LogFileAppender - Прослушивание на http://localhost:56945/Service.svc не выполняла ни одна конечная точка, которая могла бы принять сообщение. Среди прочих причин это могло быть вызвано неправильным адресом или действием SOAP. Подробнее см. в описании InnerException (если имеется).
+2018-05-20 12:27:02,209 INFO LogFileAppender - Application HomePage is running.
+2018-05-20 12:27:02,280 ERROR LogFileAppender - Прослушивание на http://localhost:56945/Service.svc не выполняла ни одна конечная точка, которая могла бы принять сообщение. Среди прочих причин это могло быть вызвано неправильным адресом или действием SOAP. Подробнее см. в описании InnerException (если имеется).
+2018-05-20 12:28:13,901 INFO LogFileAppender - Application HomePage is running.
+2018-05-20 12:28:13,974 ERROR LogFileAppender - Прослушивание на http://localhost:56945/Service.svc не выполняла ни одна конечная точка, которая могла бы принять сообщение. Среди прочих причин это могло быть вызвано неправильным адресом или действием SOAP. Подробнее см. в описании InnerException (если имеется).
+2018-05-20 12:29:04,203 INFO LogFileAppender - Application HomePage is running.
+2018-05-20 12:29:04,288 ERROR LogFileAppender - Прослушивание на http://localhost:56945/Service.svc не выполняла ни одна конечная точка, которая могла бы принять сообщение. Среди прочих причин это могло быть вызвано неправильным адресом или действием SOAP. Подробнее см. в описании InnerException (если имеется).
+2018-05-20 12:29:04,375 ERROR LogFileAppender - HTTP 500 error occurred
+2018-05-20 12:29:08,882 INFO LogFileAppender - Application HomePage is running.
+2018-05-20 12:29:08,960 ERROR LogFileAppender - Прослушивание на http://localhost:56945/Service.svc не выполняла ни одна конечная точка, которая могла бы принять сообщение. Среди прочих причин это могло быть вызвано неправильным адресом или действием SOAP. Подробнее см. в описании InnerException (если имеется).
+2018-05-20 12:29:26,690 INFO LogFileAppender - Application HomePage is running.
+2018-05-20 12:29:30,660 INFO LogFileAppender - Application HomePage is running.
+2018-05-20 12:29:33,968 INFO LogFileAppender - Database connection success
+2018-05-20 12:29:39,522 INFO LogFileAppender - Database connection success
+2018-05-20 12:29:39,645 INFO LogFileAppender - Database connection success
+2018-05-20 12:29:49,957 INFO LogFileAppender - Database connection success
+2018-05-20 12:29:49,980 INFO LogFileAppender - Database connection success
+2018-05-20 12:30:01,639 INFO LogFileAppender - Database connection success
+2018-05-20 12:30:03,539 ERROR LogFileAppender - HTTP 500 error occurred
+2018-05-20 12:30:13,303 INFO LogFileAppender - Application HomePage is running.
+2018-05-21 12:00:14,683 INFO LogFileAppender - Application HomePage is running.
+2018-05-21 12:00:22,540 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-21 12:00:46,541 INFO LogFileAppender - RequesPage is running.
+2018-05-21 12:00:46,733 INFO LogFileAppender - Database connection success
+2018-05-21 12:00:52,925 INFO LogFileAppender - RequesPage is running.
+2018-05-21 12:00:52,937 INFO LogFileAppender - Database connection success
+2018-05-21 12:00:58,146 INFO LogFileAppender - RequesPage is running.
+2018-05-21 12:00:58,154 INFO LogFileAppender - Database connection success
+2018-05-21 12:01:01,906 INFO LogFileAppender - RequesPage is running.
+2018-05-21 12:01:01,910 INFO LogFileAppender - Database connection success
+2018-05-21 12:23:34,147 INFO LogFileAppender - Application HomePage is running.
+2018-05-21 12:23:41,370 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-21 12:25:00,137 INFO LogFileAppender - RequesPage is running.
+2018-05-21 12:25:00,184 INFO LogFileAppender - Database connection success
+2018-05-21 12:25:04,694 INFO LogFileAppender - RequesPage is running.
+2018-05-21 12:25:04,704 INFO LogFileAppender - Database connection success
+2018-05-21 12:28:39,505 INFO LogFileAppender - RequesPage is running.
+2018-05-21 12:28:39,662 INFO LogFileAppender - Database connection success
+2018-05-21 12:28:43,296 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-21 12:28:52,211 INFO LogFileAppender - RequesPage is running.
+2018-05-21 12:28:52,226 INFO LogFileAppender - Database connection success
+2018-05-21 12:31:35,307 INFO LogFileAppender - RequesPage is running.
+2018-05-21 12:31:35,457 INFO LogFileAppender - Database connection success
+2018-05-21 12:36:07,087 INFO LogFileAppender - RequesPage is running.
+2018-05-21 12:36:18,866 INFO LogFileAppender - Database connection success
+2018-05-21 12:42:44,558 INFO LogFileAppender - RequesPage is running.
+2018-05-21 12:42:44,614 INFO LogFileAppender - Database connection success
+2018-05-21 12:43:02,565 INFO LogFileAppender - RequesPage is running.
+2018-05-21 12:43:02,573 INFO LogFileAppender - Database connection success
+2018-05-21 12:43:10,432 INFO LogFileAppender - RequesPage is running.
+2018-05-21 12:43:10,440 INFO LogFileAppender - Database connection success
+2018-05-21 12:47:49,374 INFO LogFileAppender - RequesPage is running.
+2018-05-21 12:47:49,434 INFO LogFileAppender - Database connection success
+2018-05-21 12:47:53,150 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-21 12:48:03,453 INFO LogFileAppender - RequesPage is running.
+2018-05-21 12:48:03,465 INFO LogFileAppender - Database connection success
+2018-05-21 12:48:29,701 INFO LogFileAppender - RequesPage is running.
+2018-05-21 12:48:29,709 INFO LogFileAppender - Database connection success
+2018-05-21 12:48:39,355 INFO LogFileAppender - RequesPage is running.
+2018-05-21 12:48:39,363 INFO LogFileAppender - Database connection success
+2018-05-21 12:48:42,903 INFO LogFileAppender - Database connection success
+2018-05-21 12:50:42,287 INFO LogFileAppender - Application HomePage is running.
+2018-05-21 12:50:46,843 ERROR LogFileAppender - HTTP 404 error occurred
+2018-05-21 12:50:57,290 INFO LogFileAppender - RequesPage is running.
+2018-05-21 12:50:57,338 INFO LogFileAppender - Database connection success
+2018-05-21 12:51:01,337 INFO LogFileAppender - Database connection success
+2018-05-21 12:51:10,523 INFO LogFileAppender - RequesPage is running.
+2018-05-21 12:51:10,531 INFO LogFileAppender - Database connection success
+2018-05-21 13:39:40,452 INFO LogFileAppender - Database connection success
+2018-05-21 13:39:54,974 INFO LogFileAppender - Database connection success
+2018-05-21 13:40:08,190 INFO LogFileAppender - Database connection success
+2018-05-21 13:41:00,608 INFO LogFileAppender - RequesPage is running.
+2018-05-21 13:41:00,616 INFO LogFileAppender - Database connection success
+2018-05-21 13:41:07,148 INFO LogFileAppender - Database connection success
+2018-05-21 13:41:09,253 INFO LogFileAppender - RequesPage is running.
+2018-05-21 13:41:09,261 INFO LogFileAppender - Database connection success
+2018-05-21 13:41:11,210 INFO LogFileAppender - Database connection success
+2018-05-21 13:41:12,865 INFO LogFileAppender - Database connection success
+2018-05-21 13:41:12,905 INFO LogFileAppender - Database connection success
+2018-05-21 13:41:29,349 INFO LogFileAppender - RequesPage is running.
+2018-05-21 13:41:29,357 INFO LogFileAppender - Database connection success
+2018-05-21 13:41:33,092 INFO LogFileAppender - Database connection success
