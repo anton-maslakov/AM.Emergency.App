@@ -81,9 +81,13 @@
     <Compile Include="Repository\Impl\RequestDetailRepository.cs" />
     <Compile Include="Repository\Impl\RequestsRepository.cs" />
     <Compile Include="Repository\Impl\RescuersRepository.cs" />
+    <Compile Include="Repository\Impl\RoleRepository.cs" />
+    <Compile Include="Repository\Impl\UserRepository.cs" />
     <Compile Include="Repository\IRequestDetailsRepository.cs" />
     <Compile Include="Repository\IRequestsRepository.cs" />
     <Compile Include="Repository\IRescuersRepository.cs" />
+    <Compile Include="Repository\IRoleRepository.cs" />
+    <Compile Include="Repository\IUserRepository.cs" />
     <Compile Include="Service\AdService.cs" />
     <Compile Include="Service\IAdService.cs" />
   </ItemGroup>
