@@ -1,0 +1,187 @@
+2018-06-09 00:31:27,625  INFO  Application HomePage is running.
+2018-06-09 01:53:58,040  INFO  Application HomePage is running.
+2018-06-09 01:59:31,483  INFO  Application HomePage is running.
+2018-06-09 02:24:45,640  INFO  Application HomePage is running.
+2018-06-09 02:36:48,947  ERROR HTTP 404 error occurred
+2018-06-09 02:39:05,328  ERROR HTTP 404 error occurred
+2018-06-09 02:56:47,998  INFO  Application HomePage is running.
+2018-06-09 03:10:52,677  ERROR HTTP 404 error occurred
+2018-06-09 03:19:27,937  ERROR HTTP 404 error occurred
+2018-06-09 03:33:15,053  ERROR HTTP 404 error occurred
+2018-06-09 03:40:44,047  ERROR HTTP 500 error occurred
+2018-06-09 03:51:13,354  INFO  Application HomePage is running.
+2018-06-09 14:42:21,747  INFO  Application HomePage is running.
+2018-06-09 14:42:28,435  ERROR HTTP 404 error occurred
+2018-06-09 15:12:30,087  INFO  Application HomePage is running.
+2018-06-09 15:26:09,235  ERROR Не удалось найти хранимую процедуру "InsertBrigade".
+2018-06-09 15:26:29,303  ERROR Не удалось найти хранимую процедуру "InsertBrigade".
+2018-06-09 15:28:06,792  INFO  Application HomePage is running.
+2018-06-09 15:28:11,631  ERROR HTTP 404 error occurred
+2018-06-09 15:29:00,508  ERROR Процедура или функция "InsertBrigades" ожидает параметр "@BrigadeNumber", который не был указан.
+2018-06-09 15:29:08,539  ERROR Процедура или функция "InsertBrigades" ожидает параметр "@BrigadeNumber", который не был указан.
+2018-06-09 15:30:15,181  INFO  Application HomePage is running.
+2018-06-09 15:30:19,865  ERROR HTTP 404 error occurred
+2018-06-09 15:30:28,424  ERROR HTTP 500 error occurred
+2018-06-09 15:30:40,195  ERROR HTTP 500 error occurred
+2018-06-09 15:30:52,746  ERROR HTTP 500 error occurred
+2018-06-09 15:32:52,377  INFO  Application HomePage is running.
+2018-06-09 15:45:22,938  INFO  Application HomePage is running.
+2018-06-09 15:46:37,070  ERROR Нарушено "PK_Brigades" ограничения PRIMARY KEY. Не удается вставить повторяющийся ключ в объект "dbo.Brigades". Повторяющееся значение ключа: (101).
+Выполнение данной инструкции было прервано.
+2018-06-09 15:47:39,642  ERROR Нарушено "PK_Brigades" ограничения PRIMARY KEY. Не удается вставить повторяющийся ключ в объект "dbo.Brigades". Повторяющееся значение ключа: (101).
+Выполнение данной инструкции было прервано.
+2018-06-09 17:16:36,142  ERROR HTTP 500 error occurred
+2018-06-09 17:16:36,143  ERROR HTTP 500 error occurred
+2018-06-09 17:44:21,542  ERROR HTTP 500 error occurred
+2018-06-09 17:44:30,535  ERROR HTTP 500 error occurred
+2018-06-09 17:44:31,063  ERROR HTTP 404 error occurred
+2018-06-09 17:54:37,248  ERROR HTTP 404 error occurred
+2018-06-09 17:56:05,122  ERROR HTTP 404 error occurred
+2018-06-09 17:59:20,017  INFO  Application HomePage is running.
+2018-06-09 17:59:25,390  ERROR HTTP 404 error occurred
+2018-06-09 17:59:44,651  ERROR HTTP 404 error occurred
+2018-06-09 18:23:45,984  INFO  Application HomePage is running.
+2018-06-09 18:23:52,372  ERROR HTTP 404 error occurred
+2018-06-09 18:24:11,464  ERROR HTTP 500 error occurred
+2018-06-09 18:24:37,437  ERROR HTTP 500 error occurred
+2018-06-09 18:24:48,764  ERROR HTTP 500 error occurred
+2018-06-09 18:25:37,004  INFO  Application HomePage is running.
+2018-06-09 18:25:40,667  ERROR HTTP 404 error occurred
+2018-06-09 18:25:46,425  ERROR HTTP 500 error occurred
+2018-06-09 18:34:56,663  INFO  Application HomePage is running.
+2018-06-09 18:35:01,624  ERROR HTTP 404 error occurred
+2018-06-09 18:35:16,256  ERROR HTTP 500 error occurred
+2018-06-09 18:35:19,720  ERROR HTTP 500 error occurred
+2018-06-09 18:36:21,072  INFO  Application HomePage is running.
+2018-06-09 18:36:25,882  ERROR HTTP 404 error occurred
+2018-06-09 18:37:13,876  INFO  Application HomePage is running.
+2018-06-09 18:37:17,096  ERROR HTTP 404 error occurred
+2018-06-09 18:40:35,496  INFO  Application HomePage is running.
+2018-06-09 18:40:40,037  ERROR HTTP 404 error occurred
+2018-06-09 19:21:44,780  INFO  Application HomePage is running.
+2018-06-09 19:21:51,012  ERROR HTTP 404 error occurred
+2018-06-09 19:22:56,552  INFO  Application HomePage is running.
+2018-06-09 19:23:00,946  ERROR HTTP 404 error occurred
+2018-06-09 19:53:06,459  INFO  Application HomePage is running.
+2018-06-09 19:53:13,058  ERROR HTTP 404 error occurred
+2018-06-09 19:53:28,628  ERROR HTTP 404 error occurred
+2018-06-09 19:54:45,892  INFO  Application HomePage is running.
+2018-06-09 19:54:50,612  ERROR HTTP 404 error occurred
+2018-06-09 19:55:02,328  ERROR HTTP 404 error occurred
+2018-06-09 19:56:39,307  INFO  Application HomePage is running.
+2018-06-09 19:56:44,211  ERROR HTTP 404 error occurred
+2018-06-09 19:57:00,111  ERROR HTTP 404 error occurred
+2018-06-09 19:57:08,807  ERROR HTTP 404 error occurred
+2018-06-09 19:59:54,366  INFO  Application HomePage is running.
+2018-06-09 19:59:57,589  ERROR HTTP 404 error occurred
+2018-06-09 20:00:22,304  ERROR HTTP 404 error occurred
+2018-06-09 20:01:42,588  INFO  Application HomePage is running.
+2018-06-09 20:01:46,491  ERROR HTTP 404 error occurred
+2018-06-09 20:01:59,788  ERROR HTTP 404 error occurred
+2018-06-09 20:10:02,262  INFO  Application HomePage is running.
+2018-06-09 20:12:53,934  INFO  Application HomePage is running.
+2018-06-09 20:12:58,763  ERROR HTTP 404 error occurred
+2018-06-09 20:14:44,728  ERROR HTTP 500 error occurred
+2018-06-09 20:14:45,335  ERROR HTTP 404 error occurred
+2018-06-09 20:14:50,970  INFO  Application HomePage is running.
+2018-06-09 20:16:49,870  INFO  Application HomePage is running.
+2018-06-09 20:17:29,965  ERROR HTTP 404 error occurred
+2018-06-09 20:19:14,805  INFO  Application HomePage is running.
+2018-06-09 20:19:21,912  ERROR HTTP 404 error occurred
+2018-06-09 20:19:56,522  ERROR HTTP 404 error occurred
+2018-06-09 20:23:48,803  INFO  Application HomePage is running.
+2018-06-09 20:24:22,743  ERROR HTTP 404 error occurred
+2018-06-09 20:26:46,790  INFO  Application HomePage is running.
+2018-06-09 20:26:51,617  ERROR HTTP 404 error occurred
+2018-06-09 20:27:48,915  INFO  Application HomePage is running.
+2018-06-09 20:27:52,207  ERROR HTTP 404 error occurred
+2018-06-09 20:59:09,315  INFO  Application HomePage is running.
+2018-06-09 21:01:57,591  ERROR HTTP 500 error occurred
+2018-06-09 21:02:06,848  ERROR HTTP 500 error occurred
+2018-06-09 21:02:24,736  ERROR HTTP 500 error occurred
+2018-06-09 21:06:05,636  INFO  Application HomePage is running.
+2018-06-09 21:12:03,439  INFO  Application HomePage is running.
+2018-06-09 21:12:08,313  ERROR HTTP 404 error occurred
+2018-06-09 21:14:03,543  INFO  Application HomePage is running.
+2018-06-09 21:14:07,398  ERROR HTTP 404 error occurred
+2018-06-09 21:14:16,618  ERROR Конфликт инструкции INSERT с ограничением FOREIGN KEY "FK_RescuersBrigades_Brigades". Конфликт произошел в базе данных "AM.EmergencyService.DB", таблица "dbo.Brigades", column 'BrigadeNumber'.
+Выполнение данной инструкции было прервано.
+2018-06-09 21:14:36,904  ERROR HTTP 500 error occurred
+2018-06-09 21:27:38,299  INFO  Application HomePage is running.
+2018-06-09 21:27:43,196  ERROR HTTP 404 error occurred
+2018-06-09 21:28:07,826  ERROR Конфликт инструкции INSERT с ограничением FOREIGN KEY "FK_RescuersBrigades_Brigades". Конфликт произошел в базе данных "AM.EmergencyService.DB", таблица "dbo.Brigades", column 'BrigadeNumber'.
+Выполнение данной инструкции было прервано.
+2018-06-09 21:28:23,728  ERROR Конфликт инструкции INSERT с ограничением FOREIGN KEY "FK_RescuersBrigades_Brigades". Конфликт произошел в базе данных "AM.EmergencyService.DB", таблица "dbo.Brigades", column 'BrigadeNumber'.
+Выполнение данной инструкции было прервано.
+2018-06-09 21:28:23,785  ERROR Конфликт инструкции INSERT с ограничением FOREIGN KEY "FK_RescuersBrigades_Brigades". Конфликт произошел в базе данных "AM.EmergencyService.DB", таблица "dbo.Brigades", column 'BrigadeNumber'.
+Выполнение данной инструкции было прервано.
+2018-06-09 21:28:42,286  ERROR Конфликт инструкции INSERT с ограничением FOREIGN KEY "FK_BrigadesInventory_Brigades". Конфликт произошел в базе данных "AM.EmergencyService.DB", таблица "dbo.Brigades", column 'BrigadeNumber'.
+Выполнение данной инструкции было прервано.
+2018-06-09 21:30:18,819  INFO  Application HomePage is running.
+2018-06-09 21:31:46,098  ERROR Конфликт инструкции INSERT с ограничением FOREIGN KEY "FK_RescuersBrigades_Brigades". Конфликт произошел в базе данных "AM.EmergencyService.DB", таблица "dbo.Brigades", column 'BrigadeNumber'.
+Выполнение данной инструкции было прервано.
+2018-06-09 21:31:46,152  ERROR Конфликт инструкции INSERT с ограничением FOREIGN KEY "FK_BrigadesInventory_Brigades". Конфликт произошел в базе данных "AM.EmergencyService.DB", таблица "dbo.Brigades", column 'BrigadeNumber'.
+Выполнение данной инструкции было прервано.
+2018-06-09 21:35:09,341  ERROR HTTP 500 error occurred
+2018-06-09 21:38:40,753  INFO  Application HomePage is running.
+2018-06-09 21:38:44,367  ERROR HTTP 404 error occurred
+2018-06-09 21:47:38,754  ERROR HTTP 404 error occurred
+2018-06-09 21:47:41,062  INFO  RequestPage is running.
+2018-06-09 21:47:58,966  INFO  RequestPage is running.
+2018-06-09 21:52:12,889  INFO  RequestPage is running.
+2018-06-09 21:52:13,510  ERROR HTTP 500 error occurred
+2018-06-09 21:54:21,001  INFO  Application HomePage is running.
+2018-06-09 21:54:25,865  ERROR HTTP 404 error occurred
+2018-06-09 21:54:27,698  INFO  RequestPage is running.
+2018-06-09 21:54:28,411  ERROR HTTP 500 error occurred
+2018-06-09 21:54:54,483  INFO  RequestPage is running.
+2018-06-09 21:54:54,527  ERROR HTTP 500 error occurred
+2018-06-09 21:54:57,617  INFO  RequestPage is running.
+2018-06-09 21:54:57,679  ERROR HTTP 500 error occurred
+2018-06-09 21:55:07,849  INFO  RequestPage is running.
+2018-06-09 21:56:41,050  ERROR HTTP 500 error occurred
+2018-06-09 21:57:27,302  INFO  RequestPage is running.
+2018-06-09 21:57:32,565  ERROR HTTP 500 error occurred
+2018-06-09 21:57:37,695  INFO  RequestPage is running.
+2018-06-09 21:58:17,912  INFO  Application HomePage is running.
+2018-06-09 21:58:29,051  INFO  RequestPage is running.
+2018-06-09 22:06:22,103  INFO  Application HomePage is running.
+2018-06-09 22:06:25,968  ERROR HTTP 404 error occurred
+2018-06-09 22:06:44,716  INFO  RequestPage is running.
+2018-06-09 22:07:18,914  ERROR HTTP 500 error occurred
+2018-06-09 22:11:19,029  INFO  Application HomePage is running.
+2018-06-09 22:11:23,801  ERROR HTTP 404 error occurred
+2018-06-09 22:11:31,361  ERROR HTTP 500 error occurred
+2018-06-09 22:11:33,602  ERROR HTTP 500 error occurred
+2018-06-09 22:11:33,929  ERROR HTTP 500 error occurred
+2018-06-09 22:11:34,090  ERROR HTTP 500 error occurred
+2018-06-09 22:11:39,853  ERROR HTTP 500 error occurred
+2018-06-09 22:12:58,334  INFO  Application HomePage is running.
+2018-06-09 22:13:03,104  ERROR HTTP 404 error occurred
+2018-06-09 22:13:41,698  INFO  RequestPage is running.
+2018-06-09 22:15:40,265  INFO  Application HomePage is running.
+2018-06-09 22:16:46,585  INFO  Application HomePage is running.
+2018-06-09 22:16:51,321  ERROR HTTP 404 error occurred
+2018-06-09 22:16:56,734  INFO  RequestPage is running.
+2018-06-09 22:17:14,693  INFO  RequestPage is running.
+2018-06-09 22:17:56,893  INFO  Application HomePage is running.
+2018-06-09 22:18:06,357  INFO  RequestPage is running.
+2018-06-09 22:18:06,365  ERROR HTTP 404 error occurred
+2018-06-09 22:19:31,642  INFO  Application HomePage is running.
+2018-06-09 22:19:40,690  INFO  RequestPage is running.
+2018-06-09 22:19:49,400  INFO  RequestPage is running.
+2018-06-09 22:20:00,778  INFO  RequestPage is running.
+2018-06-09 22:22:51,146  INFO  RequestPage is running.
+2018-06-09 22:24:37,127  INFO  Application HomePage is running.
+2018-06-09 22:24:41,847  ERROR HTTP 404 error occurred
+2018-06-09 22:24:44,451  INFO  RequestPage is running.
+2018-06-09 22:25:35,277  INFO  Application HomePage is running.
+2018-06-09 22:25:38,104  ERROR HTTP 404 error occurred
+2018-06-09 23:00:50,008  INFO  Application HomePage is running.
+2018-06-09 23:02:41,129  INFO  Application HomePage is running.
+2018-06-09 23:03:38,630  INFO  Application HomePage is running.
+2018-06-09 23:27:19,870  INFO  Application HomePage is running.
+2018-06-09 23:28:28,935  INFO  Application HomePage is running.
+2018-06-09 23:28:44,385  INFO  RequestPage is running.
+2018-06-09 23:30:02,924  INFO  Application HomePage is running.
+2018-06-09 23:31:17,744  INFO  RequestPage is running.

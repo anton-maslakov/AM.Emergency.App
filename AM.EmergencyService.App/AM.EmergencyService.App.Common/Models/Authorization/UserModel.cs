@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace AM.EmergencyService.App.Common.Models.Authorization
 {
@@ -12,5 +8,6 @@ namespace AM.EmergencyService.App.Common.Models.Authorization
         public string Name { get; set; }
         public string Password { get; set; }
         public IEnumerable<RoleModel> Roles { get; set; }
+        public string Email { get; set; }
     }
 }

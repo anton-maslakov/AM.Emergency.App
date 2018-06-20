@@ -18,6 +18,94 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
             _conn = ConnectionStringInitialiser.InitConnectionString();
         }
 
+        public void Create(CasualtyModel casualtyModel)
+        {
+            SqlConnection conn = new SqlConnection(_conn);
+            SqlCommand command = new SqlCommand("InsertCasualty", conn) { CommandType = CommandType.StoredProcedure };
+
+            try
+            {
+                conn.Open();
+                SqlParameter[] sqlParameters = {
+                    new SqlParameter() { ParameterName = "@FirstName", Value = casualtyModel.Firstname},
+                    new SqlParameter() { ParameterName = "@Surname", Value = casualtyModel.Surname},
+                    new SqlParameter() { ParameterName = "@Lastname", Value = casualtyModel.Lastname},
+                    new SqlParameter() { ParameterName = "@BirthDate", Value = casualtyModel.BirthDate.ToShortDateString()},
+                    new SqlParameter() { ParameterName = "@Address", Value = casualtyModel.Address}
+                };
+
+                command.Parameters.AddRange(sqlParameters);
+
+                command.ExecuteNonQuery();
+
+                conn.Close();
+            }
+            catch (SqlException ex)
+            {
+                _logger.Log(LogLevel.Error, ex.Message);
+            }
+        }
+
+        public void Delete(int id)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void DeleteCasualtyFromRequest(int requestNumber, int casualtyId)
+        {
+            SqlConnection conn = new SqlConnection(_conn);
+            SqlCommand command = new SqlCommand("DeleteCasualtyFromRequest", conn) { CommandType = CommandType.StoredProcedure };
+
+            try
+            {
+                conn.Open();
+                SqlParameter[] sqlParameters = {
+                    new SqlParameter() { ParameterName = "@RequestNumber", Value = requestNumber},
+                    new SqlParameter() { ParameterName = "@CasualtyId", Value = casualtyId}
+                };
+
+                command.Parameters.AddRange(sqlParameters);
+
+                command.ExecuteNonQuery();
+
+                conn.Close();
+            }
+            catch (SqlException ex)
+            {
+                _logger.Log(LogLevel.Error, ex.Message);
+            }
+        }
+
+        public IEnumerable<CasualtyModel> GetAllCasualty()
+        {
+            List<CasualtyModel> casualtyList = new List<CasualtyModel>();
+            SqlConnection conn = new SqlConnection(_conn);
+            SqlCommand sqlCommand = new SqlCommand("GetAllCasualty", conn);
+            sqlCommand.CommandType = CommandType.StoredProcedure;
+            try
+            {
+                conn.Open();
+                SqlDataReader reader = sqlCommand.ExecuteReader();
+                while (reader.Read())
+                {
+                    casualtyList.Add(new CasualtyModel
+                    {
+                        Id = reader.GetInt32(0),
+                        Firstname = reader.GetString(1),
+                        Surname=reader.GetString(2),
+                        Lastname=reader.GetString(3),
+                        BirthDate=reader.GetDateTime(4),
+                        Address=reader.GetString(5)
+                    });
+                }
+            }
+            catch (SqlException ex)
+            {
+                _logger.Log(LogLevel.Error, ex.Message);
+            }
+            return casualtyList;
+        }
+
         public IEnumerable<CasualtyModel> GetCasualtyByRequest(int requestNumber)
         {
             List<CasualtyModel> casualtyList = new List<CasualtyModel>();
@@ -34,11 +122,11 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
                     casualtyList.Add(new CasualtyModel
                     {
                         Id = reader.GetInt32(0),
-                        Firstname = reader.GetString(2),
-                        Surname = reader.GetString(3),
-                        Lastname = reader.GetString(4),
-                        BirthDate = reader[5].ToString(),
-                        Address = reader.GetString(6)
+                        Firstname = reader.GetString(1),
+                        Surname = reader.GetString(2),
+                        Lastname = reader.GetString(3),
+                        BirthDate = reader.GetDateTime(4),
+                        Address = reader.GetString(5)
                     });
                 }
             }
@@ -47,6 +135,42 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
                 _logger.Log(LogLevel.Error, ex.Message);
             }
             return casualtyList;
+        }
+
+        public IEnumerable<CasualtyModel> GetCasualtyNotInRequest(int requestNumber)
+        {
+            List<CasualtyModel> casualtyList = new List<CasualtyModel>();
+            SqlConnection conn = new SqlConnection(_conn);
+            SqlCommand sqlCommand = new SqlCommand("GetCasualtyNotInRequest", conn);
+            sqlCommand.CommandType = CommandType.StoredProcedure;
+            try
+            {
+                conn.Open();
+                sqlCommand.Parameters.AddWithValue("@RequestNumber", requestNumber);
+                SqlDataReader reader = sqlCommand.ExecuteReader();
+                while (reader.Read())
+                {
+                    casualtyList.Add(new CasualtyModel
+                    {
+                        Id = reader.GetInt32(0),
+                        Firstname = reader.GetString(1),
+                        Surname = reader.GetString(2),
+                        Lastname = reader.GetString(3),
+                        BirthDate = reader.GetDateTime(4),
+                        Address = reader.GetString(5)
+                    });
+                }
+            }
+            catch (SqlException ex)
+            {
+                _logger.Log(LogLevel.Error, ex.Message);
+            }
+            return casualtyList;
+        }
+
+        public void Update(CasualtyModel casualtyModel)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

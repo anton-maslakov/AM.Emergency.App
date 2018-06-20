@@ -22,7 +22,7 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
         {
             List<string> roles = new List<string>();
             SqlConnection conn = new SqlConnection(_conn);
-            SqlCommand sqlCommand = new SqlCommand("GetRoleById", conn);
+            SqlCommand sqlCommand = new SqlCommand("GetAllRoles", conn);
             sqlCommand.CommandType = CommandType.StoredProcedure;
             try
             {
@@ -65,6 +65,32 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
                 _logger.Log(LogLevel.Error, ex.Message);
             }
             return roleList;
+        }
+
+        public IEnumerable<RoleModel> GetUserRoles(int id)
+        {
+            List<RoleModel> roles = new List<RoleModel>();
+            SqlConnection conn = new SqlConnection(_conn);
+            SqlCommand command = new SqlCommand("GetUserRoles", conn);
+            command.CommandType = CommandType.StoredProcedure;
+            try
+            {
+                conn.Open();
+                command.Parameters.AddWithValue("@UserId", id);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    roles.Add(new RoleModel
+                    {
+                        Rolename = reader.GetString(0)
+                    });
+                }
+            }
+            catch (SqlException ex)
+            {
+                _logger.Log(LogLevel.Error, ex.Message);
+            }
+            return roles;
         }
     }
 }

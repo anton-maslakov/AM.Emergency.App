@@ -2,8 +2,6 @@
 {
     using (Html.BeginForm("LogOut", "Account", FormMethod.Get, new { id = "logoutForm", @class = "navbar-right" }))
     {
-        @*@Html.AntiForgeryToken()*@
-
         <ul class="nav navbar-nav navbar-right">
             <li>
                 @Html.Label("Здравствуйте, " + User.Identity.Name + "!")

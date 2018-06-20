@@ -17,7 +17,7 @@
                 @Html.DisplayFor(modelItem => item.BrigadeNumber)
             </td>
             <td>
-                @*@Html.ActionLink("Edit", "Edit", new { id = item.Id }) |*@
+                @Html.ActionLink("Редактировать", "Edit", new { brigadeNumber = item.BrigadeNumber }) |
                 @Html.ActionLink("Подробнее", "Details", new { brigadeNumber = item.BrigadeNumber }) |
                @* @Html.ActionLink("Delete", "Delete", new { id = item.Id })*@
             </td>
@@ -25,3 +25,4 @@
     }
 
 </table>
+@Html.ActionLink("Сформировать бригаду", "Create")

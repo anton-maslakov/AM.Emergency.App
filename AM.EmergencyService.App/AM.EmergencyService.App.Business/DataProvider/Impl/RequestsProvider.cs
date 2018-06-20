@@ -1,40 +1,77 @@
-﻿using AM.EmergencyService.App.Common.Helper;
+﻿using AM.EmergencyService.App.Business.Service;
+using AM.EmergencyService.App.Common.Helper;
 using AM.EmergencyService.App.Common.Logger;
 using AM.EmergencyService.App.Common.Models;
 using AM.EmergencyService.App.Data.Repository;
+using System;
 using System.Collections.Generic;
 
 namespace AM.EmergencyService.App.Business.DataProvider.Impl
 {
     public class RequestsProvider : IRequestsProvider
     {
-        private ILogger _logger;
         private IRequestsRepository _repos;
-        public RequestsProvider(ILogger logger, IRequestsRepository repos)
+        private ICacheService _cache;
+        public RequestsProvider(IRequestsRepository repos, ICacheService cache)
         {
-            ErrorHandlingHelper.IfArgumentNullException(logger, "ILogger");
             ErrorHandlingHelper.IfArgumentNullException(repos, "IRequestsRepository");
-            _logger = logger;
+            ErrorHandlingHelper.IfArgumentNullException(cache, "ICacheService");
             _repos = repos;
+            _cache = cache;
         }
         public IEnumerable<RequestModel> GetAllData()
         {
-            return _repos.GetAllData();
+            IEnumerable<RequestModel> requestList = _cache.Get<IEnumerable<RequestModel>>("requestList");
+
+            if (requestList == null)
+            {
+                requestList = _repos.GetAllData();
+                _cache.Add<IEnumerable<RequestModel>>("requestList", requestList, 2000);
+            }
+            return requestList;
         }
 
-        public IEnumerable<RequestModel> GetRequestByAddress(string requestAddress)
+        public IEnumerable<RequestModel> GetRequestByAddress(string requestAddress, string requestDate)
         {
-            return _repos.GetRequestByAddress(requestAddress);
+            if (requestDate == " ")
+            {
+                return _repos.GetRequestByAddress(requestAddress);
+            }
+            else
+            {
+                return _repos.GetRequestByAddressAndDate(requestAddress, requestDate);
+            }
         }
 
-        public IEnumerable<RequestModel> GetRequestByCategory(string requestCategory)
+        public IEnumerable<RequestModel> GetRequestByCategory(string requestCategory, string requestDate)
         {
-            return _repos.GetRequestByCategory(requestCategory);
+            if (requestDate == " ")
+            {
+                return _repos.GetRequestByCategory(requestCategory);
+            }
+            else
+            {
+                return _repos.GetRequestByCategoryAndDate(requestCategory, requestDate);
+            }
         }
 
-        IEnumerable<RequestModel> IRequestsProvider.GetRequestByNumber(int requestNumber)
+        public IEnumerable<RequestModel> GetRequestByNumber(int requestNumber, string requestDate)
         {
-            return _repos.GetRequestByNumber(requestNumber);
+            if (requestNumber < 1)
+            {
+                throw new ArgumentException("Номер запроса указан неверно. Пожалуйста введите значение больше 1");
+            }
+            else
+            {
+                if (requestDate == " ")
+                {
+                    return _repos.GetRequestByNumber(requestNumber);
+                }
+                else
+                {
+                    return _repos.GetRequestByNumberAndDate(requestNumber, requestDate);
+                }
+            }
         }
     }
 }
