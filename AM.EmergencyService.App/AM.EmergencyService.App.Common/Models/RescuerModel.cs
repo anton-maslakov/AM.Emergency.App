@@ -16,6 +16,10 @@ namespace AM.EmergencyService.App.Common.Models
         public string Name { get; set; }
         [Display(Name = "Отчество")]
         public string LastName { get; set; }
-        public int BrigadeNumber { get; set; }
+        [Display(Name = "Дата рождения")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:dd'/'MM'/'yyyy}", ApplyFormatInEditMode = true)]
+        public DateTime BirthDate { get; set; }
+        public string Job { get; set; }
     }
 }

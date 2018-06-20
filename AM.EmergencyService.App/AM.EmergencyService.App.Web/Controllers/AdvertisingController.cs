@@ -1,4 +1,5 @@
 ﻿using AM.EmergencyService.App.Business.Interface;
+using AM.EmergencyService.App.Common.Logger;
 using AM.EmergencyService.App.Data.AdServiceReference;
 using System.Collections.Generic;
 using System.Web.Mvc;
@@ -9,7 +10,7 @@ namespace AM.EmergencyService.App.Web.Controllers
     {
         private const int NUM_OF_AD = 3;
 
-        private IAdProvider _adProvider; 
+        private IAdProvider _adProvider;
         public AdvertisingController(IAdProvider adProvider)
         {
             _adProvider = adProvider;

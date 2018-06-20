@@ -7,13 +7,82 @@ d:\C#\AM.EmergencyService.App\AM.EmergencyService.App.Common\obj\Debug\AM.Emerge
 d:\C#\AM.EmergencyService.App\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.csproj.CoreCompileInputs.cache
 d:\C#\AM.EmergencyService.App\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.dll
 d:\C#\AM.EmergencyService.App\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.pdb
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Common\bin\Debug\AM.EmergencyService.App.Common.dll.config
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Common\bin\Debug\AM.EmergencyService.App.Common.dll
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Common\bin\Debug\AM.EmergencyService.App.Common.pdb
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Common\bin\Debug\log4net.dll
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Common\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Common\bin\Debug\Microsoft.Web.Infrastructure.dll
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Common\bin\Debug\StructureMap.dll
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Common\bin\Debug\StructureMap.Web.dll
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Common\bin\Debug\WebActivatorEx.dll
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Common\bin\Debug\log4net.xml
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Common\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Common\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Common\bin\Debug\StructureMap.xml
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Common\bin\Debug\StructureMap.Web.pdb
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Common\bin\Debug\StructureMap.Web.xml
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.csproj.CoreCompileInputs.cache
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.csproj.CopyComplete
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.dll
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.pdb
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.csprojResolveAssemblyReference.cache
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\AM.EmergencyService.App.Common.dll.config
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\AM.EmergencyService.App.Common.dll
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\AM.EmergencyService.App.Common.pdb
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\log4net.dll
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\StructureMap.dll
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\StructureMap.Web.dll
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\WebActivatorEx.dll
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\log4net.xml
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\StructureMap.xml
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\StructureMap.Web.pdb
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\StructureMap.Web.xml
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.csprojResolveAssemblyReference.cache
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.csproj.CoreCompileInputs.cache
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.csproj.CopyComplete
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.dll
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.pdb
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\AM.EmergencyService.App.Common.dll.config
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\AM.EmergencyService.App.Common.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\AM.EmergencyService.App.Common.pdb
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\log4net.dll
+d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\Microsoft.Web.Infrastructure.dll
+d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\StructureMap.dll
+d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\StructureMap.Web.dll
+d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\WebActivatorEx.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\log4net.xml
+d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\StructureMap.xml
+d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\StructureMap.Web.pdb
+d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\StructureMap.Web.xml
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.csprojResolveAssemblyReference.cache
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.csproj.CoreCompileInputs.cache
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.csproj.CopyComplete
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.pdb
+l:\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\AM.EmergencyService.App.Common.dll.config
+l:\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\AM.EmergencyService.App.Common.dll
+l:\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\AM.EmergencyService.App.Common.pdb
+l:\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\log4net.dll
+l:\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+l:\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\Microsoft.Web.Infrastructure.dll
+l:\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\StructureMap.dll
+l:\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\StructureMap.Web.dll
+l:\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\WebActivatorEx.dll
+l:\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\log4net.xml
+l:\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+l:\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+l:\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\StructureMap.xml
+l:\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\StructureMap.Web.pdb
+l:\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\StructureMap.Web.xml
+l:\AM.EmergencyService.App\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.csprojResolveAssemblyReference.cache
+l:\AM.EmergencyService.App\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.csproj.CoreCompileInputs.cache
+l:\AM.EmergencyService.App\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.dll
+l:\AM.EmergencyService.App\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.pdb

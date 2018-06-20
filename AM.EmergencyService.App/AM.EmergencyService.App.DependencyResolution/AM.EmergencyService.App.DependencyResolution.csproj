@@ -40,7 +40,7 @@
       <HintPath>..\packages\StructureMap.4.6.1\lib\net45\StructureMap.dll</HintPath>
     </Reference>
     <Reference Include="StructureMap.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\structuremap.web.3.1.0.133\lib\net40\StructureMap.Web.dll</HintPath>
+      <HintPath>..\packages\structuremap.web.4.0.0.315\lib\net40\StructureMap.Web.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -55,13 +55,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DependencyResolution\MainIoC.cs" />
+    <Compile Include="DependencyResolution\MainRegistry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AM.EmergencyService.App.Business\AM.EmergencyService.App.Business.csproj">
+      <Project>{26FF037D-DDAC-412C-9955-753B87B0BB5A}</Project>
+      <Name>AM.EmergencyService.App.Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AM.EmergencyService.App.Common\AM.EmergencyService.App.Common.csproj">
       <Project>{6585903D-D365-451C-A299-E91F4D194B55}</Project>
       <Name>AM.EmergencyService.App.Common</Name>
