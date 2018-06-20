@@ -62,7 +62,6 @@ d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\StructureMap.xml
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\StructureMap.Web.pdb
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\bin\Debug\StructureMap.Web.xml
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.csprojResolveAssemblyReference.cache
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.csproj.CoreCompileInputs.cache
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.csproj.CopyComplete
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Common\obj\Debug\AM.EmergencyService.App.Common.dll

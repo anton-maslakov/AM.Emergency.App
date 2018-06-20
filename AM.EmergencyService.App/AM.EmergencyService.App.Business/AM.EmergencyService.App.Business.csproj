@@ -55,12 +55,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataProvider\IBrigadesProvider.cs" />
+    <Compile Include="DataProvider\ICasualtyProvider.cs" />
+    <Compile Include="DataProvider\IInventoryProvider.cs" />
+    <Compile Include="DataProvider\Impl\BrigadesProvider.cs" />
+    <Compile Include="DataProvider\Impl\CasualtyProvider.cs" />
+    <Compile Include="DataProvider\Impl\InventoryProvider.cs" />
+    <Compile Include="DataProvider\Impl\RequestDetailsProvider.cs" />
+    <Compile Include="DataProvider\Impl\RescuersProvider.cs" />
+    <Compile Include="DataProvider\IRequestDetailsProvider.cs" />
+    <Compile Include="DataProvider\IRescuersProvider.cs" />
     <Compile Include="DependencyResolution\BusinessRegistry.cs" />
-    <Compile Include="Interface\IAdProvider.cs" />
-    <Compile Include="Interface\IDataProvider.cs" />
+    <Compile Include="AdProvider\IAdProvider.cs" />
+    <Compile Include="DataProvider\IRequestsProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Provider\AdProvider.cs" />
-    <Compile Include="Provider\DataProvider.cs" />
+    <Compile Include="AdProvider\AdProvider.cs" />
+    <Compile Include="DataProvider\Impl\RequestsProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -78,5 +88,6 @@
       <Name>AM.EmergencyService.App.Data</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

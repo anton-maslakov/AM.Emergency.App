@@ -1,5 +1,4 @@
-﻿using AM.EmergencyService.App.Business.Interface;
-using AM.EmergencyService.App.Common.Logger;
+﻿using AM.EmergencyService.App.Business.AdProvider;
 using AM.EmergencyService.App.Data.AdServiceReference;
 using System.Collections.Generic;
 using System.Web.Mvc;

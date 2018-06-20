@@ -69,8 +69,10 @@
     <Compile Include="Logger\Interface\ILogger.cs" />
     <Compile Include="Logger\Implementation\Logger.cs" />
     <Compile Include="Models\BrigadeModel.cs" />
-    <Compile Include="Models\IncidentModel.cs" />
+    <Compile Include="Models\CasualtyModel.cs" />
+    <Compile Include="Models\RequestDetailModel.cs" />
     <Compile Include="Models\InventoryModel.cs" />
+    <Compile Include="Models\CategoryModel.cs" />
     <Compile Include="Models\RequestModel.cs" />
     <Compile Include="Models\RescuerModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
