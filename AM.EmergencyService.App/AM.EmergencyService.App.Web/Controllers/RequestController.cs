@@ -1,4 +1,5 @@
 ﻿using AM.EmergencyService.App.Business.DataProvider;
+using AM.EmergencyService.App.Common.Helper;
 using AM.EmergencyService.App.Common.Logger;
 using System;
 using System.Linq;
@@ -14,6 +15,9 @@ namespace AM.EmergencyService.App.Web.Controllers
 
         public RequestController(IRequestsProvider requestsProvider, IRequestDetailsProvider requestDetailsProvider, ILogger logger)
         {
+            ErrorHandlingHelper.IfArgumentNullException(requestsProvider, "IRequestsProvider");
+            ErrorHandlingHelper.IfArgumentNullException(requestDetailsProvider, "IRequestDetailsProvider");
+            ErrorHandlingHelper.IfArgumentNullException(logger, "ILogger");
             _requestsProvider = requestsProvider;
             _requestDetailsProvider = requestDetailsProvider;
             _logger = logger;

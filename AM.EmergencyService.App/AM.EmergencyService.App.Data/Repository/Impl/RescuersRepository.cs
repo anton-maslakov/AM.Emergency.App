@@ -1,4 +1,5 @@
-﻿using AM.EmergencyService.App.Common.Logger;
+﻿using AM.EmergencyService.App.Common.Helper;
+using AM.EmergencyService.App.Common.Logger;
 using AM.EmergencyService.App.Common.Models;
 using System.Collections.Generic;
 using System.Data;
@@ -12,6 +13,7 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
         private string _conn;
         public RescuersRepository(ILogger logger)
         {
+            ErrorHandlingHelper.IfArgumentNullException(logger, "ILogger");
             _logger = logger;
             _conn = ConnectionStringInitialiser.InitConnectionString();
         }
@@ -29,12 +31,12 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
                 {
                     rescuerList.Add(new RescuerModel
                     {
-                        Id=reader.GetInt32(1),
-                        Firstname=reader.GetString(2),
-                        Surname=reader.GetString(3),
-                        Lastname=reader.GetString(4),
-                        BirthDate=reader[5].ToString(),
-                        Job=reader.GetString(6)
+                        Id = reader.GetInt32(1),
+                        Firstname = reader.GetString(2),
+                        Surname = reader.GetString(3),
+                        Lastname = reader.GetString(4),
+                        BirthDate = reader[5].ToString(),
+                        Job = reader.GetString(6)
 
                     });
                 }

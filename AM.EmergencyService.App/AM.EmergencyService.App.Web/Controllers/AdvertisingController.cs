@@ -1,4 +1,5 @@
 ﻿using AM.EmergencyService.App.Business.AdProvider;
+using AM.EmergencyService.App.Common.Helper;
 using AM.EmergencyService.App.Data.AdServiceReference;
 using System.Collections.Generic;
 using System.Web.Mvc;
@@ -12,6 +13,7 @@ namespace AM.EmergencyService.App.Web.Controllers
         private IAdProvider _adProvider;
         public AdvertisingController(IAdProvider adProvider)
         {
+            ErrorHandlingHelper.IfArgumentNullException(adProvider, "IAdProvider");
             _adProvider = adProvider;
         }
         public ActionResult GetAdvertising()

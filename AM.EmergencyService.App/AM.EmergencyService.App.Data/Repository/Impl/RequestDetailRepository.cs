@@ -1,4 +1,5 @@
-﻿using AM.EmergencyService.App.Common.Logger;
+﻿using AM.EmergencyService.App.Common.Helper;
+using AM.EmergencyService.App.Common.Logger;
 using AM.EmergencyService.App.Common.Models;
 using System.Collections.Generic;
 using System.Data;
@@ -12,6 +13,7 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
         private string _conn;
         public RequestDetailRepository(ILogger logger)
         {
+            ErrorHandlingHelper.IfArgumentNullException(logger, "ILogger");
             _logger = logger;
             _conn = ConnectionStringInitialiser.InitConnectionString();
         }
