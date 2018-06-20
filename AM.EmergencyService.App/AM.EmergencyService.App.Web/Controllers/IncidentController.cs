@@ -1,19 +1,21 @@
-﻿using AM.EmergencyService.App.Business.Interface;
+﻿using AM.EmergencyService.App.Business.DataProvider;
+using AM.EmergencyService.App.Common.Helper;
 using System.Web.Mvc;
 
 namespace AM.EmergencyService.App.Web.Controllers
 {
     public class IncidentController : Controller
     {
-        private IDataProvider _provider; 
+        private IRequestDetailsProvider _requestDetailsProvider; 
 
-        public IncidentController(IDataProvider provider)
+        public IncidentController(IRequestDetailsProvider requestDetailsProvider)
         {
-            _provider = provider;
+            ErrorHandlingHelper.IfArgumentNullException(requestDetailsProvider, "IRequestDetailsProvider");
+            _requestDetailsProvider = requestDetailsProvider;
         }
         public ActionResult IncidentInfo(int id)
         {
-            _provider.Incidents.GetData("EXEC GetIncident @RequestId=" + id);
+            _requestDetailsProvider.GetRequestDetailsByRequestNumber(id);
             return View();
         }
     }

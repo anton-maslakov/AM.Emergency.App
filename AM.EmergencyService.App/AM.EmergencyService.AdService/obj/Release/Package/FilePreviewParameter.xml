@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="Default Web Site/AdService" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^d:\\мои\ документы\\visual\ studio\ 2017\\Projects\\AM\.EmergencyService\.App\\AM\.EmergencyService\.AdService\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^d:\\мои\ документы\\visual\ studio\ 2017\\Projects\\AM\.EmergencyService\.App\\AM\.EmergencyService\.AdService\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+</parameters>

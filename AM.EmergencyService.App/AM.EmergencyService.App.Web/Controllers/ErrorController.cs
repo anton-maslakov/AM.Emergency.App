@@ -1,4 +1,5 @@
-﻿using AM.EmergencyService.App.Common.Logger;
+﻿using AM.EmergencyService.App.Common.Helper;
+using AM.EmergencyService.App.Common.Logger;
 using System.Web.Mvc;
 
 namespace LogerError.Controllers
@@ -9,6 +10,7 @@ namespace LogerError.Controllers
 
         public ErrorController(ILogger logger)
         {
+            ErrorHandlingHelper.IfArgumentNullException(logger, "ILogger");
             _logger = logger;
         }
         public ActionResult NotFound()

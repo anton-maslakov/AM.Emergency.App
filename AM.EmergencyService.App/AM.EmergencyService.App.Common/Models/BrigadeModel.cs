@@ -8,8 +8,6 @@ namespace AM.EmergencyService.App.Common.Models
 {
     public class BrigadeModel
     {
-        public int Id { get; set; }
-        [Display(Name = "Номер расчета")]
         public int BrigadeNumber { get; set; }
     }
 }

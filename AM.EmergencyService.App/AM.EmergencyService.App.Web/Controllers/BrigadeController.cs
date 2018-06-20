@@ -1,28 +1,31 @@
-﻿using AM.EmergencyService.App.Business.Interface;
-using System.Linq;
+﻿using AM.EmergencyService.App.Business.DataProvider;
+using AM.EmergencyService.App.Common.Helper;
 using System.Web.Mvc;
 
 namespace AM.EmergencyService.App.Web.Controllers
 {
     public class BrigadeController : Controller
     {
-        private IDataProvider _provider;
+        private IBrigadesProvider _brigadesProvider;
+        private IRescuersProvider _rescuersProvider;
 
-        public BrigadeController(IDataProvider provider)
+        public BrigadeController(IBrigadesProvider brigadesProvider, IRescuersProvider rescuersProvider)
         {
-            _provider = provider;
+            ErrorHandlingHelper.IfArgumentNullException(brigadesProvider, "IBrigadesProvider");
+            ErrorHandlingHelper.IfArgumentNullException(rescuersProvider, "IRescuersProvider");
+            _brigadesProvider = brigadesProvider;
+            _rescuersProvider = rescuersProvider;
         }
         // GET: Brigade
         public ActionResult Index()
         {
-            var brigades = _provider.Brigades.GetData("EXEC GetBrigades");
+            var brigades = _brigadesProvider.GetAllData();
             return View(brigades);
         }
 
-        public ActionResult Details(int id)
+        public ActionResult Details(int brigadeNumber)
         {
-            var rescuers = _provider.Rescuers.GetData("EXEC GetBrigadeRescuers @BrigadeId="+id);
-            var inventory = _provider.Inventory.GetData("EXEC GetBrigadeInventory @BrigadeId="+id);
+            var rescuers = _rescuersProvider.GetRescuersByBrigadeNumber(brigadeNumber);
             return View(rescuers);
         }
     }
