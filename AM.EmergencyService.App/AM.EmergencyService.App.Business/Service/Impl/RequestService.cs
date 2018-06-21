@@ -23,13 +23,17 @@ namespace AM.EmergencyService.App.Business.Service.Impl
         }
         public void Create(RequestModel requestModel)
         {
+            _repos.Create(requestModel);
             IEnumerable<RequestModel> requestList = _cache.Get<IEnumerable<RequestModel>>("requestList");
             if (requestList != null)
             {
                 _cache.Delete("requestList");
             }
-            _repos.Create(requestModel);
         }
 
+        public void Update(RequestModel requestModel)
+        {
+            _repos.Update(requestModel);
+        }
     }
 }

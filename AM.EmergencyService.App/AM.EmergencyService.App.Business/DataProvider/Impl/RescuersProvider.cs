@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using AM.EmergencyService.App.Common.Helper;
 using AM.EmergencyService.App.Common.Logger;
 using AM.EmergencyService.App.Common.Models;
@@ -27,9 +28,9 @@ namespace AM.EmergencyService.App.Business.DataProvider.Impl
             return _repos.GetRescuerById(rescuerId);
         }
 
-        public IEnumerable<RescuerModel> GetRescuersByBrigadeNumber(int brigadeNumber)
+        public IEnumerable<RescuerModel> GetRescuersByBrigadeNumber(int brigadeNumber, DateTime date)
         {
-            return _repos.GetRescuersByBrigadeNumber(brigadeNumber);
+            return _repos.GetRescuersByBrigadeNumber(brigadeNumber, date);
         }
     }
 }

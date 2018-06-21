@@ -8,11 +8,7 @@
     @Html.Action("ShowRequestDetails", new { requestNumber = Model.RequestNumber })
     <h4>Пострадавшие:</h4>
     @Html.Action("ShowRequestCasualty", "Casualty", new { requestNumber = Model.RequestNumber })
-    <h6>Добавить пострадавших в инциденте:</h6>
-    @Html.Action("SelectCasualty", "Casualty", new { requestNumber = Model.RequestNumber })
     @Html.Action("ShowRequestInventory", "Inventory", new { requestNumber = Model.RequestNumber })
-    <h6>Выбрать инвентарь, использованный на вызове:</h6>
-    @Html.Action("SelectInventory", "Inventory", new { requestNumber = Model.RequestNumber })
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
             <input type="submit" value="Сохранить" class="btn btn-default" />

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace AM.EmergencyService.App.Web.Models.Request
 {
@@ -14,9 +15,9 @@ namespace AM.EmergencyService.App.Web.Models.Request
         [Required]
         public string RequestReason { get; set; }
         [Display(Name = "Дата вызова")]
-        [DataType(DataType.DateTime)]
+        [DataType(DataType.Date)]
         [Required]
-        public string RequestDate { get; set; }
+        public DateTime RequestDate { get; set; }
         [Display(Name = "Категория вызова")]
         [Required]
         public string CategoryName { get; set; }

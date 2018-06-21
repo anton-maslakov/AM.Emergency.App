@@ -1,4 +1,4 @@
-﻿@model IEnumerable<AM.EmergencyService.App.Common.Models.CasualtyModel>
+﻿@model IEnumerable<AM.EmergencyService.App.Web.Models.Casualty.CasualtyViewModel>
 
 <p>
     @Html.ActionLink("Добавить пострадавшего", "Create")
@@ -41,10 +41,9 @@
             @Html.DisplayFor(modelItem => item.Address)
         </td>
         <td>
-            @Html.ActionLink("Редактировать", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Удалить", "Delete", new { id=item.Id })
+            @Html.ActionLink("Редактировать", "Edit", new { casualtyId = item.Id }) |
+            @Html.ActionLink("Удалить", "Delete", new { casualtyId = item.Id })
         </td>
     </tr>
 }
-
 </table>

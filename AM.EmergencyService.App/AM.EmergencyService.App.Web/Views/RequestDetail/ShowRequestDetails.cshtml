@@ -1,4 +1,4 @@
-﻿@model AM.EmergencyService.App.Common.Models.RequestDetailModel
+﻿@model AM.EmergencyService.App.Web.Models.RequestDetail.RequestDetailViewModel
 
 <table class="table">
     <tr>
@@ -39,7 +39,7 @@
             @Html.DisplayFor(model => model.IncidentReason)
         </td>
         <td>
-            @Html.DisplayFor(model => model.BrigadeNumber)
+            @Html.ActionLink(Model.BrigadeNumber.ToString(), "Details", "Brigade", new { brigadeNumber=Model.BrigadeNumber, date = Model.BrigadeCallDate }, null)
         </td>
         <td>
             @Html.DisplayFor(model => model.BrigadeCallDate)

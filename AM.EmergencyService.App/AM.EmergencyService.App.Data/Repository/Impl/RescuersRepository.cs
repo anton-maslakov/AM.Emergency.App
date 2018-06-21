@@ -1,6 +1,7 @@
 ﻿using AM.EmergencyService.App.Common.Helper;
 using AM.EmergencyService.App.Common.Logger;
 using AM.EmergencyService.App.Common.Models;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -82,17 +83,21 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
             return rescuerList;
         }
 
-        public IEnumerable<RescuerModel> GetRescuersByBrigadeNumber(int brigadeNumber)
+        public IEnumerable<RescuerModel> GetRescuersByBrigadeNumber(int brigadeNumber, DateTime date)
         {
             List<RescuerModel> rescuerList = new List<RescuerModel>();
             SqlConnection conn = new SqlConnection(_conn);
-            SqlCommand sqlCommand = new SqlCommand("GetBrigadeRescuers", conn);
-            sqlCommand.CommandType = CommandType.StoredProcedure;
+            SqlCommand command = new SqlCommand("GetBrigadeRescuers", conn);
+            command.CommandType = CommandType.StoredProcedure;
             try
             {
                 conn.Open();
-                sqlCommand.Parameters.AddWithValue("@BrigadeNumber", brigadeNumber);
-                SqlDataReader reader = sqlCommand.ExecuteReader();
+                SqlParameter[] sqlParameters = {
+                    new SqlParameter() { ParameterName = "@BrigadeNumber", Value = brigadeNumber},
+                    new SqlParameter() { ParameterName = "@Date", Value = date}
+                };
+                command.Parameters.AddRange(sqlParameters);
+                SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
                     rescuerList.Add(new RescuerModel

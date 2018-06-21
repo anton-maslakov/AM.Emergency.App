@@ -28,7 +28,6 @@ namespace AM.EmergencyService.App.Business.DataProvider.Impl
             {
                 requestList = _repos.GetAllData();
                 _cache.Add("requestList", requestList, 2000);
-                requestList.First().RequestNumber = 20;
 
             }
             return requestList;
@@ -36,7 +35,7 @@ namespace AM.EmergencyService.App.Business.DataProvider.Impl
 
         public IEnumerable<RequestModel> GetRequestByAddress(string requestAddress, string requestDate)
         {
-            if (requestDate == " ")
+            if (String.IsNullOrEmpty(requestDate))
             {
                 return _repos.GetRequestByAddress(requestAddress);
             }
@@ -48,7 +47,7 @@ namespace AM.EmergencyService.App.Business.DataProvider.Impl
 
         public IEnumerable<RequestModel> GetRequestByCategory(string requestCategory, string requestDate)
         {
-            if (requestDate == " ")
+            if (String.IsNullOrEmpty(requestDate))
             {
                 return _repos.GetRequestByCategory(requestCategory);
             }
@@ -66,7 +65,7 @@ namespace AM.EmergencyService.App.Business.DataProvider.Impl
             }
             else
             {
-                if (requestDate == " ")
+                if (String.IsNullOrEmpty(requestDate))
                 {
                     return _repos.GetRequestByNumber(requestNumber);
                 }

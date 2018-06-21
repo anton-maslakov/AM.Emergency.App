@@ -1,0 +1,30 @@
+2018-06-16 10:47:49,958  INFO  Application HomePage is running.
+2018-06-16 10:47:57,621  ERROR HTTP 404 error occurred
+2018-06-16 10:48:19,390  INFO  Application HomePage is running.
+2018-06-16 10:48:26,712  INFO  RequestPage is running.
+2018-06-16 10:48:48,930  ERROR HTTP 500 error occurred
+2018-06-16 10:49:02,452  INFO  Application HomePage is running.
+2018-06-16 14:17:15,684  INFO  Application HomePage is running.
+2018-06-16 14:17:23,018  ERROR HTTP 404 error occurred
+2018-06-16 14:17:40,411  INFO  Application HomePage is running.
+2018-06-16 14:19:44,005  ERROR Ошибка при преобразовании типа данных nvarchar к int.
+2018-06-16 14:26:55,949  ERROR Ошибка при преобразовании типа данных nvarchar к int.
+2018-06-16 14:32:45,192  ERROR Ошибка при преобразовании типа данных nvarchar к int.
+2018-06-16 14:37:15,863  ERROR HTTP 500 error occurred
+2018-06-16 14:48:48,962  ERROR HTTP 500 error occurred
+2018-06-16 14:49:22,757  ERROR HTTP 500 error occurred
+2018-06-16 14:50:10,658  ERROR HTTP 500 error occurred
+2018-06-16 14:55:51,872  INFO  Application HomePage is running.
+2018-06-16 14:58:07,148  ERROR HTTP 404 error occurred
+2018-06-16 14:58:09,070  INFO  Application HomePage is running.
+2018-06-16 14:58:23,882  INFO  Application HomePage is running.
+2018-06-16 18:42:49,585  INFO  Application HomePage is running.
+2018-06-16 18:43:01,922  ERROR HTTP 404 error occurred
+2018-06-16 18:43:43,767  INFO  Application HomePage is running.
+2018-06-16 18:44:17,676  INFO  RequestPage is running.
+2018-06-16 18:44:34,501  ERROR HTTP 500 error occurred
+2018-06-16 22:04:42,988  ERROR HTTP 500 error occurred
+2018-06-16 22:05:04,575  ERROR HTTP 500 error occurred
+2018-06-16 22:05:11,358  INFO  Application HomePage is running.
+2018-06-16 22:06:43,977  INFO  RequestPage is running.
+2018-06-16 22:14:47,848  ERROR HTTP 500 error occurred

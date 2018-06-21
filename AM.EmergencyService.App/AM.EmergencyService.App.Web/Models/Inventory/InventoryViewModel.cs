@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace AM.EmergencyService.App.Web.Models
+namespace AM.EmergencyService.App.Web.Models.Inventory
 {
     public class InventoryViewModel
     {

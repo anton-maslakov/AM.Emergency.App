@@ -1,4 +1,5 @@
 ﻿using AM.EmergencyService.App.Common.Models;
+using System;
 using System.Collections.Generic;
 
 namespace AM.EmergencyService.App.Data.Repository
@@ -14,6 +15,6 @@ namespace AM.EmergencyService.App.Data.Repository
         void Edit(InventoryModel inventoryModel);
         void Delete(int id);
         void DeleteInventoryFromBrigade(int brigadeNumber, int inventoryNumber);
-        IEnumerable<InventoryModel> GetInventoryByBrigadeNumber(int brigadeNumber);
+        IEnumerable<InventoryModel> GetInventoryByBrigadeNumber(int brigadeNumber, DateTime date);
     }
 }

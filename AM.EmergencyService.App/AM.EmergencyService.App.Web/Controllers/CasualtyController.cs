@@ -31,7 +31,7 @@ namespace AM.EmergencyService.App.Web.Controllers
         public ActionResult Index()
         {
             var casualtyList = _casualtyProvider.GetAllCasualty();
-            return View(casualtyList);
+            return View(ParseModelListToViewModelList(casualtyList));
         }
         [Editor]
         public ActionResult Create()
@@ -49,12 +49,12 @@ namespace AM.EmergencyService.App.Web.Controllers
         public ActionResult Edit(int casualtyId)
         {
             var casualty = _casualtyProvider.GetCasualtyById(casualtyId);
-            return View(casualty);
+            return View(ParseCasualtyModelToViewModel(casualty));
         }
         [HttpPost]
-        public ActionResult Edit(CasualtyModel casualty)
+        public ActionResult Edit(CasualtyViewModel casualty)
         {
-            _casualtyService.Edit(casualty);
+            _casualtyService.Edit(ParseViewModelToCasualtyModel(casualty));
             return RedirectToAction("Index");
         }
 
@@ -79,7 +79,7 @@ namespace AM.EmergencyService.App.Web.Controllers
             var casualtyList = _casualtyProvider.GetCasualtyByRequest(requestNumber);
             if (casualtyList != null)
             {
-                return PartialView(casualtyList);
+                return PartialView(ParseModelListToViewModelList(casualtyList));
             }
             else
             {
@@ -87,14 +87,14 @@ namespace AM.EmergencyService.App.Web.Controllers
             }
         }
         #endregion
-        
+
         #region Helper
-        private List<CasualtyViewModel> ToCasualtyViewModel(IEnumerable<CasualtyModel> casualties)
+        private List<CasualtySelectViewModel> ToCasualtyViewModel(IEnumerable<CasualtyModel> casualties)
         {
-            List<CasualtyViewModel> casualtyViewModel = new List<CasualtyViewModel>();
+            List<CasualtySelectViewModel> casualtyViewModel = new List<CasualtySelectViewModel>();
             foreach (var casyalty in casualties)
             {
-                casualtyViewModel.Add(new CasualtyViewModel
+                casualtyViewModel.Add(new CasualtySelectViewModel
                 {
                     Id = casyalty.Id,
                     Name = casyalty.BirthDate.ToShortDateString() + " " + casyalty.Surname + " " + casyalty.Firstname + " " + casyalty.Lastname
@@ -113,6 +113,48 @@ namespace AM.EmergencyService.App.Web.Controllers
                 Surname = casualty.Surname
             };
             return casyaltyModel;
+        }
+        private CasualtyModel ParseViewModelToCasualtyModel(CasualtyViewModel casualty)
+        {
+            CasualtyModel casyaltyModel = new CasualtyModel
+            {
+                Id=casualty.Id,
+                Firstname = casualty.Firstname,
+                Address = casualty.Address,
+                BirthDate = casualty.BirthDate,
+                Lastname = casualty.Lastname,
+                Surname = casualty.Surname
+            };
+            return casyaltyModel;
+        }
+        private CasualtyViewModel ParseCasualtyModelToViewModel(CasualtyModel casualty)
+        {
+            CasualtyViewModel casyaltyModel = new CasualtyViewModel
+            {
+                Firstname = casualty.Firstname,
+                Address = casualty.Address,
+                BirthDate = casualty.BirthDate,
+                Lastname = casualty.Lastname,
+                Surname = casualty.Surname
+            };
+            return casyaltyModel;
+        }
+        private List<CasualtyViewModel> ParseModelListToViewModelList(IEnumerable<CasualtyModel> casualtyList)
+        {
+            List<CasualtyViewModel> casyaltyViewList = new List<CasualtyViewModel>();
+            foreach (var casualty in casualtyList)
+            {
+                casyaltyViewList.Add(new CasualtyViewModel
+                {
+                    Id = casualty.Id,
+                    Firstname = casualty.Firstname,
+                    Address = casualty.Address,
+                    BirthDate = casualty.BirthDate,
+                    Lastname = casualty.Lastname,
+                    Surname = casualty.Surname
+                });
+            }
+            return casyaltyViewList;
         }
 
         #endregion
