@@ -73,6 +73,7 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
                     new SqlParameter() { ParameterName = "@RequestNumber", Value = requestDetailModel.RequestNumber},
                     new SqlParameter() { ParameterName = "@IncidentInformation", Value = requestDetailModel.IncidentInformation},
                     new SqlParameter() { ParameterName = "@IncidentReason", Value = requestDetailModel.IncidentReason},
+                    new SqlParameter() { ParameterName = "@BrigadeNumber", Value = requestDetailModel.BrigadeNumber},
                     new SqlParameter() { ParameterName = "@BrigadeCallDate", Value = requestDetailModel.BrigadeCallDate},
                     new SqlParameter() { ParameterName = "@BrigadeArrivalDate", Value = requestDetailModel.BrigadeArrivalDate},
                     new SqlParameter() { ParameterName = "@BrigadeEndDate", Value = requestDetailModel.BrigadeEndDate},
@@ -129,9 +130,35 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
             return requestDetail;
         }
 
-        public void Update(RequestDetailModel requestDetailModel)
+        public void Edit(RequestDetailModel requestDetailModel)
         {
-            throw new System.NotImplementedException();
+            SqlConnection conn = new SqlConnection(_conn);
+            SqlCommand command = new SqlCommand("UpdateRequestDetails", conn) { CommandType = CommandType.StoredProcedure };
+
+            try
+            {
+                conn.Open();
+                SqlParameter[] sqlParameters = {
+                    new SqlParameter() { ParameterName = "@RequestNumber", Value = requestDetailModel.RequestNumber},
+                    new SqlParameter() { ParameterName = "@IncidentInformation", Value = requestDetailModel.IncidentInformation},
+                    new SqlParameter() { ParameterName = "@IncidentReason", Value = requestDetailModel.IncidentReason},
+                    new SqlParameter() { ParameterName = "@BrigadeNumber", Value = requestDetailModel.BrigadeNumber},
+                    new SqlParameter() { ParameterName = "@BrigadeCallDate", Value = requestDetailModel.BrigadeCallDate},
+                    new SqlParameter() { ParameterName = "@BrigadeArrivalDate", Value = requestDetailModel.BrigadeArrivalDate},
+                    new SqlParameter() { ParameterName = "@BrigadeEndDate", Value = requestDetailModel.BrigadeEndDate},
+                    new SqlParameter() { ParameterName = "@BrigadeReturnDate", Value = requestDetailModel.BrigadeReturnDate}
+                };
+
+                command.Parameters.AddRange(sqlParameters);
+
+                command.ExecuteNonQuery();
+
+                conn.Close();
+            }
+            catch (SqlException ex)
+            {
+                _logger.Log(LogLevel.Error, ex.Message);
+            }
         }
     }
 }

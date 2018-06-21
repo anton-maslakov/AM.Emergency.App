@@ -33,5 +33,9 @@ namespace AM.EmergencyService.App.Business.Service.Impl
             _repos.Create(requestDetailModel);
         }
 
+        public void Edit(RequestDetailModel requestDetailModel)
+        {
+            _repos.Edit(requestDetailModel);
+        }
     }
 }

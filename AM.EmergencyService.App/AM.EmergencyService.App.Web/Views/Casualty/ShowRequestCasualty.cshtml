@@ -1,4 +1,4 @@
-﻿@model IEnumerable<AM.EmergencyService.App.Common.Models.CasualtyModel>
+﻿@model IEnumerable<AM.EmergencyService.App.Web.Models.Casualty.CasualtyViewModel>
 <table class="table">
     <tr>
         <th>
@@ -19,27 +19,32 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Surname)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Firstname)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Lastname)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BirthDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Address)
-        </td>
-        <td>
-            @Html.ActionLink("Удалить", "DeleteCasualtyFromRequest", new { requestNumber = ViewBag.requestNumber, casualtyId=item.Id })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Surname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Firstname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lastname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BirthDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            @if (HttpContext.Current.Request.FilePath != "/RequestDetail/Details")
+            {
+                <td>
+                    @Html.ActionLink("Удалить", "DeleteCasualtyFromRequest", new { requestNumber = ViewBag.requestNumber, casualtyId = item.Id })
+                </td>
+
+            }
+        </tr>
+    }
 
 </table>

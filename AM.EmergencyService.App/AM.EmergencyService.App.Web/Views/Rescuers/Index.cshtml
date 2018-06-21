@@ -1,7 +1,7 @@
-﻿@model IEnumerable<AM.EmergencyService.App.Common.Models.RescuerModel>
+﻿@model IEnumerable<AM.EmergencyService.App.Web.Models.Rescuers.RescuerViewModel>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Добавить работника", "Create")
 </p>
 <table class="table">
     <tr>
@@ -23,28 +23,30 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Surname)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Firstname)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Lastname)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BirthDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Job)
-        </td>
-        <td>
-            @Html.ActionLink("Изменить", "Edit", new { rescuerId=item.Id }) |
-            @Html.ActionLink("Удалить", "Delete", new { rescuerId = item.Id })
-        </td>
-    </tr>
-}
-
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Surname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Firstname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lastname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BirthDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Job)
+            </td>
+            <td>
+                @Html.ActionLink("Изменить", "Edit", new { rescuerId = item.Id }) |
+                @Html.ActionLink("Удалить", "Delete", new { rescuerId = item.Id })
+            </td>
+        </tr>
+    }
 </table>
+<script src="~/Scripts/globalize.js"></script>
+<script src="~/Scripts/jquery.validate.globalize.js"></script>

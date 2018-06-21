@@ -3,6 +3,8 @@ using AM.EmergencyService.App.Business.Service;
 using AM.EmergencyService.App.Common.Helper;
 using AM.EmergencyService.App.Common.Models;
 using AM.EmergencyService.App.Web.Attributes;
+using AM.EmergencyService.App.Web.Models.Inventory;
+using System;
 using System.Collections.Generic;
 using System.Web.Mvc;
 
@@ -53,7 +55,7 @@ namespace AM.EmergencyService.App.Web.Controllers
         public ActionResult DeleteInventoryFromBrigade(int brigadeNumber, int inventoryNumber)
         {
             _inventoryService.DeleteInventoryFromBrigade(brigadeNumber, inventoryNumber);
-            return RedirectToAction("Details","Brigade", new { brigadeNumber = brigadeNumber });
+            return RedirectToAction("Details", "Brigade", new { brigadeNumber = brigadeNumber });
         }
         [Dispatcher]
         public ActionResult DeleteInventoryFromRequest(int requestNumber, int inventoryNumber)
@@ -61,7 +63,7 @@ namespace AM.EmergencyService.App.Web.Controllers
             _inventoryService.DeleteInventoryFromRequest(requestNumber, inventoryNumber);
             return RedirectToAction("Details", "RequestDetail", new { requestNumber = requestNumber });
         }
-      
+
         #region PartialViews
         [ChildActionOnly]
         public PartialViewResult SelectInventory(int requestNumber)
@@ -86,13 +88,13 @@ namespace AM.EmergencyService.App.Web.Controllers
             }
         }
         [ChildActionOnly]
-        public PartialViewResult ShowBrigadeInventory(int brigadeNumber)
+        public PartialViewResult ShowBrigadeInventory(int brigadeNumber, DateTime date)
         {
             ViewBag.brigadeNumber = brigadeNumber;
-            var inventoryList = _inventoryProvider.GetInventoryByBrigadeNumber(brigadeNumber);
+            var inventoryList = _inventoryProvider.GetInventoryByBrigadeNumber(brigadeNumber, date);
             if (inventoryList != null)
             {
-                return PartialView(inventoryList);
+                return PartialView(ToInventoryViewModel(inventoryList));
             }
             else
             {
@@ -106,12 +108,27 @@ namespace AM.EmergencyService.App.Web.Controllers
             var inventoryList = _inventoryProvider.GetInventoryByRequestNumber(requestNumber);
             if (inventoryList != null)
             {
-                return PartialView(inventoryList);
+                return PartialView(ToInventoryViewModel(inventoryList));
             }
             else
             {
                 return null;
             }
+        }
+        #endregion
+        #region Helpers
+        private List<InventoryViewModel> ToInventoryViewModel(IEnumerable<InventoryModel> inventoryList)
+        {
+            List<InventoryViewModel> inventoryViewModel = new List<InventoryViewModel>();
+            foreach (var inventory in inventoryList)
+            {
+                inventoryViewModel.Add(new InventoryViewModel
+                {
+                    InventoryNumber = inventory.InventoryNumber,
+                    InventoryName = inventory.InventoryName
+                });
+            }
+            return inventoryViewModel;
         }
         #endregion
     }

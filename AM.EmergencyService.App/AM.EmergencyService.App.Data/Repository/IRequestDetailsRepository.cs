@@ -9,7 +9,7 @@ namespace AM.EmergencyService.App.Data.Repository
         void AddInventoryToRequestDetail(int requestNumber, int inventoryNumber);
         void AddCasualtyToRequestDetail(int requestNumber, int casualtyId);
         void Create(RequestDetailModel requestDetailModel);
-        void Update(RequestDetailModel requestDetailModel);
+        void Edit(RequestDetailModel requestDetailModel);
         void Delete(int id);
     }
 }

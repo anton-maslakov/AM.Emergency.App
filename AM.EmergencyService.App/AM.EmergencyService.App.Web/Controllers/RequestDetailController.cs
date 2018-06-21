@@ -39,6 +39,27 @@ namespace AM.EmergencyService.App.Web.Controllers
                 return View(requestDetail);
             }
         }
+        [HttpPost]
+        public ActionResult Edit(RequestDetailCreateViewModel viewModel)
+        {
+            _requestDetailService.Edit(ParseCreateViewModelToRequestDetailModel(viewModel));
+            if (viewModel.CasualtyId != null)
+            {
+                foreach (var casualty in viewModel.CasualtyId)
+                {
+                    _requestDetailService.AddCasualtyToRequestDetail(viewModel.RequestNumber, casualty);
+                }
+            }
+            if (viewModel.InventoryNumber != null)
+            {
+                foreach (var inventory in viewModel.InventoryNumber)
+                {
+                    _requestDetailService.AddInventoryToRequestDetail(viewModel.RequestNumber, inventory);
+                }
+            }
+
+            return RedirectToAction("Index", "Request");
+        }
         [Dispatcher]
         public ActionResult Create(int requestNumber)
         {
@@ -60,11 +81,11 @@ namespace AM.EmergencyService.App.Web.Controllers
             {
                 foreach (var inventory in viewModel.InventoryNumber)
                 {
-                    _requestDetailService.AddCasualtyToRequestDetail(viewModel.RequestNumber, inventory);
+                    _requestDetailService.AddInventoryToRequestDetail(viewModel.RequestNumber, inventory);
                 }
             }
 
-            return View();
+            return RedirectToAction("Index", "Request");
         }
 
         #region PartialView
@@ -75,7 +96,7 @@ namespace AM.EmergencyService.App.Web.Controllers
             var incident = _requestDetailsProvider.GetRequestDetailsByRequestNumber(requestNumber);
             if (incident != null)
             {
-                return PartialView(incident);
+                return PartialView(ParseRequestDetailModelToViewModel(incident));
             }
             else
             {
@@ -102,7 +123,30 @@ namespace AM.EmergencyService.App.Web.Controllers
         }
         private RequestDetailCreateViewModel ParseRequestDetailModelToCreatViewModel(RequestDetailModel requestDetailModel)
         {
-            RequestDetailCreateViewModel requestModel = new RequestDetailCreateViewModel
+            RequestDetailCreateViewModel requestModel = new RequestDetailCreateViewModel();
+            if (requestDetailModel != null)
+            {
+                requestModel = new RequestDetailCreateViewModel
+                {
+                    RequestNumber = requestDetailModel.RequestNumber,
+                    IncidentInformation = requestDetailModel.IncidentInformation,
+                    IncidentReason = requestDetailModel.IncidentReason,
+                    BrigadeArrivalDate = requestDetailModel.BrigadeArrivalDate,
+                    BrigadeCallDate = requestDetailModel.BrigadeCallDate,
+                    BrigadeEndDate = requestDetailModel.BrigadeEndDate,
+                    BrigadeNumber = requestDetailModel.BrigadeNumber,
+                    BrigadeReturnDate = requestDetailModel.BrigadeReturnDate
+                };
+            }
+            else
+            {
+                return null;
+            }
+            return requestModel;
+        }
+        private RequestDetailViewModel ParseRequestDetailModelToViewModel(RequestDetailModel requestDetailModel)
+        {
+            RequestDetailViewModel requestModel = new RequestDetailViewModel
             {
                 RequestNumber = requestDetailModel.RequestNumber,
                 IncidentInformation = requestDetailModel.IncidentInformation,

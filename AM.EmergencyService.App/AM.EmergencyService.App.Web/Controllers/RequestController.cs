@@ -7,6 +7,7 @@ using AM.EmergencyService.App.Web.Attributes;
 using AM.EmergencyService.App.Web.Models.Request;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Web.Mvc;
 
 namespace AM.EmergencyService.App.Web.Controllers
@@ -34,8 +35,19 @@ namespace AM.EmergencyService.App.Web.Controllers
 
         public ActionResult Index()
         {
-            _logger.Log(LogLevel.Info, "RequestPage is running.");
             return View();
+        }
+        [Dispatcher]
+        public ActionResult Edit(int requestNumber)
+        {
+            var request = _requestsProvider.GetRequestByNumber(requestNumber, null);
+            return View(ParseRequestModelToEditViewModel(request));
+        }
+        [HttpPost]
+        public ActionResult Edit(RequestEditViewModel requestEditViewModel)
+        {
+            _requestService.Update(ParseEditViewModelToRequestModel(requestEditViewModel));
+            return RedirectToAction("Index");
         }
         public ActionResult Search()
         {
@@ -128,6 +140,30 @@ namespace AM.EmergencyService.App.Web.Controllers
                 RequestAddress = requestCreateViewModel.RequestAddress,
                 RequestReason = requestCreateViewModel.RequestReason,
                 Category = new CategoryModel { Id = requestCreateViewModel.CategoryId }
+            };
+            return requestModel;
+        }
+        private RequestEditViewModel ParseRequestModelToEditViewModel(IEnumerable<RequestModel> requestModel)
+        {
+            RequestEditViewModel requestEditModel = new RequestEditViewModel
+            {
+                RequestNumber = requestModel.First().RequestNumber,
+                RequestAddress = requestModel.First().RequestAddress,
+                RequestReason = requestModel.First().RequestReason,
+                RequestDate = requestModel.First().RequestDate,
+                Category = requestModel.First().Category.Id
+            };
+            return requestEditModel;
+        }
+        private RequestModel ParseEditViewModelToRequestModel(RequestEditViewModel requestEditModel)
+        {
+            RequestModel requestModel = new RequestModel
+            {
+                RequestNumber = requestEditModel.RequestNumber,
+                RequestAddress = requestEditModel.RequestAddress,
+                RequestReason = requestEditModel.RequestReason,
+                RequestDate = requestEditModel.RequestDate,
+                Category = new CategoryModel { Id = requestEditModel.Category }
             };
             return requestModel;
         }

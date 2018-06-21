@@ -7,6 +7,7 @@ namespace AM.EmergencyService.App.Business.Service
         void AddInventoryToRequestDetail(int requestNumber, int inventoryNumber);
         void AddCasualtyToRequestDetail(int requestNumber, int casualtyId);
         void Create(RequestDetailModel requestDetailModel);
+        void Edit(RequestDetailModel requestDetailModel);
 
     }
 }

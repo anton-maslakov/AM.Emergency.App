@@ -15,7 +15,7 @@ namespace AM.EmergencyService.App.Web.Models.Casualty
         [Required]
         public string Lastname { get; set; }
         [Display(Name = "Дата рождения")]
-        [DataType(DataType.DateTime)]
+        [DataType(DataType.Date)]
         [Required]
         public DateTime BirthDate { get; set; }
         [Display(Name = "Адрес прописки")]

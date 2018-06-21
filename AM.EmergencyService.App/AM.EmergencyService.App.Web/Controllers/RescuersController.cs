@@ -4,6 +4,7 @@ using AM.EmergencyService.App.Common.Helper;
 using AM.EmergencyService.App.Common.Models;
 using AM.EmergencyService.App.Web.Attributes;
 using AM.EmergencyService.App.Web.Models.Rescuers;
+using System;
 using System.Collections.Generic;
 using System.Web.Mvc;
 
@@ -25,18 +26,18 @@ namespace AM.EmergencyService.App.Web.Controllers
         public ActionResult Index()
         {
             var rescuersList = _rescuersProvider.GetAllData();
-            return View(rescuersList);
+            return View(ToRescuerViewModel(rescuersList));
         }
         [Editor]
         public ActionResult Edit(int rescuerId)
         {
             var rescuerList = _rescuersProvider.GetRescuerById(rescuerId);
-            return View(rescuerList);
+            return View(ParseRescuerModelToViewModel(rescuerList));
         }
         [HttpPost]
-        public ActionResult Edit(RescuerModel rescuerModel)
+        public ActionResult Edit(RescuerViewModel rescuerModel)
         {
-            _rescuerService.Edit(rescuerModel);
+            _rescuerService.Edit(ParseViewModelToRescuerModel(rescuerModel));
             return RedirectToAction("Index");
         }
         [Editor]
@@ -60,7 +61,7 @@ namespace AM.EmergencyService.App.Web.Controllers
         [ChildActionOnly]
         public PartialViewResult SelectRescuers()
         {
-            var rescuerList = ToRescuerViewModel(_rescuersProvider.GetAllData());
+            var rescuerList = ToRescuerSelectViewModel(_rescuersProvider.GetAllData());
             if (rescuerList != null)
             {
                 return PartialView(rescuerList);
@@ -71,10 +72,10 @@ namespace AM.EmergencyService.App.Web.Controllers
             }
         }
         [ChildActionOnly]
-        public PartialViewResult ShowBrigadeRescuers(int brigadeNumber)
+        public PartialViewResult ShowBrigadeRescuers(int brigadeNumber, DateTime date)
         {
             ViewBag.brigadeNumber = brigadeNumber;
-            var rescuerList = _rescuersProvider.GetRescuersByBrigadeNumber(brigadeNumber);
+            var rescuerList = _rescuersProvider.GetRescuersByBrigadeNumber(brigadeNumber, date);
             if (rescuerList != null)
             {
                 return PartialView(rescuerList);
@@ -87,7 +88,7 @@ namespace AM.EmergencyService.App.Web.Controllers
         #endregion
 
         #region Helpers
-        private List<RescuerSelectViewModel> ToRescuerViewModel(IEnumerable<RescuerModel> rescuers)
+        private List<RescuerSelectViewModel> ToRescuerSelectViewModel(IEnumerable<RescuerModel> rescuers)
         {
             List<RescuerSelectViewModel> rescuersViewModel = new List<RescuerSelectViewModel>();
             foreach (var rescuer in rescuers)
@@ -100,12 +101,60 @@ namespace AM.EmergencyService.App.Web.Controllers
             }
             return rescuersViewModel;
         }
+        private List<RescuerViewModel> ToRescuerViewModel(IEnumerable<RescuerModel> rescuers)
+        {
+            List<RescuerViewModel> rescuersViewModel = new List<RescuerViewModel>();
+            foreach (var rescuer in rescuers)
+            {
+                rescuersViewModel.Add(new RescuerViewModel
+                {
+                    Id = rescuer.Id,
+                    Firstname = rescuer.Firstname,
+                    Surname = rescuer.Surname,
+                    Lastname = rescuer.Lastname,
+                    BirthDate = rescuer.BirthDate,
+                    Job = rescuer.Job
+                });
+            }
+            return rescuersViewModel;
+        }
+
         private RescuerModel ParseToRescuerModel(RescuerCreateViewModel rescuer)
         {
             RescuerModel rescuerModel = new RescuerModel();
 
             rescuerModel = new RescuerModel
             {
+                Firstname = rescuer.Firstname,
+                Surname = rescuer.Surname,
+                Lastname = rescuer.Lastname,
+                BirthDate = rescuer.BirthDate,
+                Job = rescuer.Job
+            };
+            return rescuerModel;
+        }
+        private RescuerModel ParseViewModelToRescuerModel(RescuerViewModel rescuer)
+        {
+            RescuerModel rescuerModel = new RescuerModel();
+
+            rescuerModel = new RescuerModel
+            {
+                Id=rescuer.Id,
+                Firstname = rescuer.Firstname,
+                Surname = rescuer.Surname,
+                Lastname = rescuer.Lastname,
+                BirthDate = rescuer.BirthDate,
+                Job = rescuer.Job
+            };
+            return rescuerModel;
+        }
+        private RescuerViewModel ParseRescuerModelToViewModel(RescuerModel rescuer)
+        {
+            RescuerViewModel rescuerModel = new RescuerViewModel();
+
+            rescuerModel = new RescuerViewModel
+            {
+                Id = rescuer.Id,
                 Firstname = rescuer.Firstname,
                 Surname = rescuer.Surname,
                 Lastname = rescuer.Lastname,

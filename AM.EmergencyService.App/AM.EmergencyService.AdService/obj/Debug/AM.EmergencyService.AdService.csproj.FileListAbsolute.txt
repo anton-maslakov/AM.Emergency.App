@@ -26,10 +26,3 @@ l:\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyS
 l:\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.csproj.CoreCompileInputs.cache
 l:\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.dll
 l:\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.pdb
-D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.AdService\bin\AM.EmergencyService.AdService.dll.config
-D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.AdService\bin\AM.EmergencyService.AdService.dll
-D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.AdService\bin\AM.EmergencyService.AdService.pdb
-D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.csprojResolveAssemblyReference.cache
-D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.csproj.CoreCompileInputs.cache
-D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.dll
-D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.pdb

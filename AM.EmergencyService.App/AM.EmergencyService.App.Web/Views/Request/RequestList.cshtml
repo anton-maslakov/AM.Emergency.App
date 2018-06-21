@@ -38,7 +38,7 @@
                     @Html.DisplayFor(modelItem => item.CategoryName)
                 </td>
                 <td>
-                    @Html.ActionLink("Изменить", "Edit", "RequestDetail", new { requestNumber = item.RequestNumber }, null) |
+                    @Html.ActionLink("Изменить", "Edit", "Request", new { requestNumber = item.RequestNumber }, null) |
                     @Html.ActionLink("Подробнее", "Details", "RequestDetail", new { requestNumber = item.RequestNumber }, null)
                 </td>
             </tr>

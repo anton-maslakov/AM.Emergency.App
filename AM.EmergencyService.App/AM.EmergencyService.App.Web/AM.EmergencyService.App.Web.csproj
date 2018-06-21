@@ -67,6 +67,10 @@
       <HintPath>..\packages\structuremap.web.4.0.0.315\lib\net40\StructureMap.Web.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>..\packages\System.Globalization.Calendars.4.3.0\lib\net46\System.Globalization.Calendars.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -205,6 +209,10 @@
     <Content Include="Config\log4net.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Scripts\cldr\main\ru\ca-generic.json" />
+    <Content Include="Scripts\cldr\main\ru\ca-gregorian.json" />
+    <Content Include="Scripts\cldr\main\ru\dateFields.json" />
+    <Content Include="Scripts\cldr\main\ru\timeZoneNames.json" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -212,6 +220,11 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <Content Include="Scripts\jquery-ui-1.12.1.js" />
     <Content Include="Scripts\jquery-ui-1.12.1.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\locales\bootstrap-datepicker-en-CA.min.js" />
     <Content Include="Scripts\locales\bootstrap-datepicker.ar-tn.min.js" />
     <Content Include="Scripts\locales\bootstrap-datepicker.ar.min.js" />
@@ -332,15 +345,20 @@
     </Compile>
     <Compile Include="Models\Account\LoginViewModel.cs" />
     <Compile Include="Models\Brigade\BrigadeCreateViewModel.cs" />
+    <Compile Include="Models\Brigade\BrigadeViewModel.cs" />
     <Compile Include="Models\Casualty\CasualtyCreatViewModel.cs" />
+    <Compile Include="Models\Casualty\CasualtySelectViewModel.cs" />
     <Compile Include="Models\Casualty\CasualtyViewModel.cs" />
     <Compile Include="Models\Inventory\InventoryViewModel.cs" />
     <Compile Include="Models\RequestDetail\RequestDetailCreateViewModel.cs" />
+    <Compile Include="Models\RequestDetail\RequestDetailViewModel.cs" />
     <Compile Include="Models\Request\RequestCreateViewModel.cs" />
+    <Compile Include="Models\Request\RequestEditViewModel.cs" />
     <Compile Include="Models\Request\RequestViewModel.cs" />
     <Compile Include="Models\Rescuers\RescuerCreateViewModel.cs" />
     <Compile Include="Models\Rescuers\RescuerSelectViewModel.cs" />
     <Compile Include="Models\Account\UserViewModel.cs" />
+    <Compile Include="Models\Rescuers\RescuerViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -375,7 +393,6 @@
     <Content Include="Views\Brigade\Create.cshtml" />
     <Content Include="Views\Brigade\Add.cshtml" />
     <Content Include="Views\Brigade\Edit.cshtml" />
-    <Content Include="Views\Rescuers\View.cshtml" />
     <Content Include="Views\Rescuers\SelectRescuers.cshtml" />
     <Content Include="Views\Brigade\SelectBrigade.cshtml" />
     <Content Include="Views\Inventory\SelectInventory.cshtml" />
@@ -403,6 +420,7 @@
     <Content Include="Views\Inventory\Create.cshtml" />
     <Content Include="Views\Casualty\Index.cshtml" />
     <Content Include="Views\Casualty\Edit.cshtml" />
+    <Content Include="Views\Request\Edit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

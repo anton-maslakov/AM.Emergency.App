@@ -1,4 +1,4 @@
-﻿@model IEnumerable<AM.EmergencyService.App.Common.Models.InventoryModel>
+﻿@model IEnumerable<AM.EmergencyService.App.Web.Models.Inventory.InventoryViewModel>
 
 <table class="table">
     <tr>
@@ -11,18 +11,22 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.InventoryNumber)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.InventoryName)
-        </td>
-        <td>
-            @Html.ActionLink("Удалить", "DeleteInventoryFromRequest", new { requestNumber=ViewBag.requestNumber, inventoryNumber = item.InventoryNumber })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.InventoryNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InventoryName)
+            </td>
+            @if (HttpContext.Current.Request.FilePath != "/RequestDetail/Details")
+            {
+                <td>
+                    @Html.ActionLink("Удалить", "DeleteInventoryFromRequest", new { requestNumber = ViewBag.requestNumber, inventoryNumber = item.InventoryNumber })
+                </td>
+            }
+        </tr>
+    }
 
 </table>
