@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using AM.EmergencyService.App.Common.Helper;
@@ -126,17 +127,21 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
             }
         }
 
-        public IEnumerable<InventoryModel> GetInventoryByBrigadeNumber(int brigadeNumber)
+        public IEnumerable<InventoryModel> GetInventoryByBrigadeNumber(int brigadeNumber, DateTime date)
         {
             List<InventoryModel> inventoryList = new List<InventoryModel>();
             SqlConnection conn = new SqlConnection(_conn);
-            SqlCommand sqlCommand = new SqlCommand("GetBrigadeInventory", conn);
-            sqlCommand.CommandType = CommandType.StoredProcedure;
+            SqlCommand command = new SqlCommand("GetBrigadeInventory", conn);
+            command.CommandType = CommandType.StoredProcedure;
             try
             {
                 conn.Open();
-                sqlCommand.Parameters.AddWithValue("@BrigadeNumber", brigadeNumber);
-                SqlDataReader reader = sqlCommand.ExecuteReader();
+                SqlParameter[] sqlParameters = {
+                    new SqlParameter() { ParameterName = "@BrigadeNumber", Value = brigadeNumber},
+                    new SqlParameter() { ParameterName = "@Date", Value = date}
+                };
+                command.Parameters.AddRange(sqlParameters);
+                SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
                     inventoryList.Add(new InventoryModel

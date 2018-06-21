@@ -36,13 +36,12 @@ namespace AM.EmergencyService.App.Web.Controllers
             return View(brigades);
         }
         [Dispatcher]
-        public ActionResult Details(int brigadeNumber)
+        public ActionResult Details(int brigadeNumber, DateTime date)
         {
-            var ViewModel = new BrigadeCreateViewModel
+            var ViewModel = new BrigadeViewModel
             {
                 BrigadeNumber=brigadeNumber,
-                InventoryNumber = new List<int>(),
-                RescuerId = new List<int>()
+                Date=date
             };
             return View(ViewModel);
         }

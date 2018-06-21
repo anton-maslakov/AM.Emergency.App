@@ -1,6 +1,6 @@
 ﻿@model AM.EmergencyService.App.Web.Models.RequestDetail.RequestDetailCreateViewModel
 
-@using (Html.BeginForm("Create", "RequestDetail", FormMethod.Post))
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
 
@@ -54,7 +54,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.BrigadeEndDate, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.BrigadeEndDate, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.BrigadeEndDate, new { htmlAttributes = new { @class = "form-control datepicker" } })
                 @Html.ValidationMessageFor(model => model.BrigadeEndDate, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -62,7 +62,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.BrigadeReturnDate, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.BrigadeReturnDate, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.BrigadeReturnDate, new { htmlAttributes = new { @class = "form-control datepicker" } })
                 @Html.ValidationMessageFor(model => model.BrigadeReturnDate, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -93,8 +93,10 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Назад", "Index")
 </div>
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+    <script src="~/Scripts/DatePicker.js"></script>
 }

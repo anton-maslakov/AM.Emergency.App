@@ -36,7 +36,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.BrigadeCallDate, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.BrigadeCallDate, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.BrigadeCallDate, new { htmlAttributes = new { @class = "form-control datepicker" } })
                 @Html.ValidationMessageFor(model => model.BrigadeCallDate, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -44,7 +44,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.BrigadeArrivalDate, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.BrigadeArrivalDate, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.BrigadeArrivalDate, new { htmlAttributes = new { @class = "form-control datepicker" } })
                 @Html.ValidationMessageFor(model => model.BrigadeArrivalDate, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -52,7 +52,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.BrigadeEndDate, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.BrigadeEndDate, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.BrigadeEndDate, new { htmlAttributes = new { @class = "form-control datepicker" } })
                 @Html.ValidationMessageFor(model => model.BrigadeEndDate, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -60,7 +60,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.BrigadeReturnDate, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.BrigadeReturnDate, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.BrigadeReturnDate, new { htmlAttributes = new { @class = "form-control datepicker" } })
                 @Html.ValidationMessageFor(model => model.BrigadeReturnDate, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -87,8 +87,10 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index", "Request")
+    @Html.ActionLink("Назад", "Index", "Request")
 </div>
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Scripts/DateTimePickerScript.js"></script>
 }

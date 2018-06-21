@@ -18,16 +18,20 @@ namespace AM.EmergencyService.App.Web.Models.RequestDetail
         [Display(Name = "Номер бригады")]
         public int BrigadeNumber { get; set; }
         [Display(Name = "Время вызова бригады")]
-        [DataType(DataType.DateTime)]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime BrigadeCallDate { get; set; }
         [Display(Name = "Время прибытия бригады")]
-        [DataType(DataType.DateTime)]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime BrigadeArrivalDate { get; set; }
         [Display(Name = "Время окончания вызова")]
-        [DataType(DataType.DateTime)]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime BrigadeEndDate { get; set; }
         [Display(Name = "Время возвращения бригады")]
-        [DataType(DataType.DateTime)]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime BrigadeReturnDate { get; set; }
         [Display(Name = "Пострадавшие")]
         public List<int> CasualtyId { get; set; }

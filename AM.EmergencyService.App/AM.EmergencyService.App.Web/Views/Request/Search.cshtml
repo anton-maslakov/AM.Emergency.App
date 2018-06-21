@@ -3,10 +3,10 @@
     <fieldset class="col-md-6">
         <legend>Фильтр: </legend>
         @Html.Label("Дата вызова", htmlAttributes: new { @class = "control-label col-md-3" })
-        @Html.TextBox("requestDate", " ", new { @class = "form-control datepicker" })
-        @Html.RadioButton("filter", "requestNumber") Поиск по номеру вызова
+        @Html.TextBox("requestDate", "", new { @class = "form-control datepicker", @type="date" })
+        @Html.RadioButton("filter", "requestNumber", true) Поиск по номеру вызова
         <br>
-        @Html.RadioButton("filter", "requestCategory", true) Поиск по категории вызова
+        @Html.RadioButton("filter", "requestCategory") Поиск по категории вызова
         <br>
         @Html.RadioButton("filter", "requestAddress") Поиск по адресу вызова
         <br>
@@ -17,6 +17,9 @@
 <div id="DataSearching">
     @*partial view content*@
 </div>
-<script src="~/Scripts/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="~/Scripts/DataSearchingScript.js"></script>
-<script type="text/javascript" src="~/Scripts/DateTimePickerScript.js"></script>
+@section Scripts {
+    @*<script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>*@
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Scripts/DateTimePickerScript.js"></script>
+    <script src="~/Scripts/DataSearchingScript.js"></script>
+}

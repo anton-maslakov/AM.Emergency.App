@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using AM.EmergencyService.App.Common.Helper;
 using AM.EmergencyService.App.Common.Logger;
 using AM.EmergencyService.App.Common.Models;
@@ -22,9 +23,9 @@ namespace AM.EmergencyService.App.Business.DataProvider.Impl
             return _repos.GetAllData();
         }
 
-        public IEnumerable<InventoryModel> GetInventoryByBrigadeNumber(int brigadeNumber)
+        public IEnumerable<InventoryModel> GetInventoryByBrigadeNumber(int brigadeNumber, DateTime date)
         {
-            return _repos.GetInventoryByBrigadeNumber(brigadeNumber);
+            return _repos.GetInventoryByBrigadeNumber(brigadeNumber, date);
         }
 
         public InventoryModel GetInventoryByNumber(int inventoryNumber)

@@ -67,8 +67,8 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
                         RequestNumber = reader.GetInt32(0),
                         RequestAddress = reader.GetString(1),
                         RequestReason = reader.GetString(2),
-                        RequestDate = reader[3].ToString(),
-                        Category = new CategoryModel{CategoryName=reader.GetString(4)}
+                        RequestDate = reader.GetDateTime(3),
+                        Category = new CategoryModel { CategoryName = reader.GetString(4) }
                     });
                 }
             }
@@ -97,8 +97,8 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
                         RequestNumber = reader.GetInt32(0),
                         RequestAddress = reader.GetString(1),
                         RequestReason = reader.GetString(2),
-                        RequestDate = reader[3].ToString(),
-                        Category = new CategoryModel{ CategoryName=reader.GetString(4) }
+                        RequestDate = reader.GetDateTime(3),
+                        Category = new CategoryModel { CategoryName = reader.GetString(4) }
                     });
                 }
             }
@@ -131,7 +131,7 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
                         RequestNumber = reader.GetInt32(0),
                         RequestAddress = reader.GetString(1),
                         RequestReason = reader.GetString(2),
-                        RequestDate = reader[3].ToString(),
+                        RequestDate = reader.GetDateTime(3),
                         Category = new CategoryModel { CategoryName = reader.GetString(4) }
                     });
                 }
@@ -161,7 +161,7 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
                         RequestNumber = reader.GetInt32(0),
                         RequestAddress = reader.GetString(1),
                         RequestReason = reader.GetString(2),
-                        RequestDate = reader[3].ToString(),
+                        RequestDate = reader.GetDateTime(3),
                         Category = new CategoryModel { CategoryName = reader.GetString(4) }
                     });
                 }
@@ -195,7 +195,7 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
                         RequestNumber = reader.GetInt32(0),
                         RequestAddress = reader.GetString(1),
                         RequestReason = reader.GetString(2),
-                        RequestDate = reader[3].ToString(),
+                        RequestDate = reader.GetDateTime(3),
                         Category = new CategoryModel { CategoryName = reader.GetString(4) }
                     });
                 }
@@ -225,8 +225,8 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
                         RequestNumber = reader.GetInt32(0),
                         RequestAddress = reader.GetString(1),
                         RequestReason = reader.GetString(2),
-                        RequestDate = reader[3].ToString(),
-                        Category = new CategoryModel{ CategoryName = reader.GetString(4) }
+                        RequestDate = reader.GetDateTime(3),
+                        Category = new CategoryModel { CategoryName = reader.GetString(4) }
                     });
                 }
             }
@@ -259,7 +259,7 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
                         RequestNumber = reader.GetInt32(0),
                         RequestAddress = reader.GetString(1),
                         RequestReason = reader.GetString(2),
-                        RequestDate = reader[3].ToString(),
+                        RequestDate = reader.GetDateTime(3),
                         Category = { CategoryName = reader.GetString(4) }
                     });
                 }
@@ -273,7 +273,30 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
 
         public void Update(RequestModel requestModel)
         {
-            throw new NotImplementedException();
+            SqlConnection conn = new SqlConnection(_conn);
+            SqlCommand command = new SqlCommand("UpdateRequest", conn) { CommandType = CommandType.StoredProcedure };
+
+            try
+            {
+                conn.Open();
+                SqlParameter[] sqlParameters = {
+                    new SqlParameter() { ParameterName = "@RequestNumber", Value = requestModel.RequestNumber},
+                    new SqlParameter() { ParameterName = "@RequestAddress", Value = requestModel.RequestAddress},
+                    new SqlParameter() { ParameterName = "@RequestReason", Value = requestModel.RequestReason},
+                    new SqlParameter() { ParameterName = "@RequestDate", Value = requestModel.RequestDate},
+                    new SqlParameter() { ParameterName = "@IdCategory", Value = requestModel.Category.Id}
+                };
+
+                command.Parameters.AddRange(sqlParameters);
+
+                command.ExecuteNonQuery();
+
+                conn.Close();
+            }
+            catch (SqlException ex)
+            {
+                _logger.Log(LogLevel.Error, ex.Message);
+            }
         }
     }
 }
