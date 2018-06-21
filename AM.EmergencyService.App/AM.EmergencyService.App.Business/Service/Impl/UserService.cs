@@ -14,6 +14,11 @@ namespace AM.EmergencyService.App.Business.Service.Impl
             _repos = repos;
         }
 
+        public void AddUserRoles(int userId, int roleId)
+        {
+            _repos.AddUserRole(userId,roleId);
+        }
+
         public void Create(UserModel userModel)
         {
             _repos.Create(userModel);

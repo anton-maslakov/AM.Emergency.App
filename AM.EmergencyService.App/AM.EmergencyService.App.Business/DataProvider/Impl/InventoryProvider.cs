@@ -27,6 +27,11 @@ namespace AM.EmergencyService.App.Business.DataProvider.Impl
             return _repos.GetInventoryByBrigadeNumber(brigadeNumber);
         }
 
+        public InventoryModel GetInventoryByNumber(int inventoryNumber)
+        {
+            return _repos.GetInventoryByNumber(inventoryNumber);
+        }
+
         public IEnumerable<InventoryModel> GetInventoryByRequestNumber(int requestNumber)
         {
             return _repos.GetInventoryByRequestNumber(requestNumber);

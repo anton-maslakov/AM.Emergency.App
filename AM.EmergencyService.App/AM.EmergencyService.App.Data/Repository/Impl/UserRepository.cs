@@ -18,6 +18,28 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
             _conn = ConnectionStringInitialiser.InitConnectionString();
         }
 
+        public void AddUserRole(int userId, int roleId)
+        {
+            SqlConnection conn = new SqlConnection(_conn);
+            SqlCommand command = new SqlCommand("InsertUserRoles", conn) { CommandType = CommandType.StoredProcedure };
+
+            try
+            {
+                conn.Open();
+                SqlParameter[] sqlParameters = {
+                    new SqlParameter() { ParameterName = "@UserId", Value = userId},
+                    new SqlParameter() { ParameterName = "@RoleID", Value = roleId},
+                };
+                command.Parameters.AddRange(sqlParameters);
+                command.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (SqlException ex)
+            {
+                _logger.Log(LogLevel.Error, ex.Message);
+            }
+        }
+
         public void Create(UserModel userModel)
         {
             SqlConnection conn = new SqlConnection(_conn);

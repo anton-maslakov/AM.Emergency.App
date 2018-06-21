@@ -1,0 +1,5 @@
+﻿@model IEnumerable<AM.EmergencyService.App.Common.Models.Authorization.RoleModel>
+
+<div>
+    @Html.ListBox("Roles", new SelectList(Model, "Id", "Rolename"), new { @class = "form-control" })
+</div>

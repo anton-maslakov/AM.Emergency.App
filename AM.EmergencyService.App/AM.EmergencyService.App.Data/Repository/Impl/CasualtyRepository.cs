@@ -106,6 +106,37 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
             return casualtyList;
         }
 
+        public CasualtyModel GetCasualtyById(int casualtyId)
+        {
+            CasualtyModel casualty = new CasualtyModel();
+            SqlConnection conn = new SqlConnection(_conn);
+            SqlCommand sqlCommand = new SqlCommand("GetCasualtyById", conn);
+            sqlCommand.CommandType = CommandType.StoredProcedure;
+            try
+            {
+                conn.Open();
+                sqlCommand.Parameters.AddWithValue("@Id", casualtyId);
+                SqlDataReader reader = sqlCommand.ExecuteReader();
+                while (reader.Read())
+                {
+                    casualty = new CasualtyModel
+                    {
+                        Id = reader.GetInt32(0),
+                        Firstname = reader.GetString(1),
+                        Surname = reader.GetString(2),
+                        Lastname = reader.GetString(3),
+                        BirthDate = reader.GetDateTime(4),
+                        Address = reader.GetString(5)
+                    };
+                }
+            }
+            catch (SqlException ex)
+            {
+                _logger.Log(LogLevel.Error, ex.Message);
+            }
+            return casualty;
+        }
+
         public IEnumerable<CasualtyModel> GetCasualtyByRequest(int requestNumber)
         {
             List<CasualtyModel> casualtyList = new List<CasualtyModel>();
@@ -168,9 +199,33 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
             return casualtyList;
         }
 
-        public void Update(CasualtyModel casualtyModel)
+        public void Edit(CasualtyModel casualtyModel)
         {
-            throw new System.NotImplementedException();
+            SqlConnection conn = new SqlConnection(_conn);
+            SqlCommand command = new SqlCommand("UpdateCasualty", conn) { CommandType = CommandType.StoredProcedure };
+
+            try
+            {
+                conn.Open();
+                SqlParameter[] sqlParameters = {
+                    new SqlParameter() { ParameterName = "@Id", Value = casualtyModel.Id},
+                    new SqlParameter() { ParameterName = "@Firstname", Value = casualtyModel.Firstname},
+                    new SqlParameter() { ParameterName = "@Surname", Value = casualtyModel.Surname},
+                    new SqlParameter() { ParameterName = "@Lastname", Value = casualtyModel.Lastname},
+                    new SqlParameter() { ParameterName = "@Address", Value = casualtyModel.Address},
+                    new SqlParameter() { ParameterName = "@Birthdate", Value = casualtyModel.BirthDate}
+                };
+
+                command.Parameters.AddRange(sqlParameters);
+
+                command.ExecuteNonQuery();
+
+                conn.Close();
+            }
+            catch (SqlException ex)
+            {
+                _logger.Log(LogLevel.Error, ex.Message);
+            }
         }
     }
 }

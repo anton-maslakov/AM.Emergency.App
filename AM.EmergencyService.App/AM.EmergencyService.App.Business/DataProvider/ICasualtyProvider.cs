@@ -8,5 +8,7 @@ namespace AM.EmergencyService.App.Business.DataProvider
         IEnumerable<CasualtyModel> GetCasualtyByRequest(int requestNumber);
         IEnumerable<CasualtyModel> GetCasualtyNotInRequest(int requestNumber);
         IEnumerable<CasualtyModel> GetAllCasualty();
+        CasualtyModel GetCasualtyById(int casualtyId);
+
     }
 }

@@ -8,7 +8,6 @@ d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Release\StructureMap.Web.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Release\log4net.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Release\AM.EmergencyService.App.Common.pdb
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Release\AM.EmergencyService.App.Common.dll.config
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Release\AM.EmergencyService.App.Data.pdb
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Release\AM.EmergencyService.App.Data.dll.config
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Release\StructureMap.xml
@@ -22,3 +21,7 @@ d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\obj\Release\AM.EmergencyService.App.Business.csproj.CopyComplete
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\obj\Release\AM.EmergencyService.App.Business.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\obj\Release\AM.EmergencyService.App.Business.pdb
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Release\log4net.config
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Release\App.config
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Release\Newtonsoft.Json.dll
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business\bin\Release\Newtonsoft.Json.xml

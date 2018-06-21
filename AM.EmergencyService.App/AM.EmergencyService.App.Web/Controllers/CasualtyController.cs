@@ -28,6 +28,12 @@ namespace AM.EmergencyService.App.Web.Controllers
             return RedirectToAction("Details", "RequestDetail", new { requestNumber = requestNumber });
         }
         [Editor]
+        public ActionResult Index()
+        {
+            var casualtyList = _casualtyProvider.GetAllCasualty();
+            return View(casualtyList);
+        }
+        [Editor]
         public ActionResult Create()
         {
             CasualtyCreatViewModel viewModel = new CasualtyCreatViewModel();
@@ -37,9 +43,21 @@ namespace AM.EmergencyService.App.Web.Controllers
         public ActionResult Create(CasualtyCreatViewModel creatViewModel)
         {
             _casualtyService.Create(ParseCreateViewModelToCasualtyModel(creatViewModel));
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index");
         }
-        
+        [Dispatcher]
+        public ActionResult Edit(int casualtyId)
+        {
+            var casualty = _casualtyProvider.GetCasualtyById(casualtyId);
+            return View(casualty);
+        }
+        [HttpPost]
+        public ActionResult Edit(CasualtyModel casualty)
+        {
+            _casualtyService.Edit(casualty);
+            return RedirectToAction("Index");
+        }
+
         #region PartialViews
         [ChildActionOnly]
         public PartialViewResult SelectCasualty(int requestNumber)

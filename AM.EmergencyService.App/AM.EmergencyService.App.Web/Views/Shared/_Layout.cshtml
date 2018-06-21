@@ -31,6 +31,9 @@
                                 @if (HttpContext.Current.User.IsInRole("editor"))
                                 {
                                     <li class="nav-item"><a href="/Brigade/Index" class="nav-link">Бригады</a></li>
+                                    <li class="nav-item"><a href="/Rescuers/Index" class="nav-link">Спасатели</a></li>
+                                    <li class="nav-item"><a href="/Inventory/Index" class="nav-link">Инвентарь</a></li>
+                                    <li class="nav-item"><a href="/Casualty/Index" class="nav-link">Пострадавшие</a></li>
                                 }
                                 @if (HttpContext.Current.User.IsInRole("admin"))
                                 {

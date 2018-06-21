@@ -7,6 +7,7 @@ namespace AM.EmergencyService.App.Web.Models.RequestDetail
     public class RequestDetailCreateViewModel
     {
         [Display(Name = "Номер вызова")]
+        [Required]
         public int RequestNumber { get; set; }
         [DataType(DataType.MultilineText)]
         [Display(Name = "Информация о вызове")]

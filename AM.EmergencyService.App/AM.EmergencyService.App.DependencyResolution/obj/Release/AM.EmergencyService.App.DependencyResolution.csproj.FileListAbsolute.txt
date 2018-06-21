@@ -11,7 +11,6 @@ d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Release\log4net.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Release\AM.EmergencyService.App.Business.pdb
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Release\AM.EmergencyService.App.Common.pdb
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Release\AM.EmergencyService.App.Common.dll.config
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Release\AM.EmergencyService.App.Data.pdb
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Release\AM.EmergencyService.App.Data.dll.config
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Release\Microsoft.Practices.ServiceLocation.pdb
@@ -25,3 +24,7 @@ d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\obj\Release\AM.EmergencyService.App.DependencyResolution.csproj.CopyComplete
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\obj\Release\AM.EmergencyService.App.DependencyResolution.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\obj\Release\AM.EmergencyService.App.DependencyResolution.pdb
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Release\log4net.config
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Release\App.config
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Release\Newtonsoft.Json.dll
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Release\Newtonsoft.Json.xml

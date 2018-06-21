@@ -3,10 +3,6 @@ using AM.EmergencyService.App.Common.Logger;
 using AM.EmergencyService.App.Common.Models;
 using AM.EmergencyService.App.Data.Repository;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AM.EmergencyService.App.Business.Service.Impl
 {
@@ -31,5 +27,9 @@ namespace AM.EmergencyService.App.Business.Service.Impl
             _repos.DeleteCasualtyFromRequest(requestNumber, casualtyId);
         }
 
+        public void Edit(CasualtyModel casualtyModel)
+        {
+            _repos.Edit(casualtyModel);
+        }
     }
 }

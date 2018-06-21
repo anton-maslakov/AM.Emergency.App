@@ -23,6 +23,11 @@ namespace AM.EmergencyService.App.Business.DataProvider.Impl
             return _repos.GetAllCasualty();
         }
 
+        public CasualtyModel GetCasualtyById(int casualtyId)
+        {
+            return _repos.GetCasualtyById(casualtyId);
+        }
+
         public IEnumerable<CasualtyModel> GetCasualtyByRequest(int requestNumber)
         {
             return _repos.GetCasualtyByRequest(requestNumber);

@@ -1,0 +1,49 @@
+2018-06-13 21:31:31,190  INFO  Application HomePage is running.
+2018-06-13 21:31:43,186  ERROR HTTP 404 error occurred
+2018-06-13 21:39:04,626  INFO  Application HomePage is running.
+2018-06-13 21:41:54,869  INFO  Application HomePage is running.
+2018-06-13 21:41:58,964  ERROR HTTP 404 error occurred
+2018-06-13 21:43:57,202  INFO  Application HomePage is running.
+2018-06-13 21:47:04,013  INFO  Application HomePage is running.
+2018-06-13 21:48:24,156  INFO  Application HomePage is running.
+2018-06-13 21:51:45,479  INFO  Application HomePage is running.
+2018-06-13 21:51:50,762  INFO  Application HomePage is running.
+2018-06-13 23:12:16,698  INFO  Application HomePage is running.
+2018-06-13 23:12:26,882  ERROR HTTP 404 error occurred
+2018-06-13 23:14:05,897  INFO  Application HomePage is running.
+2018-06-13 23:14:27,734  ERROR Процедура или функция "UpdateUser" ожидает параметр "@Email", который не был указан.
+2018-06-13 23:14:35,397  ERROR Процедура или функция "UpdateUser" ожидает параметр "@Email", который не был указан.
+2018-06-13 23:15:25,875  INFO  Application HomePage is running.
+2018-06-13 23:15:30,072  ERROR HTTP 404 error occurred
+2018-06-13 23:15:49,160  INFO  Application HomePage is running.
+2018-06-13 23:15:56,464  ERROR Процедура или функция "UpdateUser" ожидает параметр "@Email", который не был указан.
+2018-06-13 23:16:44,945  ERROR Процедура или функция "UpdateUser" ожидает параметр "@Email", который не был указан.
+2018-06-13 23:16:51,347  ERROR Процедура или функция "UpdateUser" ожидает параметр "@Email", который не был указан.
+2018-06-13 23:22:05,085  INFO  Application HomePage is running.
+2018-06-13 23:22:09,047  ERROR HTTP 404 error occurred
+2018-06-13 23:22:52,838  INFO  Application HomePage is running.
+2018-06-13 23:23:17,071  ERROR Процедура или функция "UpdateUser" ожидает параметр "@Email", который не был указан.
+2018-06-13 23:23:22,807  ERROR Процедура или функция "UpdateUser" ожидает параметр "@Email", который не был указан.
+2018-06-13 23:24:10,538  ERROR Процедура или функция "UpdateUser" ожидает параметр "@Email", который не был указан.
+2018-06-13 23:24:15,472  ERROR Процедура или функция "UpdateUser" ожидает параметр "@Email", который не был указан.
+2018-06-13 23:24:48,601  INFO  Application HomePage is running.
+2018-06-13 23:25:30,582  ERROR Процедура или функция "UpdateUser" ожидает параметр "@Email", который не был указан.
+2018-06-13 23:25:34,701  ERROR Процедура или функция "UpdateUser" ожидает параметр "@Email", который не был указан.
+2018-06-13 23:25:39,877  ERROR Процедура или функция "UpdateUser" ожидает параметр "@Email", который не был указан.
+2018-06-13 23:26:04,123  ERROR Процедура или функция "UpdateUser" ожидает параметр "@Email", который не был указан.
+2018-06-13 23:33:54,885  ERROR Процедура или функция "UpdateUser" ожидает параметр "@Email", который не был указан.
+2018-06-13 23:34:51,904  ERROR Процедура или функция "InsertUser" ожидает параметр "@Login", который не был указан.
+2018-06-13 23:34:51,959  ERROR Процедура или функция "GetUserByLogin" ожидает параметр "@login", который не был указан.
+2018-06-13 23:34:59,647  ERROR HTTP 500 error occurred
+2018-06-13 23:42:55,481  INFO  Application HomePage is running.
+2018-06-13 23:43:04,079  ERROR HTTP 404 error occurred
+2018-06-13 23:43:32,666  INFO  Application HomePage is running.
+2018-06-13 23:44:15,527  INFO  Application HomePage is running.
+2018-06-13 23:44:20,975  ERROR HTTP 404 error occurred
+2018-06-13 23:50:25,722  INFO  Application HomePage is running.
+2018-06-13 23:52:30,863  INFO  Application HomePage is running.
+2018-06-13 23:52:44,788  ERROR Процедура или функция "InsertUser" ожидает параметр "@Login", который не был указан.
+2018-06-13 23:52:44,841  ERROR Процедура или функция "GetUserByLogin" ожидает параметр "@login", который не был указан.
+2018-06-13 23:53:36,452  INFO  Application HomePage is running.
+2018-06-13 23:53:40,708  ERROR HTTP 404 error occurred
+2018-06-13 23:54:04,056  INFO  Application HomePage is running.

@@ -22,6 +22,11 @@ namespace AM.EmergencyService.App.Business.DataProvider.Impl
             return _repos.GetAllData();
         }
 
+        public RescuerModel GetRescuerById(int rescuerId)
+        {
+            return _repos.GetRescuerById(rescuerId);
+        }
+
         public IEnumerable<RescuerModel> GetRescuersByBrigadeNumber(int brigadeNumber)
         {
             return _repos.GetRescuersByBrigadeNumber(brigadeNumber);

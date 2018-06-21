@@ -1,14 +1,11 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using AM.EmergencyService.App.Business.DataProvider.Impl;
+﻿using AM.EmergencyService.App.Business.Service;
+using AM.EmergencyService.App.Common.Models;
+using AM.EmergencyService.App.Data.Repository;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Moq;
-using AM.EmergencyService.App.Data.Repository;
-using AM.EmergencyService.App.Business.Service;
-using AM.EmergencyService.App.Common.Models;
 
 namespace AM.EmergencyService.App.Business.DataProvider.Impl.Tests
 {
@@ -61,7 +58,7 @@ namespace AM.EmergencyService.App.Business.DataProvider.Impl.Tests
         public void GetRequestByAddress_ValidAddress__RequestList()
         {
             List<RequestModel> returnList;
-            _requestRepository.Setup(r => r.GetRequestByAddress("Город Улица Дом")).Returns(returnList = new List<RequestModel> { _requestList[0] });
+            _requestRepository.Setup(r => r.GetRequestByAddress(It.IsAny<string>())).Returns(returnList = new List<RequestModel> { _requestList[0] });
             List<RequestModel> resultList = _requestsProvider.GetRequestByAddress("Город Улица Дом", " ").ToList();
             Assert.IsNotNull(resultList);
             Assert.IsTrue(resultList.Count > 0);
@@ -74,7 +71,7 @@ namespace AM.EmergencyService.App.Business.DataProvider.Impl.Tests
         public void GetRequestByCategory_ValidCategory_ListWithRequestCategoryEmergency()
         {
             List<RequestModel> returnList;
-            _requestRepository.Setup(r => r.GetRequestByCategory("Неотложный")).Returns(returnList = new List<RequestModel> { _requestList[1] });
+            _requestRepository.Setup(r => r.GetRequestByCategory(It.IsAny<string>())).Returns(returnList = new List<RequestModel> { _requestList[1] });
             List<RequestModel> resultList = _requestsProvider.GetRequestByCategory("Неотложный", " ").ToList();
             Assert.AreEqual(8, resultList[0].RequestNumber);
             _requestRepository.Verify(r => r.GetRequestByCategory(It.IsAny<string>()), Times.Once);
@@ -85,7 +82,7 @@ namespace AM.EmergencyService.App.Business.DataProvider.Impl.Tests
         public void GetRequestByNumber_ValidRequestNumber8_ListWithRequestNumber8()
         {
             List<RequestModel> returnList;
-            _requestRepository.Setup(r => r.GetRequestByNumber(8)).Returns(returnList = new List<RequestModel> { _requestList[1] });
+            _requestRepository.Setup(r => r.GetRequestByNumber(It.IsAny<int>())).Returns(returnList = new List<RequestModel> { _requestList[1] });
             List<RequestModel> resultList = _requestsProvider.GetRequestByNumber(8, " ").ToList();
             Assert.AreEqual(returnList[0].RequestNumber, resultList[0].RequestNumber);
             _requestRepository.Verify(r => r.GetRequestByNumber(It.IsAny<int>()), Times.Once);

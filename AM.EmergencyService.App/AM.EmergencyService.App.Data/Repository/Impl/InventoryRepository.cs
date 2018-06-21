@@ -101,9 +101,29 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
             return inventoryList;
         }
 
-        public void Update(InventoryModel inventoryModel)
+        public void Edit(InventoryModel inventoryModel)
         {
-            throw new System.NotImplementedException();
+            SqlConnection conn = new SqlConnection(_conn);
+            SqlCommand command = new SqlCommand("UpdateInventory", conn) { CommandType = CommandType.StoredProcedure };
+
+            try
+            {
+                conn.Open();
+                SqlParameter[] sqlParameters = {
+                    new SqlParameter() { ParameterName = "@inventoryName", Value = inventoryModel.InventoryName},
+                    new SqlParameter() { ParameterName = "@inventoryNumber", Value = inventoryModel.InventoryNumber}
+                };
+
+                command.Parameters.AddRange(sqlParameters);
+
+                command.ExecuteNonQuery();
+
+                conn.Close();
+            }
+            catch (SqlException ex)
+            {
+                _logger.Log(LogLevel.Error, ex.Message);
+            }
         }
 
         public IEnumerable<InventoryModel> GetInventoryByBrigadeNumber(int brigadeNumber)
@@ -202,6 +222,33 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
                 _logger.Log(LogLevel.Error, ex.Message);
             }
             return inventoryList;
+        }
+
+        public InventoryModel GetInventoryByNumber(int brigadeNumber)
+        {
+            InventoryModel inventory = new InventoryModel();
+            SqlConnection conn = new SqlConnection(_conn);
+            SqlCommand sqlCommand = new SqlCommand("GetInventoryByNumber", conn);
+            sqlCommand.CommandType = CommandType.StoredProcedure;
+            try
+            {
+                conn.Open();
+                sqlCommand.Parameters.AddWithValue("@inventoryNumber", brigadeNumber);
+                SqlDataReader reader = sqlCommand.ExecuteReader();
+                while (reader.Read())
+                {
+                    inventory = new InventoryModel
+                    {
+                        InventoryNumber = reader.GetInt32(0),
+                        InventoryName = reader.GetString(1)
+                    };
+                }
+            }
+            catch (SqlException ex)
+            {
+                _logger.Log(LogLevel.Error, ex.Message);
+            }
+            return inventory;
         }
     }
 }

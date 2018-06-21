@@ -72,10 +72,12 @@
     </Compile>
     <Compile Include="DependencyResolution\DataRegistry.cs" />
     <Compile Include="Repository\ICasualtyRepository.cs" />
+    <Compile Include="Repository\ICategoriesRepository.cs" />
     <Compile Include="Repository\IInventoryRepository.cs" />
     <Compile Include="Repository\Impl\BrigadesRepository.cs" />
     <Compile Include="Repository\IBrigadesRepository.cs" />
     <Compile Include="Repository\Impl\CasualtyRepository.cs" />
+    <Compile Include="Repository\Impl\CategoriesRepository.cs" />
     <Compile Include="Repository\Impl\InventoryRepository.cs" />
     <Compile Include="Repository\ConnectionStringInitialiser.cs" />
     <Compile Include="Repository\Impl\RequestDetailRepository.cs" />

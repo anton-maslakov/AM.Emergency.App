@@ -19,7 +19,7 @@ namespace AM.EmergencyService.App.Business.DataProvider.Impl
             _repos = repos;
         }
 
-        public List<string> GetAllRoles()
+        public IEnumerable<RoleModel> GetAllRoles()
         {
             return _repos.GetAllRoles();
         }
@@ -29,7 +29,7 @@ namespace AM.EmergencyService.App.Business.DataProvider.Impl
             return _repos.GetRoleById(id);
         }
 
-        public IEnumerable<RoleModel> GetUserRoles(int id)
+        public IEnumerable<string> GetUserRoles(int id)
         {
             return _repos.GetUserRoles(id);
         }

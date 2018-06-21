@@ -1,88 +1,22 @@
-﻿@model IEnumerable<AM.EmergencyService.App.Common.Models.RequestModel>
-@using (Html.BeginForm())
+﻿@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "searchForm" }))
 {
     <fieldset class="col-md-6">
         <legend>Фильтр: </legend>
-        @Html.RadioButton("filter", "requestNumber", true) Поиск по номеру вызова
+        @Html.Label("Дата вызова", htmlAttributes: new { @class = "control-label col-md-3" })
+        @Html.TextBox("requestDate", " ", new { @class = "form-control datepicker" })
+        @Html.RadioButton("filter", "requestNumber") Поиск по номеру вызова
         <br>
-        @Html.RadioButton("filter", "requestCategory") Поиск по категории вызова
+        @Html.RadioButton("filter", "requestCategory", true) Поиск по категории вызова
         <br>
         @Html.RadioButton("filter", "requestAddress") Поиск по адресу вызова
         <br>
         @Html.TextBox("searchString")
-        <p><input type="submit" value="Поиск"></p>
+        <p><input type="button" value="Поиск" id="searchBtn"></p>
     </fieldset>
 }
-@if (Model!=null)
-{
-    <table class="table">
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.RequestNumber)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.RequestAddress)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.RequestReason)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.RequestDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.BrigadeCallDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.BrigadeArrivalDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.BrigadeEndDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.BrigadeReturnDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.RequestCategory)
-            </th>
-            <th></th>
-        </tr>
-
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.RequestNumber)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.RequestAddress)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.RequestReason)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.RequestDate)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.BrigadeCallDate)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.BrigadeArrivalDate)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.BrigadeEndDate)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.BrigadeReturnDate)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.RequestCategory)
-                </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-                </td>
-            </tr>
-        }
-    </table>
-}
+<div id="DataSearching">
+    @*partial view content*@
+</div>
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="~/Scripts/DataSearchingScript.js"></script>
+<script type="text/javascript" src="~/Scripts/DateTimePickerScript.js"></script>

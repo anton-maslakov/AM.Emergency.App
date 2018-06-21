@@ -7,6 +7,7 @@ namespace AM.EmergencyService.App.Business.Service
         void Create(UserModel userModel);
         void Update(UserModel userModel);
         void Delete(int id);
+        void AddUserRoles(int userId, int roleId);
 
     }
 }

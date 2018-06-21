@@ -21,7 +21,33 @@ namespace AM.EmergencyService.App.Web.Controllers
         }
         public ActionResult Index()
         {
-            return View();
+            var inventoryList = _inventoryProvider.GetAllData();
+            return View(inventoryList);
+        }
+        [Editor]
+        public ActionResult Create()
+        {
+            var inventory = new InventoryModel();
+            return View(inventory);
+        }
+        [Editor]
+        [HttpPost]
+        public ActionResult Create(InventoryModel inventory)
+        {
+            _inventoryService.Create(inventory);
+            return RedirectToAction("Index");
+        }
+        [Editor]
+        public ActionResult Edit(int inventoryNumber)
+        {
+            var inventory = _inventoryProvider.GetInventoryByNumber(inventoryNumber);
+            return View(inventory);
+        }
+        [HttpPost]
+        public ActionResult Edit(InventoryModel inventoryModel)
+        {
+            _inventoryService.Edit(inventoryModel);
+            return RedirectToAction("Index");
         }
         [Editor]
         public ActionResult DeleteInventoryFromBrigade(int brigadeNumber, int inventoryNumber)

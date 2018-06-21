@@ -48,6 +48,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web" />
@@ -61,13 +62,16 @@
   <ItemGroup>
     <Compile Include="DataProvider\IBrigadesProvider.cs" />
     <Compile Include="DataProvider\ICasualtyProvider.cs" />
+    <Compile Include="DataProvider\ICategoriesProvider.cs" />
     <Compile Include="DataProvider\IInventoryProvider.cs" />
     <Compile Include="DataProvider\Impl\BrigadesProvider.cs" />
     <Compile Include="DataProvider\Impl\CasualtyProvider.cs" />
+    <Compile Include="DataProvider\Impl\CategoriesProvider.cs" />
     <Compile Include="DataProvider\Impl\InventoryProvider.cs" />
     <Compile Include="DataProvider\Impl\RequestDetailsProvider.cs" />
     <Compile Include="DataProvider\Impl\RescuersProvider.cs" />
     <Compile Include="DataProvider\Impl\RoleProvider.cs" />
+    <Compile Include="DataProvider\Impl\UserProvider.cs" />
     <Compile Include="DataProvider\IRequestDetailsProvider.cs" />
     <Compile Include="DataProvider\IRescuersProvider.cs" />
     <Compile Include="DataProvider\IRoleProvider.cs" />
@@ -79,8 +83,24 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AdProvider\AdProvider.cs" />
     <Compile Include="DataProvider\Impl\RequestsProvider.cs" />
+    <Compile Include="Service\IBrigadeService.cs" />
+    <Compile Include="Service\ICacheService.cs" />
+    <Compile Include="Service\ICasualtyService.cs" />
+    <Compile Include="Service\IInventoryService.cs" />
+    <Compile Include="Service\Impl\BrigadeService.cs" />
+    <Compile Include="Service\Impl\CasualtyService.cs" />
+    <Compile Include="Service\Impl\InventoryService.cs" />
+    <Compile Include="Service\Impl\RequestDetailService.cs" />
+    <Compile Include="Service\Impl\RequestService.cs" />
+    <Compile Include="Service\Impl\RescuerService.cs" />
     <Compile Include="Service\Impl\UserLogin.cs" />
+    <Compile Include="Service\Impl\UserService.cs" />
+    <Compile Include="Service\Impl\СacheService.cs" />
+    <Compile Include="Service\IRequestDetailService.cs" />
+    <Compile Include="Service\IRequestService.cs" />
+    <Compile Include="Service\IRescuersService.cs" />
     <Compile Include="Service\IUserLogin.cs" />
+    <Compile Include="Service\IUserService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

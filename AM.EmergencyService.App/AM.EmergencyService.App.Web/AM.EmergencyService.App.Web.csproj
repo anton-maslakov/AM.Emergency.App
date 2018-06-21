@@ -189,6 +189,7 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="Scripts\DataSearchingScript.js" />
+    <Content Include="Scripts\DateTimePickerScript.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
@@ -293,6 +294,7 @@
     <Content Include="Scripts\locales\bootstrap-datepicker.zh-CN.min.js" />
     <Content Include="Scripts\locales\bootstrap-datepicker.zh-TW.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\MultipleDropdownList.js" />
     <Content Include="Scripts\popper-utils.js" />
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />
@@ -313,19 +315,32 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdvertisingController.cs" />
     <Compile Include="Controllers\BrigadeController.cs" />
+    <Compile Include="Controllers\CasualtyController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\IncidentController.cs" />
+    <Compile Include="Controllers\InventoryController.cs" />
     <Compile Include="Controllers\RequestController.cs" />
+    <Compile Include="Controllers\RequestDetailController.cs" />
+    <Compile Include="Controllers\RescuersController.cs" />
     <Compile Include="DependencyResolution\ControllerConvention.cs" />
+    <Compile Include="DependencyResolution\DefaultRegistry.cs" />
     <Compile Include="DependencyResolution\IoC.cs" />
     <Compile Include="DependencyResolution\StructureMapDependencyScope.cs" />
     <Compile Include="DependencyResolution\StructureMapScopeModule.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\RequestViewModel.cs" />
-    <Compile Include="Models\UserViewModel.cs" />
+    <Compile Include="Models\Account\LoginViewModel.cs" />
+    <Compile Include="Models\Brigade\BrigadeCreateViewModel.cs" />
+    <Compile Include="Models\Casualty\CasualtyCreatViewModel.cs" />
+    <Compile Include="Models\Casualty\CasualtyViewModel.cs" />
+    <Compile Include="Models\Inventory\InventoryViewModel.cs" />
+    <Compile Include="Models\RequestDetail\RequestDetailCreateViewModel.cs" />
+    <Compile Include="Models\Request\RequestCreateViewModel.cs" />
+    <Compile Include="Models\Request\RequestViewModel.cs" />
+    <Compile Include="Models\Rescuers\RescuerCreateViewModel.cs" />
+    <Compile Include="Models\Rescuers\RescuerSelectViewModel.cs" />
+    <Compile Include="Models\Account\UserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -352,12 +367,42 @@
     <Content Include="Views\Advertising\ShowAdvertising.cshtml" />
     <Content Include="Views\Error\InternalServerError.cshtml" />
     <Content Include="Views\Error\NotFound.cshtml" />
-    <Content Include="Views\Incident\IncidentInfo.cshtml" />
-    <Content Include="Views\Request\Details.cshtml" />
+    <Content Include="Views\RequestDetail\Details.cshtml" />
     <Content Include="Views\Advertising\NoAdvertising.cshtml" />
     <Content Include="Views\Shared\_LoginView.cshtml" />
     <Content Include="Views\Account\LogIn.cshtml" />
-    <Content Include="Views\Request\_searchPartialView.cshtml" />
+    <Content Include="Views\Request\RequestList.cshtml" />
+    <Content Include="Views\Brigade\Create.cshtml" />
+    <Content Include="Views\Brigade\Add.cshtml" />
+    <Content Include="Views\Brigade\Edit.cshtml" />
+    <Content Include="Views\Rescuers\View.cshtml" />
+    <Content Include="Views\Rescuers\SelectRescuers.cshtml" />
+    <Content Include="Views\Brigade\SelectBrigade.cshtml" />
+    <Content Include="Views\Inventory\SelectInventory.cshtml" />
+    <Content Include="Views\Rescuers\ShowBrigadeRescuers.cshtml" />
+    <Content Include="Views\Inventory\ShowBrigadeInventory.cshtml" />
+    <Content Include="Views\Request\Create.cshtml" />
+    <Content Include="Views\Request\SelectCategory.cshtml" />
+    <Content Include="Views\RequestDetail\Create.cshtml" />
+    <Content Include="Views\RequestDetail\Edit.cshtml" />
+    <Content Include="Views\RequestDetail\ShowRequestDetails.cshtml" />
+    <Content Include="Views\Casualty\SelectCasualty.cshtml" />
+    <Content Include="Views\Casualty\ShowRequestCasualty.cshtml" />
+    <Content Include="Views\Inventory\ShowRequestInventory.cshtml" />
+    <Content Include="Views\Casualty\Create.cshtml" />
+    <Content Include="Views\Account\Index.cshtml" />
+    <Content Include="Views\Account\UserRoles.cshtml" />
+    <Content Include="Views\Account\Create.cshtml" />
+    <Content Include="Views\Account\Edit.cshtml" />
+    <Content Include="Views\Rescuers\Create.cshtml" />
+    <Content Include="Views\Account\AllRoles.cshtml" />
+    <Content Include="Views\Rescuers\Index.cshtml" />
+    <Content Include="Views\Rescuers\Edit.cshtml" />
+    <Content Include="Views\Inventory\Index.cshtml" />
+    <Content Include="Views\Inventory\Edit.cshtml" />
+    <Content Include="Views\Inventory\Create.cshtml" />
+    <Content Include="Views\Casualty\Index.cshtml" />
+    <Content Include="Views\Casualty\Edit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

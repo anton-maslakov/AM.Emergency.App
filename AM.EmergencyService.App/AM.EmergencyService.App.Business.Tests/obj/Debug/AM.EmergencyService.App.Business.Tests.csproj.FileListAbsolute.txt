@@ -1,5 +1,3 @@
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\obj\Debug\AM.EmergencyService.App.Business.Tests.csprojResolveAssemblyReference.cache
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\obj\Debug\AM.EmergencyService.App.Business.Tests.csproj.CoreCompileInputs.cache
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\log4net.config
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\App.config
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\AM.EmergencyService.App.Business.Tests.dll
@@ -30,6 +28,8 @@ d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\Newtonsoft.Json.xml
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\log4net.xml
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\obj\Debug\AM.EmergencyService.App.Business.Tests.csprojResolveAssemblyReference.cache
+d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\obj\Debug\AM.EmergencyService.App.Business.Tests.csproj.CoreCompileInputs.cache
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\obj\Debug\AM.EmergencyService.App.Business.Tests.csproj.CopyComplete
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\obj\Debug\AM.EmergencyService.App.Business.Tests.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\obj\Debug\AM.EmergencyService.App.Business.Tests.pdb

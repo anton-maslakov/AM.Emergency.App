@@ -2,6 +2,7 @@
 using AM.EmergencyService.App.Common.Logger;
 using AM.EmergencyService.App.Common.Models;
 using AM.EmergencyService.App.Data.Repository;
+using System.Collections.Generic;
 
 namespace AM.EmergencyService.App.Business.Service.Impl
 {
@@ -19,19 +20,25 @@ namespace AM.EmergencyService.App.Business.Service.Impl
             _logger = logger;
             _repos = repos;
         }
-    public void Add(BrigadeModel brigadeModel)
-    {
-        _repos.Add(brigadeModel);
-    }
+        public void Add(BrigadeModel brigadeModel)
+        {
 
-    public void AddInventoryBrigade(int brigadeNumber, int inventoryNumber)
-    {
-        _repos.AddInventoryBrigade(brigadeNumber, inventoryNumber);
-    }
+            _repos.Add(brigadeModel);
+        }
 
-    public void AddRescuersBrigade(int brigadeNumber, int rescuerId)
-    {
-        _repos.AddRescuersBrigade(brigadeNumber, rescuerId);
+        public void AddInventoryBrigade(int brigadeNumber, int inventoryNumber)
+        {
+            IEnumerable<BrigadeModel> brigadeList = _cache.Get<IEnumerable<BrigadeModel>>("brigadeList");
+            if (brigadeList != null)
+            {
+                _cache.Delete("brigadeList");
+            }
+            _repos.AddInventoryBrigade(brigadeNumber, inventoryNumber);
+        }
+
+        public void AddRescuersBrigade(int brigadeNumber, int rescuerId)
+        {
+            _repos.AddRescuersBrigade(brigadeNumber, rescuerId);
+        }
     }
-}
 }

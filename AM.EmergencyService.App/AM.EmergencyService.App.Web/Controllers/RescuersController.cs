@@ -24,13 +24,37 @@ namespace AM.EmergencyService.App.Web.Controllers
         [Editor]
         public ActionResult Index()
         {
-            return View();
+            var rescuersList = _rescuersProvider.GetAllData();
+            return View(rescuersList);
+        }
+        [Editor]
+        public ActionResult Edit(int rescuerId)
+        {
+            var rescuerList = _rescuersProvider.GetRescuerById(rescuerId);
+            return View(rescuerList);
+        }
+        [HttpPost]
+        public ActionResult Edit(RescuerModel rescuerModel)
+        {
+            _rescuerService.Edit(rescuerModel);
+            return RedirectToAction("Index");
         }
         [Editor]
         public ActionResult DeleteRescuerFromBrigade(int brigadeNumber, int rescuerId)
         {
             _rescuerService.DeleteRescuerFromBrigade(brigadeNumber, rescuerId);
             return RedirectToAction("Details", "Brigade", new { brigadeNumber = brigadeNumber });
+        }
+        public ActionResult Create()
+        {
+            RescuerCreateViewModel viewModel = new RescuerCreateViewModel();
+            return View(viewModel);
+        }
+        [HttpPost]
+        public ActionResult Create(RescuerCreateViewModel model)
+        {
+            _rescuerService.Add(ParseToRescuerModel(model));
+            return RedirectToAction("Index");
         }
         #region PartialViews
         [ChildActionOnly]
@@ -75,6 +99,20 @@ namespace AM.EmergencyService.App.Web.Controllers
                 });
             }
             return rescuersViewModel;
+        }
+        private RescuerModel ParseToRescuerModel(RescuerCreateViewModel rescuer)
+        {
+            RescuerModel rescuerModel = new RescuerModel();
+
+            rescuerModel = new RescuerModel
+            {
+                Firstname = rescuer.Firstname,
+                Surname = rescuer.Surname,
+                Lastname = rescuer.Lastname,
+                BirthDate = rescuer.BirthDate,
+                Job = rescuer.Job
+            };
+            return rescuerModel;
         }
         #endregion
     }

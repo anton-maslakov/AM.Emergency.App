@@ -11,6 +11,7 @@ namespace AM.EmergencyService.App.Data.Repository
         IEnumerable<RoleModel> GetUserRoles(int userId);
         IEnumerable<UserModel> GetAllUsers();
         void Create(UserModel userModel);
+        void AddUserRole(int userId, int roleId);
         void Update(UserModel userModel);
         void Delete(int id);
     }

@@ -33,12 +33,17 @@ namespace AM.EmergencyService.App.Web.Controllers
         }
         public ActionResult Create()
         {
-            return View();
+            return View(new UserViewModel());
         }
         [HttpPost]
         public ActionResult Create(UserViewModel viewModel)
         {
             _userService.Create(ParseToUserModel(viewModel));
+            var userModel = _userProvider.GetUserByLogin(viewModel.Login);
+            foreach(var role in viewModel.Roles)
+            {
+                _userService.AddUserRoles(userModel.Id, role);
+            }
             return RedirectToAction("Index");
         }
         public ActionResult Delete(int userId)
@@ -54,6 +59,10 @@ namespace AM.EmergencyService.App.Web.Controllers
         public ActionResult Edit(UserViewModel viewModel)
         {
             _userService.Update(ParseToUserModel(viewModel));
+            foreach (var role in viewModel.Roles)
+            {
+                _userService.AddUserRoles(viewModel.Id, role);
+            }
             return RedirectToAction("Index");
         }
 
@@ -64,7 +73,7 @@ namespace AM.EmergencyService.App.Web.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult LogIn(UserViewModel model, string returnUrl)
+        public ActionResult LogIn(LoginViewModel model, string returnUrl)
         {
             if (!ModelState.IsValid)
             {
@@ -90,6 +99,11 @@ namespace AM.EmergencyService.App.Web.Controllers
         public PartialViewResult UserRoles(int userId)
         {
             var roleList = _roleProvider.GetUserRoles(userId);
+            return PartialView(roleList);
+        }
+        public PartialViewResult AllRoles()
+        {
+            var roleList = _roleProvider.GetAllRoles();
             return PartialView(roleList);
         }
 
