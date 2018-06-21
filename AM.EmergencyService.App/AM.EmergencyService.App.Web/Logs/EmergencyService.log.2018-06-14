@@ -1,0 +1,12 @@
+2018-06-14 00:09:28,056  INFO  Application HomePage is running.
+2018-06-14 00:09:46,691  ERROR Процедура или функция "InsertUser" ожидает параметр "@Login", который не был указан.
+2018-06-14 00:09:46,743  ERROR Процедура или функция "GetUserByLogin" ожидает параметр "@login", который не был указан.
+2018-06-14 00:09:52,079  ERROR HTTP 500 error occurred
+2018-06-14 23:28:22,928  INFO  Application HomePage is running.
+2018-06-14 23:28:33,885  ERROR HTTP 404 error occurred
+2018-06-14 23:29:14,200  INFO  Application HomePage is running.
+2018-06-14 23:29:51,204  ERROR HTTP 500 error occurred
+2018-06-14 23:30:52,181  ERROR HTTP 500 error occurred
+2018-06-14 23:32:49,456  ERROR HTTP 500 error occurred
+2018-06-14 23:46:58,623  INFO  Application HomePage is running.
+2018-06-14 23:48:30,896  INFO  Application HomePage is running.

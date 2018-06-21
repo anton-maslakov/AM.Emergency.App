@@ -24,7 +24,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.RescuerId, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.Action("SelectRescuers","Rescuers")
+                @Html.Action("SelectRescuers", "Rescuers")
                 @Html.ActionLink("Добавить нового работника", "Add", "Rescuers")
             </div>
         </div>
@@ -32,7 +32,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.InventoryNumber, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.Action("SelectInventory", "Inventory",new { requestNumber=-1})
+                @Html.Action("SelectInventory", "Inventory", new { requestNumber = -1 })
                 @Html.ActionLink("Добавить новый инструмент", "Add", "Inventory")
             </div>
         </div>
@@ -48,3 +48,6 @@
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

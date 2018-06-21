@@ -1,0 +1,50 @@
+﻿@model AM.EmergencyService.App.Web.Models.Brigade.BrigadeCreateViewModel
+
+@{
+    ViewBag.Title = "Сформировать бригаду";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Сформировать бригаду</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.BrigadeNumber, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.Action("SelectBrigade")
+                @Html.ActionLink("Добавить новую бригаду", "Add", "Brigade")
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.RescuerId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.Action("SelectRescuers","Rescuers")
+                @Html.ActionLink("Добавить нового работника", "Add", "Rescuers")
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.InventoryNumber, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.Action("SelectInventory", "Inventory",new { requestNumber=-1})
+                @Html.ActionLink("Добавить новый инструмент", "Add", "Inventory")
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Сохранить бригаду" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

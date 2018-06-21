@@ -6,7 +6,7 @@ namespace AM.EmergencyService.App.Data.Repository
     public interface IRoleRepository
     {
         IEnumerable<RoleModel> GetRoleById(int id);
-        IEnumerable<RoleModel> GetUserRoles(int id);
-        List<string> GetAllRoles();
+        IEnumerable<string> GetUserRoles(int id);
+        IEnumerable<RoleModel> GetAllRoles();
     }
 }

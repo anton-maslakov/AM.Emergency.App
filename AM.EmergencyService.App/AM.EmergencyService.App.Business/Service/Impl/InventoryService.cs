@@ -1,5 +1,6 @@
 ﻿using AM.EmergencyService.App.Common.Helper;
 using AM.EmergencyService.App.Common.Logger;
+using AM.EmergencyService.App.Common.Models;
 using AM.EmergencyService.App.Data.Repository;
 
 namespace AM.EmergencyService.App.Business.Service.Impl
@@ -16,6 +17,11 @@ namespace AM.EmergencyService.App.Business.Service.Impl
             _repos = repos;
         }
 
+        public void Create(InventoryModel inventoryModel)
+        {
+            _repos.Create(inventoryModel);
+        }
+
         public void DeleteInventoryFromBrigade(int brigadeNumber, int inventoryNumber)
         {
             _repos.DeleteInventoryFromBrigade(brigadeNumber, inventoryNumber);
@@ -26,5 +32,9 @@ namespace AM.EmergencyService.App.Business.Service.Impl
             _repos.DeleteInventoryFromRequest(requestNumber, inventoryNumber);
         }
 
+        public void Edit(InventoryModel inventoryModel)
+        {
+            _repos.Edit(inventoryModel);
+        }
     }
 }

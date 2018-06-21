@@ -5,6 +5,7 @@ using AM.EmergencyService.App.Common.Models;
 using AM.EmergencyService.App.Data.Repository;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace AM.EmergencyService.App.Business.DataProvider.Impl
 {
@@ -26,7 +27,9 @@ namespace AM.EmergencyService.App.Business.DataProvider.Impl
             if (requestList == null)
             {
                 requestList = _repos.GetAllData();
-                _cache.Add<IEnumerable<RequestModel>>("requestList", requestList, 2000);
+                _cache.Add("requestList", requestList, 2000);
+                requestList.First().RequestNumber = 20;
+
             }
             return requestList;
         }

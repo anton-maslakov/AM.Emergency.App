@@ -146,9 +146,33 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
 
         }
 
-        public void Update(RescuerModel rescuerModel)
+        public void Edit(RescuerModel rescuerModel)
         {
-            throw new System.NotImplementedException();
+            SqlConnection conn = new SqlConnection(_conn);
+            SqlCommand command = new SqlCommand("UpdateRescuer", conn) { CommandType = CommandType.StoredProcedure };
+
+            try
+            {
+                conn.Open();
+                SqlParameter[] sqlParameters = {
+                    new SqlParameter() { ParameterName = "@Id", Value = rescuerModel.Id},
+                    new SqlParameter() { ParameterName = "@FirstName", Value = rescuerModel.Firstname},
+                    new SqlParameter() { ParameterName = "@Surname", Value = rescuerModel.Surname},
+                    new SqlParameter() { ParameterName = "@Lastname", Value = rescuerModel.Lastname},
+                    new SqlParameter() { ParameterName = "@BirthDate", Value = rescuerModel.BirthDate.ToShortDateString()},
+                    new SqlParameter() { ParameterName = "@Job", Value = rescuerModel.Job}
+                };
+
+                command.Parameters.AddRange(sqlParameters);
+
+                command.ExecuteNonQuery();
+
+                conn.Close();
+            }
+            catch (SqlException ex)
+            {
+                _logger.Log(LogLevel.Error, ex.Message);
+            }
         }
         public void DeleteRescuerFromBrigade(int brigadeNumber, int rescuerId)
         {
@@ -170,6 +194,38 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
             {
                 _logger.Log(LogLevel.Error, ex.Message);
             }
+        }
+
+        public RescuerModel GetRescuerById(int rescuerId)
+        {
+            RescuerModel rescuer = new RescuerModel();
+            SqlConnection conn = new SqlConnection(_conn);
+            SqlCommand sqlCommand = new SqlCommand("GetResceruerById", conn);
+            sqlCommand.CommandType = CommandType.StoredProcedure;
+            try
+            {
+                conn.Open();
+                sqlCommand.Parameters.AddWithValue("@Id", rescuerId);
+                SqlDataReader reader = sqlCommand.ExecuteReader();
+                while (reader.Read())
+                {
+                    rescuer = new RescuerModel
+                    {
+                        Id = reader.GetInt32(0),
+                        Firstname = reader.GetString(1),
+                        Surname = reader.GetString(2),
+                        Lastname = reader.GetString(3),
+                        BirthDate = reader.GetDateTime(4),
+                        Job = reader.GetString(5)
+
+                    };
+                }
+            }
+            catch (SqlException ex)
+            {
+                _logger.Log(LogLevel.Error, ex.Message);
+            }
+            return rescuer;
         }
     }
 }

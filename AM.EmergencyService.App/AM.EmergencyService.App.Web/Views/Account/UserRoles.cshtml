@@ -1,9 +1,9 @@
-﻿@model IEnumerable<AM.EmergencyService.App.Common.Models.Authorization.RoleModel>
+﻿@model IEnumerable<string>
 <table class="table">
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Rolename)
+            @Html.DisplayFor(modelItem => item)
         </td>
     </tr>
 }

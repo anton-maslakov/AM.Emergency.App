@@ -70,14 +70,20 @@
             Пострадавшие в инциденте:
         </h4>
         @Html.Action("ShowRequestCasualty", "Casualty", new { requestNumber = Model.RequestNumber })
-        <h6>Добавить пострадавших:</h6>
-        @Html.Action("SelectCasualty", "Casualty")
+        @if (HttpContext.Current.User.IsInRole("editor"))
+        {
+            <h6>Добавить пострадавших:</h6>
+            @Html.Action("SelectCasualty", "Casualty")
+        }
         <h4>
             Инструмент, применяемый в инциденте:
         </h4>
         @Html.Action("ShowRequestInventory", "Inventory", new { requestNumber = Model.RequestNumber })
-        <h6>Добавить инструмент:</h6>
-        @Html.Action("SelectInventory", "Inventory", new { requestNumber = Model.RequestNumber })
+        @if (HttpContext.Current.User.IsInRole("editor"))
+        {
+            <h6>Добавить инструмент:</h6>
+            @Html.Action("SelectInventory", "Inventory", new { requestNumber = Model.RequestNumber })
+        }
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Сохранить" class="btn btn-default" />
@@ -89,3 +95,6 @@
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

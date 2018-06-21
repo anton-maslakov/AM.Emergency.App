@@ -18,9 +18,9 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
             _conn = ConnectionStringInitialiser.InitConnectionString();
         }
 
-        public List<string> GetAllRoles()
+        public IEnumerable<RoleModel> GetAllRoles()
         {
-            List<string> roles = new List<string>();
+            List<RoleModel> roles = new List<RoleModel>();
             SqlConnection conn = new SqlConnection(_conn);
             SqlCommand sqlCommand = new SqlCommand("GetAllRoles", conn);
             sqlCommand.CommandType = CommandType.StoredProcedure;
@@ -30,7 +30,11 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
                 SqlDataReader reader = sqlCommand.ExecuteReader();
                 while (reader.Read())
                 {
-                    roles.Add(reader.GetString(1));
+                    roles.Add(new RoleModel
+                    {
+                        Id=reader.GetInt32(0),
+                        Rolename=reader.GetString(1)
+                    });
                 }
             }
             catch (SqlException ex)
@@ -67,9 +71,9 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
             return roleList;
         }
 
-        public IEnumerable<RoleModel> GetUserRoles(int id)
+        public IEnumerable<string> GetUserRoles(int id)
         {
-            List<RoleModel> roles = new List<RoleModel>();
+            List<string> roles = new List<string>();
             SqlConnection conn = new SqlConnection(_conn);
             SqlCommand command = new SqlCommand("GetUserRoles", conn);
             command.CommandType = CommandType.StoredProcedure;
@@ -80,10 +84,7 @@ namespace AM.EmergencyService.App.Data.Repository.Impl
                 SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    roles.Add(new RoleModel
-                    {
-                        Rolename = reader.GetString(0)
-                    });
+                    roles.Add(reader.GetString(0));
                 }
             }
             catch (SqlException ex)

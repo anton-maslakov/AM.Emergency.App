@@ -1,0 +1,7 @@
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.AdService\bin\AM.EmergencyService.AdService.dll.config
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.AdService\bin\AM.EmergencyService.AdService.dll
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.AdService\bin\AM.EmergencyService.AdService.pdb
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Release\AM.Emergency.AdService.csprojResolveAssemblyReference.cache
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Release\AM.Emergency.AdService.csproj.CoreCompileInputs.cache
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Release\AM.EmergencyService.AdService.dll
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Release\AM.EmergencyService.AdService.pdb

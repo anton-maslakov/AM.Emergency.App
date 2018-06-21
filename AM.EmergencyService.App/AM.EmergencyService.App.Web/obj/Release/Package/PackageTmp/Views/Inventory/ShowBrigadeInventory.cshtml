@@ -1,0 +1,30 @@
+﻿@model IEnumerable<AM.EmergencyService.App.Common.Models.InventoryModel>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.InventoryNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InventoryName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.InventoryNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InventoryName)
+        </td>
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
+            @Html.ActionLink("Удалить", "DeleteInventoryFromBrigade", new { brigadeNumber=ViewBag.brigadeNumber, inventoryNumber=item.InventoryNumber })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,61 @@
+﻿@model AM.EmergencyService.App.Common.Models.RequestDetailModel
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.RequestNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IncidentInformation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IncidentReason)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BrigadeNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BrigadeCallDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BrigadeArrivalDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BrigadeEndDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BrigadeReturnDate)
+        </th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(model => model.RequestNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.IncidentInformation)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.IncidentReason)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.BrigadeNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.BrigadeCallDate)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.BrigadeArrivalDate)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.BrigadeEndDate)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.BrigadeReturnDate)
+        </td>
+        <td>
+            @Html.ActionLink("Редактировать", "Edit", new { requestNumber = Model.RequestNumber })
+        </td>
+    </tr>
+</table>
+

@@ -17,16 +17,13 @@ d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\Microsoft.Win32.Primitives.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\System.AppContext.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\System.Collections.Immutable.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\System.Console.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\System.Diagnostics.Process.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\System.Diagnostics.StackTrace.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\System.IO.Compression.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\System.IO.FileSystem.dll
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\System.IO.Pipes.AccessControl.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\System.IO.Pipes.dll
@@ -39,7 +36,6 @@ d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\System.Security.Principal.Windows.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\System.Text.Encoding.CodePages.dll
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\System.Threading.Thread.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\System.ValueTuple.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\System.Xml.ReaderWriter.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\System.Xml.XmlDocument.dll
@@ -73,7 +69,6 @@ d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\log4net.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\AM.EmergencyService.App.Business.pdb
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\AM.EmergencyService.App.Common.pdb
-d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\AM.EmergencyService.App.Common.dll.config
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\AM.EmergencyService.App.Data.pdb
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\AM.EmergencyService.App.Data.dll.config
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\AM.EmergencyService.App.DependencyResolution.pdb
@@ -102,3 +97,6 @@ d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\obj\Release\AM.EmergencyService.App.Web.csproj.CopyComplete
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\obj\Release\AM.EmergencyService.App.Web.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\obj\Release\AM.EmergencyService.App.Web.pdb
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\log4net.config
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\App.config
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\Microsoft.Managed.Core.targets

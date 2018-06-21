@@ -1,0 +1,4 @@
+﻿@model IEnumerable<AM.EmergencyService.App.Common.Models.BrigadeModel>
+<div>
+    @Html.DropDownList("BrigadeNumber", new SelectList(Model, "BrigadeNumber", "BrigadeNumber"), new { @class = "form-control" })
+</div>

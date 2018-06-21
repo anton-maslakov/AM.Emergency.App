@@ -7,5 +7,6 @@ namespace AM.EmergencyService.App.Business.DataProvider
     {
         IEnumerable<RescuerModel> GetAllData();
         IEnumerable<RescuerModel> GetRescuersByBrigadeNumber(int brigadeNumber);
+        RescuerModel GetRescuerById(int rescuerId);
     }
 }

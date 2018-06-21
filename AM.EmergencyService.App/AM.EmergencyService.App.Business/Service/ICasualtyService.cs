@@ -6,6 +6,6 @@ namespace AM.EmergencyService.App.Business.Service
     {
         void Create(CasualtyModel casualtyModel);
         void DeleteCasualtyFromRequest(int requestNumber, int casualtyId);
-
+        void Edit(CasualtyModel casualtyModel);
     }
 }
