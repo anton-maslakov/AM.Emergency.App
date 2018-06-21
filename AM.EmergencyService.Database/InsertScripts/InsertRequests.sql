@@ -1,8 +1,0 @@
-INSERT INTO Requests(RequestNumber,RequestAddress,RequestReason,RequestDate,BrigadeCallDate,BrigadeArrivalDate,BrigadeEndDate,BrigadeReturnDate, RequestCategory, IdBrigade)
-VALUES (1, 'г.Могилев, ул. Ленинская, д. 26, кв. 76', 'Пожар', '25.04.2018 15:03', '25.04.2018 15:03', '25.04.2018 15:19', '25.04.2018 16:48', '25.04.2018 17:30', 'Неотложный', 2)
-INSERT INTO Requests(RequestNumber,RequestAddress,RequestReason,RequestDate,BrigadeCallDate,BrigadeArrivalDate,BrigadeEndDate,BrigadeReturnDate, RequestCategory, IdBrigade)
-VALUES (2, 'г.Могилев, перекрёсток ул. Островского и б-ра. Непокоренных', 'ДТП', '25.04.2018 16:31', '25.04.2018 16:31', '25.04.2018 16:39', '25.04.2018 17:21', '25.04.2018 17:56', 'Срочный', 1)
-INSERT INTO Requests(RequestNumber,RequestAddress,RequestReason,RequestDate,BrigadeCallDate,BrigadeArrivalDate,BrigadeEndDate,BrigadeReturnDate, RequestCategory, IdBrigade)
-VALUES (3, 'г.Могилев, б-р. Первомайская, д. 94', 'Взрыв', '25.04.2018 23:48', '25.04.2018 23:49', '26.04.2018 00:09', '26.04.2018 03:48', '26.04.2018 04:15', 'Экстренный', 3)
-INSERT INTO Requests(RequestNumber,RequestAddress,RequestReason,RequestDate,BrigadeCallDate,BrigadeArrivalDate,BrigadeEndDate,BrigadeReturnDate, RequestCategory, IdBrigade)
-VALUES (4, 'г.Могилев, ул. Гагарина, д. 58', 'Котик застрял на дереве', '26.04.2018 15:03', '26.04.2018 15:03', '26.04.2018 15:19', '26.04.2018 16:48', '26.04.2018 17:30', 'Экстренный', 4)
