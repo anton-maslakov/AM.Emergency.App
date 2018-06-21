@@ -1,0 +1,27 @@
+﻿@model AM.EmergencyService.App.Web.Models.Brigade.BrigadeCreateViewModel
+@using (Html.BeginForm("Create", "Brigade", FormMethod.Post))
+{
+    <h4>
+        Состав бригады @Html.TextBoxFor(model => model.BrigadeNumber, htmlAttributes: new { style = "width:40px; height:25px;", @readonly = true }):
+    </h4>
+    @Html.Action("ShowBrigadeRescuers", "Rescuers", new { brigadeNumber = Model.BrigadeNumber })
+    <h6>Добавить людей в бригаду:</h6>
+    @Html.Action("SelectRescuers", "Rescuers")
+    <h4>
+        Инструмент бригады @Html.TextBoxFor(model => model.BrigadeNumber, htmlAttributes: new { style = "width:40px; height:25px;", @readonly = true }):
+    </h4>
+    @Html.Action("ShowBrigadeInventory", "Inventory", new { brigadeNumber = Model.BrigadeNumber })
+    <h6>Добавить инвентарь в бригаду:</h6>
+    @Html.Action("SelectInventory", "Inventory", new { requestNumber = -1 })
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Сохранить" class="btn btn-default" />
+        </div>
+    </div>
+}
+<p>
+    @Html.ActionLink("Назад", "Index")
+</p>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

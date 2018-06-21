@@ -1,0 +1,27 @@
+﻿@model IEnumerable<AM.EmergencyService.App.Data.AdServiceReference.AdvertisingModel>
+<div class="panel panel-default">
+    @if (Model == null)
+    {
+        <hr />
+        <div class="text-center">
+            <h4 class="text-center">Мы против рекламы!</h4>
+            <div>
+                Сервис с рекламой временно не доступен
+            </div>
+        </div>
+    }
+    else
+    {
+        foreach (var item in Model)
+        {
+            <div class="text-center">
+                <h4 class="text-center">@item.Header</h4>
+                <div>
+                    @item.AdText
+                </div>
+            </div>
+        }
+    }
+
+</div>
+

@@ -1,0 +1,4 @@
+﻿@model IEnumerable<AM.EmergencyService.App.Web.Models.Casualty.CasualtyViewModel>
+<div>
+    @Html.ListBox("CasualtyId", new MultiSelectList(Model, "Id", "Name"), new { @class = "form-control" })
+</div>

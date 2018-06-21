@@ -1,0 +1,3 @@
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Business\Fakes\StructureMap.Web.fakes : warning : Невозможно создать заглушку для StructureMap.Web.CreatePluginFamilyExpressionExtensions: тип является запечатанным.
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Business\Fakes\StructureMap.Web.fakes : warning : Невозможно создать заглушку для StructureMap.Web.GenericFamilyExpressionExtensions: тип является запечатанным.
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.Business\Fakes\StructureMap.Web.fakes : warning : Невозможно создать заглушку для StructureMap.Web.WebLifecycles: тип является запечатанным.

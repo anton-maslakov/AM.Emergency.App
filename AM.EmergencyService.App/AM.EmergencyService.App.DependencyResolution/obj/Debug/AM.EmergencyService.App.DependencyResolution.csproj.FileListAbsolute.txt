@@ -1,0 +1,116 @@
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.csprojResolveAssemblyReference.cache
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.csproj.CoreCompileInputs.cache
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.dll
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.pdb
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.DependencyResolution.dll
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.DependencyResolution.pdb
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Common.dll
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Data.dll
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.dll
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.Web.dll
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\WebActivatorEx.dll
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\log4net.dll
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Common.pdb
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Common.dll.config
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Common.exe.config
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Data.pdb
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Data.dll.config
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Data.exe.config
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.xml
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.Web.pdb
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.Web.xml
+C:\Users\Entoni\Desktop\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\log4net.xml
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.DependencyResolution.dll
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.DependencyResolution.pdb
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Business.dll
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Common.dll
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Data.dll
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\Microsoft.Web.Infrastructure.dll
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.dll
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.Web.dll
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\WebActivatorEx.dll
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\log4net.dll
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Business.pdb
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Common.pdb
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Common.dll.config
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Common.exe.config
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Data.pdb
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Data.dll.config
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Data.exe.config
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.xml
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.Web.pdb
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.Web.xml
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\bin\Debug\log4net.xml
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.csprojResolveAssemblyReference.cache
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.csproj.CoreCompileInputs.cache
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.csproj.CopyComplete
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.dll
+H:\AM.EmergencyService.App-ES-3\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.pdb
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.DependencyResolution.dll
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.DependencyResolution.pdb
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Business.dll
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Common.dll
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Data.dll
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.dll
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.Web.dll
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\WebActivatorEx.dll
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\log4net.dll
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Business.pdb
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Common.pdb
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Common.dll.config
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Common.exe.config
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Data.pdb
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Data.dll.config
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Data.exe.config
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.xml
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.Web.pdb
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.Web.xml
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\log4net.xml
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.csprojResolveAssemblyReference.cache
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.csproj.CoreCompileInputs.cache
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.csproj.CopyComplete
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.dll
+D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.pdb
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\log4net.config
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\App.config
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.DependencyResolution.dll
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.DependencyResolution.pdb
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Business.dll
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Common.dll
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Data.dll
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.dll
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.Web.dll
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\WebActivatorEx.dll
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\Newtonsoft.Json.dll
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\log4net.dll
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Business.pdb
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Common.pdb
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Common.exe.config
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Data.pdb
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Data.dll.config
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Data.exe.config
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.xml
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.Web.pdb
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.Web.xml
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\Newtonsoft.Json.xml
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\log4net.xml
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.csprojResolveAssemblyReference.cache
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.csproj.CoreCompileInputs.cache
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.csproj.CopyComplete
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.dll
+D:\Мои документы\Visual Studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.pdb
