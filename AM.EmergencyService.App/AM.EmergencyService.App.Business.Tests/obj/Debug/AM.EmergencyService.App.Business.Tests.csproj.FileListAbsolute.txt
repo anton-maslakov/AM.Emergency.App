@@ -33,3 +33,39 @@ d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\obj\Debug\AM.EmergencyService.App.Business.Tests.csproj.CopyComplete
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\obj\Debug\AM.EmergencyService.App.Business.Tests.dll
 d:\мои документы\visual studio 2017\Projects\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\obj\Debug\AM.EmergencyService.App.Business.Tests.pdb
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\log4net.config
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\App.config
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\AM.EmergencyService.App.Business.Tests.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\AM.EmergencyService.App.Business.Tests.pdb
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\AM.EmergencyService.App.Business.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\AM.EmergencyService.App.Common.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\AM.EmergencyService.App.Data.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\Castle.Core.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\Moq.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\System.ValueTuple.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\StructureMap.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\log4net.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\AM.EmergencyService.App.Business.pdb
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\AM.EmergencyService.App.Common.pdb
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\AM.EmergencyService.App.Common.dll.config
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\AM.EmergencyService.App.Common.exe.config
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\AM.EmergencyService.App.Data.pdb
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\AM.EmergencyService.App.Data.dll.config
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\AM.EmergencyService.App.Data.exe.config
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\Castle.Core.xml
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\Moq.pdb
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\Moq.xml
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\System.ValueTuple.xml
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\StructureMap.xml
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\log4net.xml
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\obj\Debug\AM.EmergencyService.App.Business.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\obj\Debug\AM.EmergencyService.App.Business.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\obj\Debug\AM.EmergencyService.App.Business.Tests.csproj.CopyComplete
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\obj\Debug\AM.EmergencyService.App.Business.Tests.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Business.Tests\obj\Debug\AM.EmergencyService.App.Business.Tests.pdb

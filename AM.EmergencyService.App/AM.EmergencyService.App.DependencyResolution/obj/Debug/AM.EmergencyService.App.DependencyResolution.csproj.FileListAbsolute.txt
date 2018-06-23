@@ -82,3 +82,36 @@ D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.
 D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.csproj.CopyComplete
 D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.dll
 D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.pdb
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\log4net.config
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\App.config
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.DependencyResolution.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.DependencyResolution.pdb
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Business.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Common.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Data.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.Web.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\WebActivatorEx.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\log4net.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Business.pdb
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Common.pdb
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Common.dll.config
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Common.exe.config
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Data.pdb
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Data.dll.config
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\AM.EmergencyService.App.Data.exe.config
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.xml
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.Web.pdb
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\StructureMap.Web.xml
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\bin\Debug\log4net.xml
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.csprojResolveAssemblyReference.cache
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.csproj.CoreCompileInputs.cache
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.csproj.CopyComplete
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.DependencyResolution\obj\Debug\AM.EmergencyService.App.DependencyResolution.pdb

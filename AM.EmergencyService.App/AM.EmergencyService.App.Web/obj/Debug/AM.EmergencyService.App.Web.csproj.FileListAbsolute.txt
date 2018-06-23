@@ -516,3 +516,7 @@ D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.
 D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Web\obj\Debug\AM.EmergencyService.App.Web.dll
 D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Web\obj\Debug\AM.EmergencyService.App.Web.pdb
 D:\Мои документы\GitHub\AM.EmergencyService.App\AM.EmergencyService.App.Web\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Web\obj\Debug\AM.EmergencyService.App.Web.csprojResolveAssemblyReference.cache
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Web\obj\Debug\AM.EmergencyService.App.Web.csproj.CoreCompileInputs.cache
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Web\obj\Debug\AM.EmergencyService.App.Web.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Web\obj\Debug\AM.EmergencyService.App.Web.pdb

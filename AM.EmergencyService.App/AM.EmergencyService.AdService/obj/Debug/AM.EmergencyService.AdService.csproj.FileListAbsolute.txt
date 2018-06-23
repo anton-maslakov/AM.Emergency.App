@@ -26,3 +26,10 @@ l:\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyS
 l:\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.csproj.CoreCompileInputs.cache
 l:\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.dll
 l:\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.pdb
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.AdService\bin\AM.EmergencyService.AdService.dll.config
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.AdService\bin\AM.EmergencyService.AdService.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.AdService\bin\AM.EmergencyService.AdService.pdb
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.csprojResolveAssemblyReference.cache
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.csproj.CoreCompileInputs.cache
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.AdService\obj\Debug\AM.EmergencyService.AdService.pdb
