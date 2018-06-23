@@ -1,8 +1,0 @@
-﻿@model AM.EmergencyService.App.Web.Models.Brigade.BrigadeCreateViewModel
-<h4>Состав бригады:</h4>
-@Html.Action("ShowBrigadeRescuers", "Rescuers", new { brigadeNumber = Model.BrigadeNumber })
-<h4>Инструмент бригады:</h4>
-@Html.Action("ShowBrigadeInventory", "Inventory", new { brigadeNumber = Model.BrigadeNumber })
-<p>
-    @Html.ActionLink("Назад", "Index")
-</p>

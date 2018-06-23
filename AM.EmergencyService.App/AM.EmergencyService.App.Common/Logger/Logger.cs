@@ -3,6 +3,7 @@ using log4net.Config;
 using System;
 using System.IO;
 using System.Reflection;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace AM.EmergencyService.App.Common.Logger
 {
@@ -13,13 +14,13 @@ namespace AM.EmergencyService.App.Common.Logger
 
         public Logger()
         {
+            log = LogManager.GetLogger("LogFileAppender");
             InitiateLogger();
-            log = LogManager.GetLogger("MyAwesomeLogger");
         }
         private void InitiateLogger()
         {
-            var currentDirectory = Path.Combine(AppDomain.CurrentDomain.RelativeSearchPath, "log4net.config");
-            var configFile= new FileInfo(currentDirectory);
+            var configPath = Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory, "log4net.config", SearchOption.AllDirectories);
+            var configFile = new FileInfo(configPath[0]);
             XmlConfigurator.ConfigureAndWatch(configFile);
         }
         void ILogger.Log(LogLevel level, string message)
