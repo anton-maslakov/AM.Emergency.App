@@ -111,3 +111,7 @@ l:\AM.EmergencyService.App\AM.EmergencyService.App.Data\obj\Debug\AM.EmergencySe
 l:\AM.EmergencyService.App\AM.EmergencyService.App.Data\obj\Debug\AM.EmergencyService.App.Data.csproj.CoreCompileInputs.cache
 l:\AM.EmergencyService.App\AM.EmergencyService.App.Data\obj\Debug\AM.EmergencyService.App.Data.dll
 l:\AM.EmergencyService.App\AM.EmergencyService.App.Data\obj\Debug\AM.EmergencyService.App.Data.pdb
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Data\obj\Debug\AM.EmergencyService.App.Data.csprojResolveAssemblyReference.cache
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Data\obj\Debug\AM.EmergencyService.App.Data.csproj.CoreCompileInputs.cache
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Data\obj\Debug\AM.EmergencyService.App.Data.dll
+C:\Users\Entoni\Desktop\AM.Emergency.App-master\AM.EmergencyService.App\AM.EmergencyService.App.Data\obj\Debug\AM.EmergencyService.App.Data.pdb
